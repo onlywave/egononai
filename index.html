@@ -101,9 +101,12 @@ async function main(){
         ${badges}<div class="big ${cls(p.metrics.perf_total_pct)}">${fmtPct(p.metrics.perf_total_pct)}</div>
         <div class="ccy">da inception · NAV ${fmtNum(p.metrics.nav_last)}</div>`;
     } else {
+      const bt = p.backtest_2026 ?
+        `<div class="big ${cls(p.backtest_2026.perf_total_pct)}">${fmtPct(p.backtest_2026.perf_total_pct)}<span
+          style="font-size:12px;color:var(--muted)"> sim 2026*</span></div>` : "";
       c.innerHTML = `<h3>${p.label}</h3><span class="ccy">${p.base_currency} · live</span>
-        ${badges}<div class="soon">Track dal ${p.inception} — vol ex-ante
-        ${String(p.ex_ante?.vol_ann_pct??"").replace(".",",")}%</div>`;
+        ${badges}${bt}<div class="soon">Track dal ${p.inception} — vol ex-ante
+        ${String(p.ex_ante?.vol_ann_pct??"").replace(".",",")}% · *simulazione, non track</div>`;
     }
     cards.appendChild(c);
   }
@@ -149,12 +152,23 @@ function renderDetail(d){
       <h3>Curva NAV (settimanale, ${d.base_currency})</h3></div>`:""}
     ${Object.keys(d.monthly_pct).length>0?`<div class="panel" id="mo_${uid}">
       <h3>Rendimenti mensili</h3></div>`:""}
+    ${d.backtest_2026?`<div class="panel" id="btnav_${uid}">
+      <h3>⚠ ${d.backtest_2026.label} — perf ${fmtPct(d.backtest_2026.metrics.perf_total_pct)}
+      · vol ${String(d.backtest_2026.metrics.vol_ann_pct).replace(".",",")}%
+      · max DD ${fmtPct(d.backtest_2026.metrics.max_dd_pct)}
+      · Sharpe ${String(d.backtest_2026.metrics.sharpe).replace(".",",")}</h3></div>
+    <div class="panel" id="btmo_${uid}"><h3>Mensili — simulazione 2026 (backtest)</h3></div>
+    <p class="method">⚠ ${d.backtest_2026.note}</p>`:""}
     <div class="panel"><h3>Metodologia</h3><p class="method">${d.methodology}</p></div>
     <div class="panel"><h3>Composizione (${d.holdings.length} posizioni)</h3>
       <div style="overflow-x:auto">${holdingsTable(d.holdings)}</div></div>`;
   document.getElementById("detail").appendChild(sec);
   if(d.nav_weekly.length>1) lineChart(sec.querySelector(`#nav_${uid}`), d.nav_weekly);
   if(Object.keys(d.monthly_pct).length>0) barChart(sec.querySelector(`#mo_${uid}`), d.monthly_pct);
+  if(d.backtest_2026){
+    lineChart(sec.querySelector(`#btnav_${uid}`), d.backtest_2026.nav_weekly);
+    barChart(sec.querySelector(`#btmo_${uid}`), d.backtest_2026.monthly_pct);
+  }
 }
 
 const tile = (k,v,c="") =>

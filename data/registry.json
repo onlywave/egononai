@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-22T16:35:28+00:00",
+ "generated": "2026-07-22T16:45:16+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -38,6 +38,9 @@
      "max_dd_pct": -4.28,
      "sharpe": 1.22
     }
+   },
+   "backtest_2026": {
+    "perf_total_pct": 1.56
    }
   },
   {
@@ -59,6 +62,9 @@
      "max_dd_pct": -15.54,
      "sharpe": 1.07
     }
+   },
+   "backtest_2026": {
+    "perf_total_pct": 16.62
    }
   },
   {
@@ -80,6 +86,9 @@
      "max_dd_pct": -15.35,
      "sharpe": 2.79
     }
+   },
+   "backtest_2026": {
+    "perf_total_pct": 28.95
    }
   },
   {
@@ -101,6 +110,9 @@
      "max_dd_pct": -9.48,
      "sharpe": 1.4
     }
+   },
+   "backtest_2026": {
+    "perf_total_pct": 3.48
    }
   }
  ],
