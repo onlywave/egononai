@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-22T17:12:30+00:00",
+ "generated": "2026-07-22T17:19:54+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -64,7 +64,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 16.6
+    "perf_total_pct": 16.59
    }
   },
   {
@@ -88,7 +88,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 29.05
+    "perf_total_pct": 29.03
    }
   },
   {

@@ -153,12 +153,14 @@ function renderDetail(d){
       <h3>Curva NAV (settimanale, ${d.base_currency})</h3></div>`:""}
     ${Object.keys(d.monthly_pct).length>0?`<div class="panel" id="mo_${uid}">
       <h3>Rendimenti mensili</h3></div>`:""}
+    ${d.quant?quantBlocks(uid,"lv",d.quant,""):""}
     ${d.backtest_2026?`<div class="panel" id="btnav_${uid}">
       <h3>⚠ ${d.backtest_2026.label} — perf ${fmtPct(d.backtest_2026.metrics.perf_total_pct)}
       · vol ${String(d.backtest_2026.metrics.vol_ann_pct).replace(".",",")}%
       · max DD ${fmtPct(d.backtest_2026.metrics.max_dd_pct)}
       · Sharpe ${String(d.backtest_2026.metrics.sharpe).replace(".",",")}</h3></div>
     <div class="panel" id="btmo_${uid}"><h3>Mensili — simulazione 2026 (backtest)</h3></div>
+    ${d.backtest_2026.quant?quantBlocks(uid,"bt",d.backtest_2026.quant," — simulazione 2026*"):""}
     <p class="method">⚠ ${d.backtest_2026.note}</p>`:""}
     <div class="panel"><h3>Ripartizioni (peso ${d.holdings[0].weight_now_pct!=null?"attuale":"target"} %)</h3>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px">
@@ -171,14 +173,109 @@ function renderDetail(d){
   document.getElementById("detail").appendChild(sec);
   if(d.nav_weekly.length>1) lineChart(sec.querySelector(`#nav_${uid}`), d.nav_weekly);
   if(Object.keys(d.monthly_pct).length>0) barChart(sec.querySelector(`#mo_${uid}`), d.monthly_pct);
+  if(d.quant) ddChart(sec.querySelector(`#dd_lv${uid}`), d.quant.drawdown_weekly);
   if(d.backtest_2026){
     lineChart(sec.querySelector(`#btnav_${uid}`), d.backtest_2026.nav_weekly);
     barChart(sec.querySelector(`#btmo_${uid}`), d.backtest_2026.monthly_pct);
+    if(d.backtest_2026.quant)
+      ddChart(sec.querySelector(`#dd_bt${uid}`), d.backtest_2026.quant.drawdown_weekly);
   }
 }
 
 const tile = (k,v,c="") =>
   `<div class="tile"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`;
+
+const it = v => (v===null||v===undefined) ? "—" : String(v).replace(".",",");
+
+function quantBlocks(uid, pfx, q, suffix){
+  const s = q.stats;
+  const t = [
+    tile("CAGR (annualizzato)", fmtPct(s.cagr_pct), cls(s.cagr_pct)),
+    tile("Sortino", it(s.sortino)),
+    tile("Calmar", it(s.calmar)),
+  ];
+  if(s.months_positive_pct!=null)
+    t.push(tile("Mesi positivi", it(s.months_positive_pct)+"% su "+s.months_n));
+  if(s.best_month_pct!=null) t.push(tile("Miglior mese", fmtPct(s.best_month_pct), "up"));
+  if(s.worst_month_pct!=null) t.push(tile("Peggior mese", fmtPct(s.worst_month_pct), "down"));
+  if(s.var95_1m_hist_pct!=null){
+    t.push(tile("VaR 95% mensile (storico)", it(s.var95_1m_hist_pct)+"%"));
+    t.push(tile("CVaR 95% mensile", it(s.cvar95_1m_hist_pct)+"%"));
+  }
+  if(s.skew_monthly!=null){
+    t.push(tile("Skew mensile", it(s.skew_monthly)));
+    t.push(tile("Curtosi in eccesso", it(s.kurtosis_monthly)));
+  }
+  if(s.rolling12_median_pct!=null){
+    t.push(tile("Rolling 12m mediana", fmtPct(s.rolling12_median_pct)));
+    t.push(tile("Rolling 12m positivi", it(s.rolling12_positive_pct)+"%"));
+  }
+  const minDD = Math.min(...q.drawdown_weekly.map(p=>p[1]));
+  return `<div class="panel"><h3>Statistiche quantitative${suffix}</h3>
+      <div class="tiles">${t.join("")}</div></div>
+    <div class="panel" id="dd_${pfx}${uid}"><h3>Drawdown dal massimo precedente${suffix}
+      — max ${fmtPct(minDD)} (${q.max_dd_date})</h3></div>
+    <div class="panel"><h3>Rendimenti mensili per anno${suffix}</h3>
+      <div style="overflow-x:auto">${matrixTable(q.monthly_matrix)}</div></div>
+    ${q.correlations?`<div class="panel"><h3>Correlazioni fra componenti${suffix}</h3>
+      <div style="overflow-x:auto">${corrTable(q.correlations)}</div></div>`:""}`;
+}
+
+const MESI = ["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"];
+
+function matrixTable(mm){
+  const years = Object.keys(mm).sort();
+  const rows = years.map(y => {
+    const cells = MESI.map((_,i) => {
+      const v = mm[y]["m"+String(i+1).padStart(2,"0")];
+      return `<td class="num">${v===undefined?"—":`<span class="${cls(v)}">${fmtPct(v)}</span>`}</td>`;
+    }).join("");
+    const tot = mm[y]["tot"];
+    return `<tr><td><b>${y}</b></td>${cells}
+      <td class="num"><b class="${cls(tot)}">${fmtPct(tot)}</b></td></tr>`;
+  }).join("");
+  return `<table><thead><tr><th>Anno</th>${MESI.map(m=>`<th class="num">${m}</th>`).join("")}
+    <th class="num">Anno</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function corrTable(c){
+  const short = l => l.length>16 ? l.slice(0,15)+"…" : l;
+  const head = c.labels.map(l=>`<th class="num" title="${l}">${short(l)}</th>`).join("");
+  const rows = c.labels.map((l,i) =>
+    `<tr><td title="${l}"><b>${short(l)}</b></td>${c.matrix[i].map((v,j) =>
+      `<td class="num"${i===j?' style="font-weight:700"':""}>${it(v.toFixed(2))}</td>`
+    ).join("")}</tr>`).join("");
+  return `<table><thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function ddChart(panel, series){
+  const W=980, H=220, m={t:10,r:14,b:24,l:56};
+  const xs = series.map(p=>new Date(p[0]).getTime());
+  const x0=Math.min(...xs), x1=Math.max(...xs);
+  const yMin=Math.min(...series.map(p=>p[1]))*1.15 || -1;
+  const X=t=>m.l+(t-x0)/(x1-x0||1)*(W-m.l-m.r);
+  const Y=v=>m.t+(v/yMin)*(H-m.t-m.b);
+  let grid="", labels="";
+  for(let i=0;i<=3;i++){
+    const v=yMin*i/3, y=Y(v);
+    grid+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y}" y2="${y}"
+      stroke="${i===0?"var(--axis)":"var(--grid)"}"/>`;
+    labels+=`<text x="${m.l-8}" y="${y+4}" text-anchor="end" font-size="11"
+      fill="var(--muted)" font-variant-numeric="tabular-nums">${v.toFixed(1).replace(".",",")}%</text>`;
+  }
+  const months={};
+  series.forEach(p=>{const k=p[0].slice(0,7); if(!(k in months)) months[k]=X(new Date(p[0]).getTime());});
+  const entries=Object.entries(months);
+  const step=Math.ceil(entries.length/10);
+  entries.forEach(([k,x],i)=>{ if(i%step===0)
+    labels+=`<text x="${x}" y="${H-6}" font-size="11" fill="var(--muted)">${k.slice(5)}/${k.slice(2,4)}</text>`;});
+  const pts = series.map(p=>`${X(new Date(p[0]).getTime()).toFixed(1)} ${Y(p[1]).toFixed(1)}`);
+  const area = `M${X(xs[0]).toFixed(1)} ${Y(0)} L` + pts.join(" L") + ` L${X(xs[xs.length-1]).toFixed(1)} ${Y(0)} Z`;
+  panel.insertAdjacentHTML("beforeend",
+    `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Drawdown">
+      ${grid}<path d="${area}" fill="var(--neg)" fill-opacity="0.25"
+        stroke="var(--neg)" stroke-width="1.5"/>${labels}</svg>`);
+}
 
 function breakdownTable(hs, key, title){
   const agg = {};
@@ -205,13 +302,16 @@ function holdingsTable(hs){
       <td class="num">${num(h.cost_px)}</td>
       <td class="num">${num(h.last_px)}</td>
       <td class="num">${pl}</td>
+      <td class="num">${h.contrib_pp===undefined||h.contrib_pp===null?"—":
+        `<span class="${cls(h.contrib_pp)}">${fmtPct(h.contrib_pp)}</span>`}</td>
       <td class="num">${num(h.weight_target_pct)}</td>
       <td class="num">${num(h.weight_now_pct)}</td></tr>`;
   }).join("");
   return `<table><thead><tr><th>Strumento</th><th>ISIN / Ticker</th><th>Classe</th>
     <th>Tipo</th><th>Val.</th><th class="num">Quantità</th>
     <th class="num">Pr. carico</th><th class="num">Pr. attuale</th>
-    <th class="num">P&amp;L %</th><th class="num">Peso target %</th>
+    <th class="num">P&amp;L %</th><th class="num">Contrib p.p.</th>
+    <th class="num">Peso target %</th>
     <th class="num">Peso att. %</th></tr></thead><tbody>${rows}</tbody></table>
     <p class="method" style="margin:8px 0 0">Prezzi nella valuta di quotazione dello
     strumento; P&amp;L in valuta base del portafoglio (effetto cambio incluso);
