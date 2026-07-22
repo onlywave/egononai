@@ -1,0 +1,39 @@
+{
+ "generated": "2026-07-22T16:01:21+00:00",
+ "portfolios": [
+  {
+   "portfolio": "wolf43",
+   "label": "WOLF 43 — World to Come",
+   "base_currency": "EUR",
+   "status": "live",
+   "asof": "2026-07-21",
+   "metrics": {
+    "perf_total_pct": 33.29,
+    "vol_ann_pct": 26.06,
+    "sharpe": 2.07,
+    "max_dd_pct": -13.55,
+    "var95_1w_pct": 6.04,
+    "nav_last": 1332876.0
+   }
+  },
+  {
+   "portfolio": "frontier61",
+   "label": "WOLF Frontier 61 — Matrice Planetaria",
+   "base_currency": "USD",
+   "status": "in_costruzione"
+  },
+  {
+   "portfolio": "income",
+   "label": "WOLF Income — Bottleneck Yield",
+   "base_currency": "EUR",
+   "status": "in_costruzione"
+  },
+  {
+   "portfolio": "multiasset100",
+   "label": "WOLF Multi-Asset 100",
+   "base_currency": "CHF",
+   "status": "in_costruzione"
+  }
+ ],
+ "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+}

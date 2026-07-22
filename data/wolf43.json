@@ -1,0 +1,503 @@
+{
+ "portfolio": "wolf43",
+ "label": "WOLF 43 — World to Come",
+ "base_currency": "EUR",
+ "inception": "2026-01-01",
+ "asof": "2026-07-21",
+ "status": "live",
+ "methodology": "44 titoli globali sui colli di bottiglia strutturali; quote fisse da inception, dividendi lordi a cassa; NAV EOD in EUR; vol e VaR dichiarati su rendimenti giornalieri (252) e settimanali (52).",
+ "metrics": {
+  "perf_total_pct": 33.29,
+  "vol_ann_pct": 26.06,
+  "sharpe": 2.07,
+  "max_dd_pct": -13.55,
+  "var95_1w_pct": 6.04,
+  "nav_last": 1332876.0
+ },
+ "monthly_pct": {
+  "2026-01": 8.72,
+  "2026-02": 9.35,
+  "2026-03": -7.66,
+  "2026-04": 14.79,
+  "2026-05": 9.41,
+  "2026-06": 6.26,
+  "2026-07": -9.02
+ },
+ "nav_weekly": [
+  [
+   "2026-01-02",
+   1023020.0
+  ],
+  [
+   "2026-01-09",
+   1049065.0
+  ],
+  [
+   "2026-01-16",
+   1087673.0
+  ],
+  [
+   "2026-01-23",
+   1080101.0
+  ],
+  [
+   "2026-01-30",
+   1087215.0
+  ],
+  [
+   "2026-02-06",
+   1090570.0
+  ],
+  [
+   "2026-02-13",
+   1128745.0
+  ],
+  [
+   "2026-02-20",
+   1156971.0
+  ],
+  [
+   "2026-02-27",
+   1188915.0
+  ],
+  [
+   "2026-03-06",
+   1127316.0
+  ],
+  [
+   "2026-03-13",
+   1126768.0
+  ],
+  [
+   "2026-03-20",
+   1105127.0
+  ],
+  [
+   "2026-03-27",
+   1101843.0
+  ],
+  [
+   "2026-04-03",
+   1128295.0
+  ],
+  [
+   "2026-04-10",
+   1195677.0
+  ],
+  [
+   "2026-04-17",
+   1237815.0
+  ],
+  [
+   "2026-04-24",
+   1269668.0
+  ],
+  [
+   "2026-05-01",
+   1262697.0
+  ],
+  [
+   "2026-05-08",
+   1323565.0
+  ],
+  [
+   "2026-05-15",
+   1318569.0
+  ],
+  [
+   "2026-05-22",
+   1347189.0
+  ],
+  [
+   "2026-05-29",
+   1378740.0
+  ],
+  [
+   "2026-06-05",
+   1362334.0
+  ],
+  [
+   "2026-06-12",
+   1381379.0
+  ],
+  [
+   "2026-06-19",
+   1476988.0
+  ],
+  [
+   "2026-06-26",
+   1425342.0
+  ],
+  [
+   "2026-07-03",
+   1418356.0
+  ],
+  [
+   "2026-07-10",
+   1380289.0
+  ],
+  [
+   "2026-07-17",
+   1297648.0
+  ],
+  [
+   "2026-07-24",
+   1332876.0
+  ]
+ ],
+ "holdings": [
+  {
+   "name": "ASML Holding",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "EUR",
+   "weight_base_pct": 4.1,
+   "weight_now_pct": 5.32
+  },
+  {
+   "name": "Schneider Electric",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "EUR",
+   "weight_base_pct": 4.1,
+   "weight_now_pct": 3.52
+  },
+  {
+   "name": "Taiwan Semi. (TSM)",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 4.0,
+   "weight_now_pct": 4.31
+  },
+  {
+   "name": "ABB Ltd",
+   "bucket": "Systems / sovereign / automation",
+   "role": "Core compounder",
+   "ccy": "CHF",
+   "weight_base_pct": 3.65,
+   "weight_now_pct": 3.76
+  },
+  {
+   "name": "Prysmian S.p.A.",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "EUR",
+   "weight_base_pct": 3.5,
+   "weight_now_pct": 3.96
+  },
+  {
+   "name": "Constellation Energy",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 3.35,
+   "weight_now_pct": 1.92
+  },
+  {
+   "name": "Vertiv Holdings",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 3.35,
+   "weight_now_pct": 4.86
+  },
+  {
+   "name": "Tokyo Electron",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "JPY",
+   "weight_base_pct": 3.25,
+   "weight_now_pct": 4.69
+  },
+  {
+   "name": "Air Liquide",
+   "bucket": "Water / climate / fluids",
+   "role": "Core compounder",
+   "ccy": "EUR",
+   "weight_base_pct": 2.9,
+   "weight_now_pct": 2.64
+  },
+  {
+   "name": "Xylem",
+   "bucket": "Water / climate / fluids",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 2.9,
+   "weight_now_pct": 1.92
+  },
+  {
+   "name": "Cadence Design Sys.",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 2.85,
+   "weight_now_pct": 2.43
+  },
+  {
+   "name": "Hitachi Ltd",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "JPY",
+   "weight_base_pct": 2.85,
+   "weight_now_pct": 2.07
+  },
+  {
+   "name": "Cameco Corp",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "CAD",
+   "weight_base_pct": 2.75,
+   "weight_now_pct": 2.06
+  },
+  {
+   "name": "Linde plc",
+   "bucket": "Water / climate / fluids",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 2.75,
+   "weight_now_pct": 2.51
+  },
+  {
+   "name": "SK hynix",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "KRW",
+   "weight_base_pct": 2.65,
+   "weight_now_pct": 5.63
+  },
+  {
+   "name": "Siemens Energy",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "EUR",
+   "weight_base_pct": 2.65,
+   "weight_now_pct": 2.61
+  },
+  {
+   "name": "BHP Group",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "AUD",
+   "weight_base_pct": 2.35,
+   "weight_now_pct": 2.43
+  },
+  {
+   "name": "CATL",
+   "bucket": "Power & grid",
+   "role": "Strategic cyclical",
+   "ccy": "HKD",
+   "weight_base_pct": 2.3,
+   "weight_now_pct": 2.18
+  },
+  {
+   "name": "Kazatomprom",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 2.3,
+   "weight_now_pct": 2.13
+  },
+  {
+   "name": "Reliance Industries",
+   "bucket": "Systems / sovereign / automation",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 2.3,
+   "weight_now_pct": 1.38
+  },
+  {
+   "name": "Vistra Corp",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 2.3,
+   "weight_now_pct": 1.79
+  },
+  {
+   "name": "Antofagasta plc",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "GBp",
+   "weight_base_pct": 2.15,
+   "weight_now_pct": 1.85
+  },
+  {
+   "name": "China Yangtze Power",
+   "bucket": "Power & grid",
+   "role": "Strategic cyclical",
+   "ccy": "CNY",
+   "weight_base_pct": 2.15,
+   "weight_now_pct": 1.81
+  },
+  {
+   "name": "Iberdrola",
+   "bucket": "Power & grid",
+   "role": "Core compounder",
+   "ccy": "EUR",
+   "weight_base_pct": 2.15,
+   "weight_now_pct": 1.86
+  },
+  {
+   "name": "Kurita Water Industries",
+   "bucket": "Water / climate / fluids",
+   "role": "Core compounder",
+   "ccy": "JPY",
+   "weight_base_pct": 2.15,
+   "weight_now_pct": 2.22
+  },
+  {
+   "name": "Daikin Industries",
+   "bucket": "Water / climate / fluids",
+   "role": "Core compounder",
+   "ccy": "JPY",
+   "weight_base_pct": 2.1,
+   "weight_now_pct": 1.91
+  },
+  {
+   "name": "Samsung Electronics",
+   "bucket": "Compute bottlenecks",
+   "role": "Core compounder",
+   "ccy": "KRW",
+   "weight_base_pct": 2.05,
+   "weight_now_pct": 3.33
+  },
+  {
+   "name": "Deere & Company",
+   "bucket": "Systems / sovereign / automation",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 1.95,
+   "weight_now_pct": 1.9
+  },
+  {
+   "name": "Nutrien",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "CAD",
+   "weight_base_pct": 1.95,
+   "weight_now_pct": 1.63
+  },
+  {
+   "name": "Advantest",
+   "bucket": "Compute bottlenecks",
+   "role": "Strategic cyclical",
+   "ccy": "JPY",
+   "weight_base_pct": 1.85,
+   "weight_now_pct": 2.08
+  },
+  {
+   "name": "Veolia Environnement",
+   "bucket": "Water / climate / fluids",
+   "role": "Strategic cyclical",
+   "ccy": "EUR",
+   "weight_base_pct": 1.6,
+   "weight_now_pct": 1.48
+  },
+  {
+   "name": "American Tower",
+   "bucket": "Systems / sovereign / automation",
+   "role": "Core compounder",
+   "ccy": "USD",
+   "weight_base_pct": 1.45,
+   "weight_now_pct": 1.04
+  },
+  {
+   "name": "CRISPR Therapeutics",
+   "bucket": "Frontier optionality",
+   "role": "Frontier optionality",
+   "ccy": "USD",
+   "weight_base_pct": 1.45,
+   "weight_now_pct": 1.03
+  },
+  {
+   "name": "Palantir Tech.",
+   "bucket": "Systems / sovereign / automation",
+   "role": "Frontier optionality",
+   "ccy": "USD",
+   "weight_base_pct": 1.45,
+   "weight_now_pct": 0.84
+  },
+  {
+   "name": "Rocket Lab USA",
+   "bucket": "Frontier optionality",
+   "role": "Frontier optionality",
+   "ccy": "USD",
+   "weight_base_pct": 1.45,
+   "weight_now_pct": 1.11
+  },
+  {
+   "name": "Talen Energy",
+   "bucket": "Power & grid",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 1.45,
+   "weight_now_pct": 1.09
+  },
+  {
+   "name": "BYD Company",
+   "bucket": "Power & grid",
+   "role": "Strategic cyclical",
+   "ccy": "HKD",
+   "weight_base_pct": 1.4,
+   "weight_now_pct": 1.01
+  },
+  {
+   "name": "Marvell Technology",
+   "bucket": "Compute bottlenecks",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 1.4,
+   "weight_now_pct": 2.64
+  },
+  {
+   "name": "SQM",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 1.2,
+   "weight_now_pct": 0.93
+  },
+  {
+   "name": "Symbotic",
+   "bucket": "Systems / sovereign / automation",
+   "role": "Frontier optionality",
+   "ccy": "USD",
+   "weight_base_pct": 1.2,
+   "weight_now_pct": 0.67
+  },
+  {
+   "name": "Vale S.A.",
+   "bucket": "Resources & molecules",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 1.2,
+   "weight_now_pct": 1.01
+  },
+  {
+   "name": "Coherent Corp.",
+   "bucket": "Compute bottlenecks",
+   "role": "Strategic cyclical",
+   "ccy": "USD",
+   "weight_base_pct": 1.05,
+   "weight_now_pct": 1.39
+  },
+  {
+   "name": "Hon Hai (Foxconn)",
+   "bucket": "Compute bottlenecks",
+   "role": "Strategic cyclical",
+   "ccy": "TWD",
+   "weight_base_pct": 1.05,
+   "weight_now_pct": 0.84
+  },
+  {
+   "name": "Astera Labs",
+   "bucket": "Compute bottlenecks",
+   "role": "Frontier optionality",
+   "ccy": "USD",
+   "weight_base_pct": 1.0,
+   "weight_now_pct": 1.48
+  }
+ ],
+ "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+}
