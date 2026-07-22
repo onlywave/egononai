@@ -87,7 +87,8 @@ const cls = v => v >= 0 ? "up" : "down";
 
 const RISK_LABEL = {basso:"rischio basso", medio:"rischio medio",
                     "medio-alto":"rischio medio-alto", alto:"rischio alto",
-                    istituzionale:"profilo istituzionale"};
+                    istituzionale:"profilo istituzionale",
+                    multipolare:"CHF-first multipolare"};
 
 async function main(){
   const reg = await (await fetch("data/registry.json")).json();

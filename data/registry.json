@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-22T17:19:54+00:00",
+ "generated": "2026-07-22T17:33:05+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -64,7 +64,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 16.59
+    "perf_total_pct": 16.58
    }
   },
   {
@@ -88,7 +88,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 29.03
+    "perf_total_pct": 28.95
    }
   },
   {
@@ -113,6 +113,30 @@
    },
    "backtest_2026": {
     "perf_total_pct": 3.58
+   }
+  },
+  {
+   "portfolio": "vita5m",
+   "label": "VITA 5M — CHF-First Multipolare",
+   "base_currency": "CHF",
+   "status": "live",
+   "asof": "2026-07-22",
+   "metrics": null,
+   "risk_level": "multipolare",
+   "etf_only": true,
+   "inception": "2026-07-23",
+   "ex_ante": {
+    "vol_ann_pct": 15.51,
+    "var95_1w_pct": 3.59,
+    "backtest_3y": {
+     "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+     "perf_ann_pct": 17.79,
+     "max_dd_pct": -16.76,
+     "sharpe": 1.13
+    }
+   },
+   "backtest_2026": {
+    "perf_total_pct": 8.67
    }
   }
  ],

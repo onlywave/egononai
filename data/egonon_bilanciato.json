@@ -79,7 +79,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 165.92,
+   "last_px": 165.81,
    "pl_pct": null,
    "weight_target_pct": 10.32,
    "weight_now_pct": null
@@ -92,7 +92,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 338.48,
+   "last_px": 338.27,
    "pl_pct": null,
    "weight_target_pct": 4.03,
    "weight_now_pct": null
@@ -118,7 +118,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 509.83,
+   "last_px": 509.71,
    "pl_pct": null,
    "weight_target_pct": 10.41,
    "weight_now_pct": null
@@ -157,7 +157,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 116.31,
+   "last_px": 116.2,
    "pl_pct": null,
    "weight_target_pct": 9.25,
    "weight_now_pct": null
@@ -172,9 +172,9 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 31.81,
+    "cagr_pct": 31.79,
     "sortino": 2.17,
-    "calmar": 5.11,
+    "calmar": 5.1,
     "months_n": 7,
     "months_positive_pct": 71.0,
     "best_month_pct": 7.59,
@@ -307,7 +307,7 @@
     ],
     [
      "2026-07-24",
-     -4.39
+     -4.4
     ]
    ],
    "max_dd_date": "2026-03-23",
@@ -319,8 +319,8 @@
      "m04": 7.59,
      "m05": 2.78,
      "m06": 3.69,
-     "m07": -2.99,
-     "tot": 16.59
+     "m07": -3.01,
+     "tot": 16.58
     }
    },
    "correlations": {
@@ -486,7 +486,7 @@
   },
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-22 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 16.59,
+   "perf_total_pct": 16.58,
    "vol_ann_pct": 12.07,
    "max_dd_pct": -6.23,
    "sharpe": 2.29
@@ -498,7 +498,7 @@
    "2026-04": 7.59,
    "2026-05": 2.78,
    "2026-06": 3.69,
-   "2026-07": -2.99
+   "2026-07": -3.01
   },
   "nav_weekly": [
    [
@@ -619,7 +619,7 @@
    ],
    [
     "2026-07-24",
-    116593.0
+    116580.0
    ]
   ]
  },

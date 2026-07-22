@@ -27,7 +27,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 71.78,
+   "last_px": 71.64,
    "pl_pct": null,
    "weight_target_pct": 6.01,
    "weight_now_pct": null
@@ -53,7 +53,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 125.25,
+   "last_px": 124.61,
    "pl_pct": null,
    "weight_target_pct": 6.01,
    "weight_now_pct": null
@@ -118,7 +118,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 165.92,
+   "last_px": 165.81,
    "pl_pct": null,
    "weight_target_pct": 6.01,
    "weight_now_pct": null
@@ -144,7 +144,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 334.08,
+   "last_px": 333.79,
    "pl_pct": null,
    "weight_target_pct": 6.01,
    "weight_now_pct": null
@@ -157,7 +157,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 606.15,
+   "last_px": 605.38,
    "pl_pct": null,
    "weight_target_pct": 6.01,
    "weight_now_pct": null
@@ -170,7 +170,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 509.83,
+   "last_px": 509.71,
    "pl_pct": null,
    "weight_target_pct": 6.01,
    "weight_now_pct": null
@@ -209,7 +209,7 @@
    "ccy": "CAD",
    "shares": null,
    "cost_px": null,
-   "last_px": 96.84,
+   "last_px": 96.76,
    "pl_pct": null,
    "weight_target_pct": 4.06,
    "weight_now_pct": null
@@ -235,7 +235,7 @@
    "ccy": "USD",
    "shares": null,
    "cost_px": null,
-   "last_px": 376.11,
+   "last_px": 375.97,
    "pl_pct": null,
    "weight_target_pct": 3.94,
    "weight_now_pct": null
@@ -289,13 +289,13 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 58.18,
+    "cagr_pct": 58.0,
     "sortino": 1.65,
-    "calmar": 4.57,
+    "calmar": 4.56,
     "months_n": 7,
     "months_positive_pct": 71.0,
     "best_month_pct": 16.97,
-    "worst_month_pct": -9.87,
+    "worst_month_pct": -9.92,
     "var95_1m_hist_pct": null,
     "cvar95_1m_hist_pct": null,
     "skew_monthly": null,
@@ -424,7 +424,7 @@
     ],
     [
      "2026-07-24",
-     -10.71
+     -10.77
     ]
    ],
    "max_dd_date": "2026-07-20",
@@ -436,8 +436,8 @@
      "m04": 16.97,
      "m05": 14.65,
      "m06": 3.15,
-     "m07": -9.87,
-     "tot": 29.03
+     "m07": -9.92,
+     "tot": 28.95
     }
    },
    "correlations": {
@@ -466,7 +466,7 @@
     "matrix": [
      [
       1.0,
-      0.23,
+      0.24,
       0.32,
       0.02,
       -0.08,
@@ -487,7 +487,7 @@
       0.3
      ],
      [
-      0.23,
+      0.24,
       1.0,
       0.03,
       0.31,
@@ -515,7 +515,7 @@
       -0.22,
       0.02,
       -0.15,
-      -0.33,
+      -0.32,
       0.01,
       -0.17,
       0.15,
@@ -545,7 +545,7 @@
       0.21,
       0.19,
       0.1,
-      0.13,
+      0.14,
       0.02,
       0.05,
       0.24,
@@ -599,7 +599,7 @@
      [
       -0.18,
       0.12,
-      -0.33,
+      -0.32,
       0.38,
       0.0,
       0.12,
@@ -776,7 +776,7 @@
       0.05,
       -0.05,
       0.0,
-      0.13,
+      0.14,
       0.17,
       -0.04,
       0.19,
@@ -909,7 +909,7 @@
   },
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-22 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 29.03,
+   "perf_total_pct": 28.95,
    "vol_ann_pct": 25.55,
    "max_dd_pct": -12.73,
    "sharpe": 1.87
@@ -921,7 +921,7 @@
    "2026-04": 16.97,
    "2026-05": 14.65,
    "2026-06": 3.15,
-   "2026-07": -9.87
+   "2026-07": -9.92
   },
   "nav_weekly": [
    [
@@ -1042,7 +1042,7 @@
    ],
    [
     "2026-07-24",
-    129027.0
+    128946.0
    ]
   ]
  },
