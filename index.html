@@ -85,7 +85,8 @@ const fmtNum = v => v.toLocaleString("it-IT");
 const cls = v => v >= 0 ? "up" : "down";
 
 const RISK_LABEL = {basso:"rischio basso", medio:"rischio medio",
-                    "medio-alto":"rischio medio-alto", alto:"rischio alto"};
+                    "medio-alto":"rischio medio-alto", alto:"rischio alto",
+                    istituzionale:"profilo istituzionale"};
 
 async function main(){
   const reg = await (await fetch("data/registry.json")).json();

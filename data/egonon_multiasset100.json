@@ -1,0 +1,105 @@
+{
+ "portfolio": "egonon_multiasset100",
+ "label": "EgononAI Multi-Asset 100 — Profilo Istituzionale",
+ "risk_level": "istituzionale",
+ "etf_only": false,
+ "base_currency": "CHF",
+ "inception": "2026-07-23",
+ "status": "live",
+ "methodology": "Replica modello del mandato multi-asset CHF: 50% risk parity a budget di rischio (equity ~65%, credito 15%, oro 15%, crypto 5%) + 50% ancoraggio alla SAA robusta del mandato, su 11 strumenti UCITS/ETP, bande da Investment Guidelines (oro 10–30%, crypto ≤5% via ETP regolati, Svizzera ≥5%, equity ≤80%), vol massima di mandato 14–18% (ex-ante 7.39%). Niente derivati, leva, REIT. Ribilanciamento mensile con drawdown ladder istituzionale.",
+ "ex_ante": {
+  "vol_ann_pct": 7.39,
+  "var95_1w_pct": 1.71,
+  "backtest_3y": {
+   "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+   "perf_ann_pct": 10.58,
+   "max_dd_pct": -9.48,
+   "sharpe": 1.4
+  }
+ },
+ "cash_pct": 0.0,
+ "holdings": [
+  {
+   "name": "iShares MSCI World CHF-hedged",
+   "asset_class": "Azionario sviluppato hedged",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 19.66
+  },
+  {
+   "name": "iShares Global Agg CHF-hedged",
+   "asset_class": "Obbligazionario globale hedged",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 16.4
+  },
+  {
+   "name": "ZKB Gold ETF",
+   "asset_class": "Oro fisico CHF",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 14.65
+  },
+  {
+   "name": "iShares Core CHF Corp",
+   "asset_class": "Obbligazionario corporate CHF",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 10.16
+  },
+  {
+   "name": "iShares Swiss Gov 3-7",
+   "asset_class": "Governativo CHF",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 9.68
+  },
+  {
+   "name": "iShares Core MSCI EM IMI",
+   "asset_class": "Azionario emergenti",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 9.0
+  },
+  {
+   "name": "Vanguard FTSE All-World",
+   "asset_class": "Azionario all-country",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 8.6
+  },
+  {
+   "name": "iShares Core SPI",
+   "asset_class": "Azionario Svizzera",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 5.0
+  },
+  {
+   "name": "iShares Swiss Gov 0-3",
+   "asset_class": "Governativo CHF breve (cassa)",
+   "kind": "etf",
+   "ccy": "CHF",
+   "weight_pct": 3.56
+  },
+  {
+   "name": "21Shares Bitcoin ETP",
+   "asset_class": "Crypto ETP regolato",
+   "kind": "etp",
+   "ccy": "CHF",
+   "weight_pct": 2.36
+  },
+  {
+   "name": "21Shares Ethereum ETP",
+   "asset_class": "Crypto ETP regolato",
+   "kind": "etp",
+   "ccy": "CHF",
+   "weight_pct": 0.92
+  }
+ ],
+ "metrics": null,
+ "monthly_pct": {},
+ "nav_weekly": [],
+ "asof": "2026-07-22",
+ "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+}

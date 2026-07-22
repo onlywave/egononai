@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-22T16:27:22+00:00",
+ "generated": "2026-07-22T16:35:28+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -79,6 +79,27 @@
      "perf_ann_pct": 63.93,
      "max_dd_pct": -15.35,
      "sharpe": 2.79
+    }
+   }
+  },
+  {
+   "portfolio": "egonon_multiasset100",
+   "label": "EgononAI Multi-Asset 100 — Profilo Istituzionale",
+   "base_currency": "CHF",
+   "status": "live",
+   "asof": "2026-07-22",
+   "metrics": null,
+   "risk_level": "istituzionale",
+   "etf_only": false,
+   "inception": "2026-07-23",
+   "ex_ante": {
+    "vol_ann_pct": 7.39,
+    "var95_1w_pct": 1.71,
+    "backtest_3y": {
+     "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+     "perf_ann_pct": 10.58,
+     "max_dd_pct": -9.48,
+     "sharpe": 1.4
     }
    }
   }
