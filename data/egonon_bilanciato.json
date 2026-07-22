@@ -1,0 +1,105 @@
+{
+ "portfolio": "egonon_bilanciato",
+ "label": "EgononAI Bilanciato — Quality Bottleneck",
+ "risk_level": "medio",
+ "etf_only": false,
+ "base_currency": "EUR",
+ "inception": "2026-07-23",
+ "status": "live",
+ "methodology": "Core compounder dell'universo bottleneck con volatilità sotto la mediana (11 titoli) pesati con Hierarchical Risk Parity, scalati a vol target 10,5% (banda 9–12%); 13% in liquidità EUR. Azioni singole + cassa, nessun derivato.",
+ "ex_ante": {
+  "vol_ann_pct": 10.5,
+  "var95_1w_pct": 2.43,
+  "backtest_3y": {
+   "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+   "perf_ann_pct": 12.93,
+   "max_dd_pct": -15.54,
+   "sharpe": 1.07
+  }
+ },
+ "cash_pct": 13.27,
+ "holdings": [
+  {
+   "name": "Daikin Industries",
+   "asset_class": "Water / climate / fluids",
+   "kind": "stock",
+   "ccy": "JPY",
+   "weight_pct": 7.1
+  },
+  {
+   "name": "Kurita Water Industries",
+   "asset_class": "Water / climate / fluids",
+   "kind": "stock",
+   "ccy": "JPY",
+   "weight_pct": 5.15
+  },
+  {
+   "name": "ABB Ltd",
+   "asset_class": "Systems / sovereign / automation",
+   "kind": "stock",
+   "ccy": "CHF",
+   "weight_pct": 8.01
+  },
+  {
+   "name": "Air Liquide",
+   "asset_class": "Water / climate / fluids",
+   "kind": "stock",
+   "ccy": "EUR",
+   "weight_pct": 10.41
+  },
+  {
+   "name": "American Tower",
+   "asset_class": "Systems / sovereign / automation",
+   "kind": "stock",
+   "ccy": "USD",
+   "weight_pct": 10.32
+  },
+  {
+   "name": "Cadence Design Sys.",
+   "asset_class": "Compute bottlenecks",
+   "kind": "stock",
+   "ccy": "USD",
+   "weight_pct": 4.03
+  },
+  {
+   "name": "Iberdrola",
+   "asset_class": "Power & grid",
+   "kind": "stock",
+   "ccy": "EUR",
+   "weight_pct": 10.41
+  },
+  {
+   "name": "Linde plc",
+   "asset_class": "Water / climate / fluids",
+   "kind": "stock",
+   "ccy": "USD",
+   "weight_pct": 10.41
+  },
+  {
+   "name": "Prysmian S.p.A.",
+   "asset_class": "Power & grid",
+   "kind": "stock",
+   "ccy": "EUR",
+   "weight_pct": 5.86
+  },
+  {
+   "name": "Schneider Electric",
+   "asset_class": "Power & grid",
+   "kind": "stock",
+   "ccy": "EUR",
+   "weight_pct": 5.79
+  },
+  {
+   "name": "Xylem",
+   "asset_class": "Water / climate / fluids",
+   "kind": "stock",
+   "ccy": "USD",
+   "weight_pct": 9.25
+  }
+ ],
+ "metrics": null,
+ "monthly_pct": {},
+ "nav_weekly": [],
+ "asof": "2026-07-22",
+ "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+}

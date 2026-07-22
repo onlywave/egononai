@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-22T16:08:43+00:00",
+ "generated": "2026-07-22T16:27:22+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -14,25 +14,73 @@
     "max_dd_pct": -13.55,
     "var95_1w_pct": 6.04,
     "nav_last": 1332876.0
+   },
+   "risk_level": "medio-alto",
+   "etf_only": false,
+   "inception": "2026-01-01"
+  },
+  {
+   "portfolio": "egonon_difensivo",
+   "label": "EgononAI Difensivo — Multi-Asset ETF",
+   "base_currency": "EUR",
+   "status": "live",
+   "asof": "2026-07-22",
+   "metrics": null,
+   "risk_level": "basso",
+   "etf_only": true,
+   "inception": "2026-07-23",
+   "ex_ante": {
+    "vol_ann_pct": 4.5,
+    "var95_1w_pct": 1.04,
+    "backtest_3y": {
+     "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+     "perf_ann_pct": 5.55,
+     "max_dd_pct": -4.28,
+     "sharpe": 1.22
+    }
    }
   },
   {
-   "portfolio": "frontier61",
-   "label": "WOLF Frontier 61 — Matrice Planetaria",
-   "base_currency": "USD",
-   "status": "in_costruzione"
-  },
-  {
-   "portfolio": "income",
-   "label": "WOLF Income — Bottleneck Yield",
+   "portfolio": "egonon_bilanciato",
+   "label": "EgononAI Bilanciato — Quality Bottleneck",
    "base_currency": "EUR",
-   "status": "in_costruzione"
+   "status": "live",
+   "asof": "2026-07-22",
+   "metrics": null,
+   "risk_level": "medio",
+   "etf_only": false,
+   "inception": "2026-07-23",
+   "ex_ante": {
+    "vol_ann_pct": 10.5,
+    "var95_1w_pct": 2.43,
+    "backtest_3y": {
+     "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+     "perf_ann_pct": 12.93,
+     "max_dd_pct": -15.54,
+     "sharpe": 1.07
+    }
+   }
   },
   {
-   "portfolio": "multiasset100",
-   "label": "WOLF Multi-Asset 100",
-   "base_currency": "CHF",
-   "status": "in_costruzione"
+   "portfolio": "egonon_dinamico",
+   "label": "EgononAI Dinamico — High Conviction",
+   "base_currency": "USD",
+   "status": "live",
+   "asof": "2026-07-22",
+   "metrics": null,
+   "risk_level": "alto",
+   "etf_only": false,
+   "inception": "2026-07-23",
+   "ex_ante": {
+    "vol_ann_pct": 18.32,
+    "var95_1w_pct": 4.25,
+    "backtest_3y": {
+     "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+     "perf_ann_pct": 63.93,
+     "max_dd_pct": -15.35,
+     "sharpe": 2.79
+    }
+   }
   }
  ],
  "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."

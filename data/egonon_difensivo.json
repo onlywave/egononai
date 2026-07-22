@@ -1,0 +1,77 @@
+{
+ "portfolio": "egonon_difensivo",
+ "label": "EgononAI Difensivo — Multi-Asset ETF",
+ "risk_level": "basso",
+ "etf_only": true,
+ "base_currency": "EUR",
+ "inception": "2026-07-23",
+ "status": "live",
+ "methodology": "Risk parity su 6 ETF UCITS (azionario ≤30%, obbligazionario, oro) con overlay di liquidità remunerata per vol target 4,5% (banda 3–6%). 100% ETF. Ribilanciamento mensile, track reale da inception.",
+ "ex_ante": {
+  "vol_ann_pct": 4.5,
+  "var95_1w_pct": 1.04,
+  "backtest_3y": {
+   "nota": "BACKTEST indicativo sui pesi correnti (3 anni), NON track live",
+   "perf_ann_pct": 5.55,
+   "max_dd_pct": -4.28,
+   "sharpe": 1.22
+  }
+ },
+ "cash_pct": 0.0,
+ "holdings": [
+  {
+   "name": "Xetra-Gold",
+   "asset_class": "Oro fisico",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 7.82
+  },
+  {
+   "name": "iShares Core EUR Corp Bond",
+   "asset_class": "Obbligazionario corporate EUR",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 23.72
+  },
+  {
+   "name": "iShares Core Global Aggregate EUR-H",
+   "asset_class": "Obbligazionario globale hedged",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 27.41
+  },
+  {
+   "name": "iShares Core EUR Govt Bond",
+   "asset_class": "Obbligazionario governativo EUR",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 19.46
+  },
+  {
+   "name": "iShares Core MSCI World",
+   "asset_class": "Azionario globale",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 9.6
+  },
+  {
+   "name": "iShares Core MSCI EM IMI",
+   "asset_class": "Azionario emergenti",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 7.01
+  },
+  {
+   "name": "Xtrackers II EUR Overnight",
+   "asset_class": "Liquidità remunerata",
+   "kind": "etf",
+   "ccy": "EUR",
+   "weight_pct": 4.98
+  }
+ ],
+ "metrics": null,
+ "monthly_pct": {},
+ "nav_weekly": [],
+ "asof": "2026-07-22",
+ "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+}

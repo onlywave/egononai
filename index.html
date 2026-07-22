@@ -42,6 +42,9 @@
   .card .ccy{color:var(--muted);font-size:12px}
   .card .big{font-size:22px;margin-top:6px}
   .card .soon{color:var(--muted);font-size:13px;margin-top:8px}
+  .badge{display:inline-block;font-size:11px;border:1px solid var(--border);
+         border-radius:999px;padding:1px 8px;margin-right:4px;color:var(--ink2)}
+  .badge.etf{color:var(--good);border-color:var(--good)}
   .up{color:var(--good)} .down{color:var(--neg)}
   h2{font-size:19px;margin:30px 0 10px}
   .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
@@ -81,58 +84,96 @@ const fmtPct = v => (v>0?"+":"") + v.toFixed(2).replace(".",",") + "%";
 const fmtNum = v => v.toLocaleString("it-IT");
 const cls = v => v >= 0 ? "up" : "down";
 
+const RISK_LABEL = {basso:"rischio basso", medio:"rischio medio",
+                    "medio-alto":"rischio medio-alto", alto:"rischio alto"};
+
 async function main(){
   const reg = await (await fetch("data/registry.json")).json();
   const cards = document.getElementById("cards");
   for(const p of reg.portfolios){
     const c = document.createElement("div"); c.className = "card";
-    if(p.status === "live"){
+    const badges = `<div style="margin-top:4px">
+      <span class="badge">${RISK_LABEL[p.risk_level]||""}</span>
+      ${p.etf_only?'<span class="badge etf">100% ETF</span>':""}</div>`;
+    if(p.metrics){
       c.innerHTML = `<h3>${p.label}</h3><span class="ccy">${p.base_currency} · live · al ${p.asof}</span>
-        <div class="big ${cls(p.metrics.perf_total_pct)}">${fmtPct(p.metrics.perf_total_pct)}</div>
+        ${badges}<div class="big ${cls(p.metrics.perf_total_pct)}">${fmtPct(p.metrics.perf_total_pct)}</div>
         <div class="ccy">da inception · NAV ${fmtNum(p.metrics.nav_last)}</div>`;
     } else {
-      c.innerHTML = `<h3>${p.label}</h3><span class="ccy">${p.base_currency}</span>
-        <div class="soon">In costruzione — pubblicazione all'inception del track reale</div>`;
+      c.innerHTML = `<h3>${p.label}</h3><span class="ccy">${p.base_currency} · live</span>
+        ${badges}<div class="soon">Track dal ${p.inception} — vol ex-ante
+        ${String(p.ex_ante?.vol_ann_pct??"").replace(".",",")}%</div>`;
     }
     cards.appendChild(c);
   }
-  const d = await (await fetch("data/wolf43.json")).json();
-  renderDetail(d);
+  const ids = reg.portfolios.map(p => p.portfolio);
+  for(const id of ids){
+    const d = await (await fetch(`data/${id}.json`)).json();
+    renderDetail(d);
+  }
   document.getElementById("foot").textContent =
     reg.disclaimer + " · Generato " + reg.generated + " · © EgononAI";
 }
 
 function renderDetail(d){
-  const el = document.getElementById("detail");
-  el.innerHTML = `<h2>${d.label} <span class="ccy" style="font-size:13px;color:var(--muted)">
-    ${d.base_currency} · inception ${d.inception} · dati al ${d.asof}</span></h2>
-    <div class="tiles">
+  const sec = document.createElement("section");
+  const uid = d.portfolio;
+  const baseCap = d.portfolio === "wolf43" ? "1.000.000" : "100.000";
+  let tiles;
+  if(d.metrics){
+    tiles = `
       ${tile("Performance da inception", fmtPct(d.metrics.perf_total_pct), cls(d.metrics.perf_total_pct))}
-      ${tile("NAV (base 1.000.000)", fmtNum(d.metrics.nav_last))}
+      ${tile("NAV (base "+baseCap+")", fmtNum(d.metrics.nav_last))}
       ${tile("Volatilità ann.", fmtPct(d.metrics.vol_ann_pct).replace("+",""))}
       ${tile("Sharpe", String(d.metrics.sharpe).replace(".",","))}
       ${tile("Max drawdown", fmtPct(d.metrics.max_dd_pct), "down")}
-      ${tile("VaR95 (1 settimana)", fmtPct(d.metrics.var95_1w_pct).replace("+",""))}
-    </div>
-    <div class="panel" id="navPanel"><h3>Curva NAV (settimanale, EUR)</h3></div>
-    <div class="panel" id="moPanel"><h3>Rendimenti mensili</h3></div>
+      ${tile("VaR95 (1 settimana)", fmtPct(d.metrics.var95_1w_pct).replace("+",""))}`;
+  } else {
+    const bt = d.ex_ante.backtest_3y;
+    tiles = `
+      ${tile("Vol ex-ante", fmtPct(d.ex_ante.vol_ann_pct).replace("+",""))}
+      ${tile("VaR95 1w ex-ante", fmtPct(d.ex_ante.var95_1w_pct).replace("+",""))}
+      ${tile("Backtest 3a: perf ann*", fmtPct(bt.perf_ann_pct), cls(bt.perf_ann_pct))}
+      ${tile("Backtest 3a: max DD*", fmtPct(bt.max_dd_pct), "down")}
+      ${tile("Backtest 3a: Sharpe*", String(bt.sharpe).replace(".",","))}
+      ${tile("Cassa", String(d.cash_pct).replace(".",",")+"%")}`;
+  }
+  sec.innerHTML = `<h2>${d.label} <span class="ccy" style="font-size:13px;color:var(--muted)">
+    ${d.base_currency} · ${RISK_LABEL[d.risk_level]||""}${d.etf_only?" · 100% ETF":""}
+    · inception ${d.inception} · dati al ${d.asof}</span></h2>
+    <div class="tiles">${tiles}</div>
+    ${d.metrics? "" : `<p class="method">* Backtest indicativo sui pesi correnti:
+      NON è un track record. Il track live parte il ${d.inception}.</p>`}
+    ${d.nav_weekly.length>1?`<div class="panel" id="nav_${uid}">
+      <h3>Curva NAV (settimanale, ${d.base_currency})</h3></div>`:""}
+    ${Object.keys(d.monthly_pct).length>0?`<div class="panel" id="mo_${uid}">
+      <h3>Rendimenti mensili</h3></div>`:""}
     <div class="panel"><h3>Metodologia</h3><p class="method">${d.methodology}</p></div>
-    <div class="panel"><h3>Composizione (${d.holdings.length} titoli)</h3>
+    <div class="panel"><h3>Composizione (${d.holdings.length} posizioni)</h3>
       <div style="overflow-x:auto">${holdingsTable(d.holdings)}</div></div>`;
-  lineChart(document.getElementById("navPanel"), d.nav_weekly);
-  barChart(document.getElementById("moPanel"), d.monthly_pct);
+  document.getElementById("detail").appendChild(sec);
+  if(d.nav_weekly.length>1) lineChart(sec.querySelector(`#nav_${uid}`), d.nav_weekly);
+  if(Object.keys(d.monthly_pct).length>0) barChart(sec.querySelector(`#mo_${uid}`), d.monthly_pct);
 }
 
 const tile = (k,v,c="") =>
   `<div class="tile"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`;
 
 function holdingsTable(hs){
-  const rows = hs.map(h => `<tr><td>${h.name}</td><td>${h.bucket}</td><td>${h.role}</td>
-     <td>${h.ccy}</td><td class="num">${h.weight_base_pct.toFixed(2).replace(".",",")}</td>
-     <td class="num">${h.weight_now_pct.toFixed(2).replace(".",",")}</td></tr>`).join("");
-  return `<table><thead><tr><th>Titolo</th><th>Bucket</th><th>Ruolo</th><th>Val.</th>
-    <th class="num">Peso base %</th><th class="num">Peso attuale %</th></tr></thead>
-    <tbody>${rows}</tbody></table>`;
+  const isW43 = "weight_base_pct" in (hs[0]||{});
+  if(isW43){
+    const rows = hs.map(h => `<tr><td>${h.name}</td><td>${h.bucket}</td><td>${h.role}</td>
+       <td>${h.ccy}</td><td class="num">${h.weight_base_pct.toFixed(2).replace(".",",")}</td>
+       <td class="num">${h.weight_now_pct.toFixed(2).replace(".",",")}</td></tr>`).join("");
+    return `<table><thead><tr><th>Titolo</th><th>Bucket</th><th>Ruolo</th><th>Val.</th>
+      <th class="num">Peso base %</th><th class="num">Peso attuale %</th></tr></thead>
+      <tbody>${rows}</tbody></table>`;
+  }
+  const rows = hs.map(h => `<tr><td>${h.name}</td><td>${h.asset_class}</td>
+     <td>${h.kind.toUpperCase()}</td><td>${h.ccy}</td>
+     <td class="num">${h.weight_pct.toFixed(2).replace(".",",")}</td></tr>`).join("");
+  return `<table><thead><tr><th>Strumento</th><th>Classe</th><th>Tipo</th><th>Val.</th>
+    <th class="num">Peso %</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 function lineChart(panel, series){
