@@ -21,80 +21,146 @@
  "holdings": [
   {
    "name": "iShares MSCI World CHF-hedged",
-   "asset_class": "Azionario sviluppato hedged",
+   "id": "IWDC.SW",
+   "group": "Azionario sviluppato hedged",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 19.66
+   "shares": null,
+   "cost_px": null,
+   "last_px": 93.26,
+   "pl_pct": null,
+   "weight_target_pct": 19.66,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Global Agg CHF-hedged",
-   "asset_class": "Obbligazionario globale hedged",
+   "id": "AGGS.SW",
+   "group": "Obbligazionario globale hedged",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 16.4
+   "shares": null,
+   "cost_px": null,
+   "last_px": 4.48,
+   "pl_pct": null,
+   "weight_target_pct": 16.4,
+   "weight_now_pct": null
   },
   {
    "name": "ZKB Gold ETF",
-   "asset_class": "Oro fisico CHF",
+   "id": "ZGLD.SW",
+   "group": "Oro fisico CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 14.65
+   "shares": null,
+   "cost_px": null,
+   "last_px": 1001.8,
+   "pl_pct": null,
+   "weight_target_pct": 14.65,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core CHF Corp",
-   "asset_class": "Obbligazionario corporate CHF",
+   "id": "CHCORP.SW",
+   "group": "Obbligazionario corporate CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 10.16
+   "shares": null,
+   "cost_px": null,
+   "last_px": 96.47,
+   "pl_pct": null,
+   "weight_target_pct": 10.16,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Swiss Gov 3-7",
-   "asset_class": "Governativo CHF",
+   "id": "CSBGC7.SW",
+   "group": "Governativo CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 9.68
+   "shares": null,
+   "cost_px": null,
+   "last_px": 73.22,
+   "pl_pct": null,
+   "weight_target_pct": 9.68,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core MSCI EM IMI",
-   "asset_class": "Azionario emergenti",
+   "id": "IS3N.DE",
+   "group": "Azionario emergenti",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 9.0
+   "shares": null,
+   "cost_px": null,
+   "last_px": 46.65,
+   "pl_pct": null,
+   "weight_target_pct": 9.0,
+   "weight_now_pct": null
   },
   {
    "name": "Vanguard FTSE All-World",
-   "asset_class": "Azionario all-country",
+   "id": "VWCE.DE",
+   "group": "Azionario all-country",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 8.6
+   "shares": null,
+   "cost_px": null,
+   "last_px": 165.4,
+   "pl_pct": null,
+   "weight_target_pct": 8.6,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core SPI",
-   "asset_class": "Azionario Svizzera",
+   "id": "CHSPI.SW",
+   "group": "Azionario Svizzera",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 5.0
+   "shares": null,
+   "cost_px": null,
+   "last_px": 170.54,
+   "pl_pct": null,
+   "weight_target_pct": 5.0,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Swiss Gov 0-3",
-   "asset_class": "Governativo CHF breve (cassa)",
+   "id": "CSBGC0.SW",
+   "group": "Governativo CHF breve (cassa)",
    "kind": "etf",
    "ccy": "CHF",
-   "weight_pct": 3.56
+   "shares": null,
+   "cost_px": null,
+   "last_px": 103.1,
+   "pl_pct": null,
+   "weight_target_pct": 3.56,
+   "weight_now_pct": null
   },
   {
    "name": "21Shares Bitcoin ETP",
-   "asset_class": "Crypto ETP regolato",
+   "id": "ABTC.SW",
+   "group": "Crypto ETP regolato",
    "kind": "etp",
    "ccy": "CHF",
-   "weight_pct": 2.36
+   "shares": null,
+   "cost_px": null,
+   "last_px": 17.56,
+   "pl_pct": null,
+   "weight_target_pct": 2.36,
+   "weight_now_pct": null
   },
   {
    "name": "21Shares Ethereum ETP",
-   "asset_class": "Crypto ETP regolato",
+   "id": "AETH.SW",
+   "group": "Crypto ETP regolato",
    "kind": "etp",
    "ccy": "CHF",
-   "weight_pct": 0.92
+   "shares": null,
+   "cost_px": null,
+   "last_px": 17.12,
+   "pl_pct": null,
+   "weight_target_pct": 0.92,
+   "weight_now_pct": null
   }
  ],
  "metrics": null,
@@ -106,10 +172,10 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-22 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 3.48,
-   "vol_ann_pct": 9.81,
+   "perf_total_pct": 3.58,
+   "vol_ann_pct": 9.82,
    "max_dd_pct": -5.74,
-   "sharpe": 0.67
+   "sharpe": 0.69
   },
   "monthly_pct": {
    "2026-01": 2.07,
@@ -118,7 +184,7 @@
    "2026-04": 3.72,
    "2026-05": 2.1,
    "2026-06": -1.01,
-   "2026-07": 0.2
+   "2026-07": 0.29
   },
   "nav_weekly": [
    [
@@ -239,7 +305,7 @@
    ],
    [
     "2026-07-24",
-    103476.0
+    103575.0
    ]
   ]
  },

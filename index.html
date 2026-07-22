@@ -72,6 +72,7 @@
     <h1>EgononAI</h1>
     <p>Portafogli modello quantitativi — ricerca sui colli di bottiglia strutturali</p>
     <span class="pill">Ricerca · non è consulenza finanziaria · metodologia dichiarata</span>
+    <span class="pill"><a href="questionario.html" style="color:inherit;text-decoration:none">Profilo investitore — questionario →</a></span>
   </header>
 
   <div class="cards" id="cards"></div>
@@ -159,6 +160,11 @@ function renderDetail(d){
       · Sharpe ${String(d.backtest_2026.metrics.sharpe).replace(".",",")}</h3></div>
     <div class="panel" id="btmo_${uid}"><h3>Mensili — simulazione 2026 (backtest)</h3></div>
     <p class="method">⚠ ${d.backtest_2026.note}</p>`:""}
+    <div class="panel"><h3>Ripartizioni (peso ${d.holdings[0].weight_now_pct!=null?"attuale":"target"} %)</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px">
+        <div>${breakdownTable(d.holdings, "group", "Classe")}</div>
+        <div>${breakdownTable(d.holdings, "ccy", "Valuta di quotazione")}</div>
+      </div></div>
     <div class="panel"><h3>Metodologia</h3><p class="method">${d.methodology}</p></div>
     <div class="panel"><h3>Composizione (${d.holdings.length} posizioni)</h3>
       <div style="overflow-x:auto">${holdingsTable(d.holdings)}</div></div>`;
@@ -174,21 +180,43 @@ function renderDetail(d){
 const tile = (k,v,c="") =>
   `<div class="tile"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`;
 
-function holdingsTable(hs){
-  const isW43 = "weight_base_pct" in (hs[0]||{});
-  if(isW43){
-    const rows = hs.map(h => `<tr><td>${h.name}</td><td>${h.bucket}</td><td>${h.role}</td>
-       <td>${h.ccy}</td><td class="num">${h.weight_base_pct.toFixed(2).replace(".",",")}</td>
-       <td class="num">${h.weight_now_pct.toFixed(2).replace(".",",")}</td></tr>`).join("");
-    return `<table><thead><tr><th>Titolo</th><th>Bucket</th><th>Ruolo</th><th>Val.</th>
-      <th class="num">Peso base %</th><th class="num">Peso attuale %</th></tr></thead>
-      <tbody>${rows}</tbody></table>`;
+function breakdownTable(hs, key, title){
+  const agg = {};
+  for(const h of hs){
+    const w = h.weight_now_pct ?? h.weight_target_pct ?? 0;
+    agg[h[key]] = (agg[h[key]] || 0) + w;
   }
-  const rows = hs.map(h => `<tr><td>${h.name}</td><td>${h.asset_class}</td>
-     <td>${h.kind.toUpperCase()}</td><td>${h.ccy}</td>
-     <td class="num">${h.weight_pct.toFixed(2).replace(".",",")}</td></tr>`).join("");
-  return `<table><thead><tr><th>Strumento</th><th>Classe</th><th>Tipo</th><th>Val.</th>
-    <th class="num">Peso %</th></tr></thead><tbody>${rows}</tbody></table>`;
+  const rows = Object.entries(agg).sort((a,b)=>b[1]-a[1]).map(([k,v]) =>
+    `<tr><td>${k}</td><td class="num">${v.toFixed(2).replace(".",",")}</td></tr>`).join("");
+  return `<table><thead><tr><th>${title}</th><th class="num">Peso %</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+}
+
+const num = (v, d=2) => (v===null||v===undefined) ? "—"
+  : v.toLocaleString("it-IT", {minimumFractionDigits:d, maximumFractionDigits:d});
+
+function holdingsTable(hs){
+  const rows = hs.map(h => {
+    const pl = (h.pl_pct===null||h.pl_pct===undefined) ? "—"
+      : `<span class="${cls(h.pl_pct)}">${fmtPct(h.pl_pct)}</span>`;
+    return `<tr><td>${h.name}</td><td class="ccy" style="font-size:12px">${h.id??"—"}</td>
+      <td>${h.group}</td><td>${String(h.kind).toUpperCase()}</td><td>${h.ccy}</td>
+      <td class="num">${num(h.shares)}</td>
+      <td class="num">${num(h.cost_px)}</td>
+      <td class="num">${num(h.last_px)}</td>
+      <td class="num">${pl}</td>
+      <td class="num">${num(h.weight_target_pct)}</td>
+      <td class="num">${num(h.weight_now_pct)}</td></tr>`;
+  }).join("");
+  return `<table><thead><tr><th>Strumento</th><th>ISIN / Ticker</th><th>Classe</th>
+    <th>Tipo</th><th>Val.</th><th class="num">Quantità</th>
+    <th class="num">Pr. carico</th><th class="num">Pr. attuale</th>
+    <th class="num">P&amp;L %</th><th class="num">Peso target %</th>
+    <th class="num">Peso att. %</th></tr></thead><tbody>${rows}</tbody></table>
+    <p class="method" style="margin:8px 0 0">Prezzi nella valuta di quotazione dello
+    strumento; P&amp;L in valuta base del portafoglio (effetto cambio incluso);
+    quantità riferite al capitale base del portafoglio modello. Carico e P&amp;L
+    disponibili dall'inception del track.</p>`;
 }
 
 function lineChart(panel, series){

@@ -21,143 +21,263 @@
  "holdings": [
   {
    "name": "Rocket Lab USA",
-   "asset_class": "Frontier optionality",
+   "id": "RKLB",
+   "group": "Frontier optionality",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 71.71,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Siemens Energy",
-   "asset_class": "Power & grid",
+   "id": "ENR.DE",
+   "group": "Power & grid",
    "kind": "stock",
    "ccy": "EUR",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 152.32,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Palantir Tech.",
-   "asset_class": "Systems / sovereign / automation",
+   "id": "PLTR",
+   "group": "Systems / sovereign / automation",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 125.67,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Iberdrola",
-   "asset_class": "Power & grid",
+   "id": "IBE.MC",
+   "group": "Power & grid",
    "kind": "stock",
    "ccy": "EUR",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 21.27,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "China Yangtze Power",
-   "asset_class": "Power & grid",
+   "id": "600900.SS",
+   "group": "Power & grid",
    "kind": "stock",
    "ccy": "CNY",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 28.73,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "SK hynix",
-   "asset_class": "Compute bottlenecks",
+   "id": "000660.KS",
+   "group": "Compute bottlenecks",
    "kind": "stock",
    "ccy": "KRW",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 1836000.0,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Air Liquide",
-   "asset_class": "Water / climate / fluids",
+   "id": "AI.PA",
+   "group": "Water / climate / fluids",
    "kind": "stock",
    "ccy": "EUR",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 176.74,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "American Tower",
-   "asset_class": "Systems / sovereign / automation",
+   "id": "AMT",
+   "group": "Systems / sovereign / automation",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 166.01,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Veolia Environnement",
-   "asset_class": "Water / climate / fluids",
+   "id": "VIE.PA",
+   "group": "Water / climate / fluids",
    "kind": "stock",
    "ccy": "EUR",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 37.25,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Astera Labs",
-   "asset_class": "Compute bottlenecks",
+   "id": "ALAB",
+   "group": "Compute bottlenecks",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 334.61,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Deere & Company",
-   "asset_class": "Systems / sovereign / automation",
+   "id": "DE",
+   "group": "Systems / sovereign / automation",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 606.11,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Linde plc",
-   "asset_class": "Water / climate / fluids",
+   "id": "LIN",
+   "group": "Water / climate / fluids",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 509.77,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Advantest",
-   "asset_class": "Compute bottlenecks",
+   "id": "6857.T",
+   "group": "Compute bottlenecks",
    "kind": "stock",
    "ccy": "JPY",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 29630.0,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Daikin Industries",
-   "asset_class": "Water / climate / fluids",
+   "id": "6367.T",
+   "group": "Water / climate / fluids",
    "kind": "stock",
    "ccy": "JPY",
-   "weight_pct": 6.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 24520.0,
+   "pl_pct": null,
+   "weight_target_pct": 6.01,
+   "weight_now_pct": null
   },
   {
    "name": "Nutrien",
-   "asset_class": "Resources & molecules",
+   "id": "NTR.TO",
+   "group": "Resources & molecules",
    "kind": "stock",
    "ccy": "CAD",
-   "weight_pct": 4.06
+   "shares": null,
+   "cost_px": null,
+   "last_px": 96.75,
+   "pl_pct": null,
+   "weight_target_pct": 4.06,
+   "weight_now_pct": null
   },
   {
    "name": "BYD Company",
-   "asset_class": "Power & grid",
+   "id": "1211.HK",
+   "group": "Power & grid",
    "kind": "stock",
    "ccy": "HKD",
-   "weight_pct": 3.97
+   "shares": null,
+   "cost_px": null,
+   "last_px": 89.8,
+   "pl_pct": null,
+   "weight_target_pct": 3.97,
+   "weight_now_pct": null
   },
   {
    "name": "Talen Energy",
-   "asset_class": "Power & grid",
+   "id": "TLN",
+   "group": "Power & grid",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 3.94
+   "shares": null,
+   "cost_px": null,
+   "last_px": 376.7,
+   "pl_pct": null,
+   "weight_target_pct": 3.94,
+   "weight_now_pct": null
   },
   {
    "name": "Kazatomprom",
-   "asset_class": "Resources & molecules",
+   "id": "KAP.IL",
+   "group": "Resources & molecules",
    "kind": "stock",
    "ccy": "USD",
-   "weight_pct": 2.37
+   "shares": null,
+   "cost_px": null,
+   "last_px": 67.9,
+   "pl_pct": null,
+   "weight_target_pct": 2.37,
+   "weight_now_pct": null
   },
   {
    "name": "BHP Group",
-   "asset_class": "Resources & molecules",
+   "id": "BHP.AX",
+   "group": "Resources & molecules",
    "kind": "stock",
    "ccy": "AUD",
-   "weight_pct": 1.03
+   "shares": null,
+   "cost_px": null,
+   "last_px": 59.76,
+   "pl_pct": null,
+   "weight_target_pct": 1.03,
+   "weight_now_pct": null
   },
   {
    "name": "Prysmian S.p.A.",
-   "asset_class": "Power & grid",
+   "id": "PRY.MI",
+   "group": "Power & grid",
    "kind": "stock",
    "ccy": "EUR",
-   "weight_pct": 0.48
+   "shares": null,
+   "cost_px": null,
+   "last_px": 128.25,
+   "pl_pct": null,
+   "weight_target_pct": 0.48,
+   "weight_now_pct": null
   }
  ],
  "metrics": null,
@@ -169,10 +289,10 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-22 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 28.95,
+   "perf_total_pct": 29.05,
    "vol_ann_pct": 25.55,
    "max_dd_pct": -12.73,
-   "sharpe": 1.87
+   "sharpe": 1.88
   },
   "monthly_pct": {
    "2026-01": 8.47,
@@ -181,7 +301,7 @@
    "2026-04": 16.97,
    "2026-05": 14.65,
    "2026-06": 3.15,
-   "2026-07": -9.92
+   "2026-07": -9.85
   },
   "nav_weekly": [
    [
@@ -302,7 +422,7 @@
    ],
    [
     "2026-07-24",
-    128951.0
+    129046.0
    ]
   ]
  },

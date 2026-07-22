@@ -21,52 +21,94 @@
  "holdings": [
   {
    "name": "Xetra-Gold",
-   "asset_class": "Oro fisico",
+   "id": "4GLD.DE",
+   "group": "Oro fisico",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 7.82
+   "shares": null,
+   "cost_px": null,
+   "last_px": 117.19,
+   "pl_pct": null,
+   "weight_target_pct": 7.82,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core EUR Corp Bond",
-   "asset_class": "Obbligazionario corporate EUR",
+   "id": "EUN5.DE",
+   "group": "Obbligazionario corporate EUR",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 23.72
+   "shares": null,
+   "cost_px": null,
+   "last_px": 117.44,
+   "pl_pct": null,
+   "weight_target_pct": 23.72,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core Global Aggregate EUR-H",
-   "asset_class": "Obbligazionario globale hedged",
+   "id": "EUNA.DE",
+   "group": "Obbligazionario globale hedged",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 27.41
+   "shares": null,
+   "cost_px": null,
+   "last_px": 4.89,
+   "pl_pct": null,
+   "weight_target_pct": 27.41,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core EUR Govt Bond",
-   "asset_class": "Obbligazionario governativo EUR",
+   "id": "EUNH.DE",
+   "group": "Obbligazionario governativo EUR",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 19.46
+   "shares": null,
+   "cost_px": null,
+   "last_px": 107.1,
+   "pl_pct": null,
+   "weight_target_pct": 19.46,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core MSCI World",
-   "asset_class": "Azionario globale",
+   "id": "EUNL.DE",
+   "group": "Azionario globale",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 9.6
+   "shares": null,
+   "cost_px": null,
+   "last_px": 126.0,
+   "pl_pct": null,
+   "weight_target_pct": 9.6,
+   "weight_now_pct": null
   },
   {
    "name": "iShares Core MSCI EM IMI",
-   "asset_class": "Azionario emergenti",
+   "id": "IS3N.DE",
+   "group": "Azionario emergenti",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 7.01
+   "shares": null,
+   "cost_px": null,
+   "last_px": 46.65,
+   "pl_pct": null,
+   "weight_target_pct": 7.01,
+   "weight_now_pct": null
   },
   {
    "name": "Xtrackers II EUR Overnight",
-   "asset_class": "Liquidità remunerata",
+   "id": "XEON.DE",
+   "group": "Liquidità remunerata",
    "kind": "etf",
    "ccy": "EUR",
-   "weight_pct": 4.98
+   "shares": null,
+   "cost_px": null,
+   "last_px": 149.71,
+   "pl_pct": null,
+   "weight_target_pct": 4.98,
+   "weight_now_pct": null
   }
  ],
  "metrics": null,

@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profilo investitore — EgononAI</title>
+<style>
+  :root{
+    color-scheme: light;
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e;
+    --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7;
+    --border:rgba(11,11,11,.10);
+    --s1:#2a78d6; --neg:#e34948; --good:#006300;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])){
+      color-scheme: dark;
+      --page:#0d0d0d; --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7;
+      --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+      --border:rgba(255,255,255,.10);
+      --s1:#3987e5; --neg:#e66767; --good:#0ca30c;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7;
+    --muted:#898781; --grid:#2c2c2a; --axis:#383835;
+    --border:rgba(255,255,255,.10);
+    --s1:#3987e5; --neg:#e66767; --good:#0ca30c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page);color:var(--ink);
+       font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+  .wrap{max-width:1060px;margin:0 auto;padding:28px 20px 60px}
+  header h1{font-size:26px;margin:0 0 2px}
+  header p{color:var(--ink2);margin:0 0 6px}
+  .pill{display:inline-block;font-size:12px;color:var(--ink2);
+        border:1px solid var(--border);border-radius:999px;padding:2px 10px;margin:2px 0 18px}
+  .back{display:inline-block;font-size:13px;color:var(--s1);text-decoration:none;margin-bottom:10px}
+  .back:hover{text-decoration:underline}
+  .banner{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--s1);
+          border-radius:10px;padding:14px 16px;margin:0 0 22px;color:var(--ink2);font-size:14px}
+  .banner b{color:var(--ink)}
+  .banner .privacy{display:block;margin-top:8px;font-size:12.5px;color:var(--muted)}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+        padding:14px 16px;margin-bottom:12px}
+  .card h3{margin:0 0 2px;font-size:15px}
+  .card .prompt{color:var(--ink2);font-size:13.5px;font-style:italic;margin:0 0 10px}
+  .badge{display:inline-block;font-size:11px;border:1px solid var(--border);
+         border-radius:999px;padding:1px 8px;margin-right:4px;color:var(--ink2)}
+  .opt{display:flex;align-items:flex-start;gap:10px;padding:7px 8px;border-radius:8px;cursor:pointer}
+  .opt:hover{background:var(--page)}
+  .opt input{margin-top:3px;accent-color:var(--s1);flex:none}
+  .opt .code{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;
+             min-width:16px;margin-top:1px}
+  .actions{display:flex;align-items:center;gap:14px;margin:18px 0 26px;flex-wrap:wrap}
+  #calc{background:var(--s1);color:#fff;border:0;border-radius:10px;padding:11px 24px;
+        font:600 15px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;cursor:pointer}
+  #calc:disabled{background:var(--muted);opacity:.55;cursor:not-allowed}
+  #progress{color:var(--muted);font-size:13px}
+  h2{font-size:19px;margin:30px 0 10px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
+  .tile{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px}
+  .tile .k{font-size:12px;color:var(--ink2)}
+  .tile .v{font-size:20px;margin-top:2px}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+         padding:14px;margin-bottom:14px}
+  .panel h3{margin:0 0 8px;font-size:14px;color:var(--ink2);font-weight:600}
+  .scale{display:flex;gap:6px;margin:6px 0 14px;flex-wrap:wrap}
+  .scale span{font-size:12px;border:1px solid var(--border);border-radius:999px;
+              padding:2px 10px;color:var(--muted)}
+  .scale span.on{background:var(--s1);border-color:var(--s1);color:#fff;font-weight:600}
+  .bar-row{display:grid;grid-template-columns:170px 1fr 56px;gap:10px;align-items:center;
+           margin:8px 0;font-size:13.5px}
+  .bar-track{background:var(--grid);border-radius:6px;height:16px;overflow:hidden}
+  .bar-fill{background:var(--s1);height:100%;border-radius:6px}
+  .bar-row .pct{text-align:right;font-variant-numeric:tabular-nums}
+  .flag-row{display:flex;align-items:flex-start;gap:10px;margin:8px 0;font-size:13.5px}
+  .flag-row .badge{flex:none;margin-top:1px;color:var(--neg);border-color:var(--neg)}
+  .flag-row .ok{color:var(--good);border-color:var(--good)}
+  .method{color:var(--ink2);font-size:13.5px}
+  .foot{color:var(--muted);font-size:12.5px;margin-top:26px}
+  @media (max-width:560px){.bar-row{grid-template-columns:1fr 56px}
+    .bar-row .name{grid-column:1 / -1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">&larr; Portafogli</a>
+    <h1>Profilo investitore — EgononAI</h1>
+    <p>Questionario di profilazione — 10 domande, profilo modello e allocazione di partenza</p>
+    <span class="pill">Ricerca · non è consulenza finanziaria · metodologia dichiarata</span>
+  </header>
+
+  <div class="banner">
+    <b>Strumento dimostrativo di ricerca:</b> il risultato è un profilo modello e
+    un'allocazione di partenza tra portafogli modello. Non è consulenza finanziaria
+    personalizzata né un questionario di adeguatezza MiFID.
+    <span class="privacy">Calcolo interamente nel browser, deterministico, senza alcun invio
+    di dati: nessun dato lascia il tuo browser.</span>
+  </div>
+
+  <form id="quiz"></form>
+
+  <div class="actions">
+    <button id="calc" type="button" disabled>Calcola profilo</button>
+    <span id="progress">0/10 domande completate</span>
+  </div>
+
+  <section id="result" hidden></section>
+
+  <p class="foot">© EgononAI · profilo = minimo dei vincoli (regola minimax, fail-closed) ·
+  nessun dato lascia il tuo browser</p>
+</div>
+
+<script>
+"use strict";
+/* ======================================================================
+   LOGICA DI PROFILAZIONE — porting 1:1 di engine/intake/profile.py
+   (questionario_v1.md, v1 del 22/07/2026). Nessuna dipendenza esterna.
+   ====================================================================== */
+/*LOGIC-START*/
+const CAPS = {
+  q1:{"Q1.A":1,"Q1.B":2,"Q1.C":4,"Q1.D":5},
+  q2:{"Q2.A":2,"Q2.B":3,"Q2.C":4,"Q2.D":5},
+  q4:{"Q4.A":1,"Q4.B":2,"Q4.C":3,"Q4.D":4,"Q4.E":5},
+  q5:{"Q5.A":1,"Q5.B":2,"Q5.C":4,"Q5.D":5},
+  q8:{"Q8.A":1,"Q8.B":2,"Q8.C":4,"Q8.D":5},
+  q9:{"Q9.A":2,"Q9.B":3,"Q9.C":4,"Q9.D":5,"Q9.E":5}
+};
+const PROFILE_NAMES = {1:"Difensivo",2:"Prudente",3:"Bilanciato",4:"Dinamico",5:"Aggressivo"};
+/* profilo -> [vol lo %, vol hi %, max DD budget %] (§5) */
+const PROFILE_PARAMS = {1:[3,6,-8], 2:[6,9,-12], 3:[9,12,-18], 4:[12,16,-25], 5:[15,20,-35]};
+const PROFILE_RETURN_MAX = {1:4,2:5,3:7,4:9,5:12};
+const ASPIRATION_MAX = {"Q3.A":3,"Q3.B":5,"Q3.C":8,"Q3.D":12,"Q3.E":Infinity};
+const ADVANCED_KNOWLEDGE = ["Q9.D","Q9.E"];   // gate crypto / satellite Dinamico
+
+/* Blend di partenza (§5) — identico a _starting_blend in profile.py:
+   senza Q6.B collassa tutto su egonon_difensivo (unico 100% ETF);
+   il satellite Dinamico richiede Q1.D + Q9 avanzata, altrimenti il suo
+   peso si riversa su wolf43 (profilo 4) o fallback wolf43 60/bilanciato 40 (profilo 5). */
+function startingBlend(a, profile){
+  if(!a.q6.includes("Q6.B")) return {egonon_difensivo:1.0};
+  const dynamicOk = a.q1 === "Q1.D" && ADVANCED_KNOWLEDGE.includes(a.q9);
+  if(profile === 1) return {egonon_difensivo:1.0};
+  if(profile === 2) return {egonon_difensivo:0.65, egonon_bilanciato:0.35};
+  if(profile === 3) return {egonon_bilanciato:0.80, wolf43:0.20};
+  if(profile === 4){
+    if(dynamicOk) return {egonon_bilanciato:0.35, wolf43:0.45, egonon_dinamico:0.20};
+    return {egonon_bilanciato:0.35, wolf43:0.65};      // peso Dinamico -> WOLF 43
+  }
+  /* profilo 5 */
+  if(dynamicOk) return {wolf43:0.45, egonon_dinamico:0.55};
+  return {wolf43:0.60, egonon_bilanciato:0.40};
+}
+
+/* Profilo = min(cap Q1,Q2,Q4,Q5,Q8,Q9) + flag di coerenza (§4), fail-closed. */
+function computeProfile(a){
+  const caps = {Q1:CAPS.q1[a.q1], Q2:CAPS.q2[a.q2], Q4:CAPS.q4[a.q4],
+                Q5:CAPS.q5[a.q5], Q8:CAPS.q8[a.q8], Q9:CAPS.q9[a.q9]};
+  const vals = Object.values(caps);
+  const profile = Math.min.apply(null, vals);
+
+  const flags = [];
+  /* FLAG_COMPORTAMENTO: Q5.A o Q5.B con Q4 in {C,D,E} — prevale Q5 (già via min) */
+  if(["Q5.A","Q5.B"].includes(a.q5) && ["Q4.C","Q4.D","Q4.E"].includes(a.q4))
+    flags.push("FLAG_COMPORTAMENTO");
+  /* FLAG_ORIZZONTE: Q1.A con Q2.D, oppure Q1.A/B con Q3 in {D,E} */
+  if((a.q1 === "Q1.A" && a.q2 === "Q2.D") ||
+     (["Q1.A","Q1.B"].includes(a.q1) && ["Q3.D","Q3.E"].includes(a.q3)))
+    flags.push("FLAG_ORIZZONTE");
+  /* FLAG_CONOSCENZA: crypto richiesta (Q6.E) senza conoscenza avanzata */
+  if(a.q6.includes("Q6.E") && !ADVANCED_KNOWLEDGE.includes(a.q9))
+    flags.push("FLAG_CONOSCENZA");
+  /* FLAG_UNIVERSO: manca Q6.B, oppure manca Q6.C su profilo <= 3 */
+  if(!a.q6.includes("Q6.B") || (!a.q6.includes("Q6.C") && profile <= 3))
+    flags.push("FLAG_UNIVERSO");
+  /* FLAG_ESCLUSIONI: blacklist fossili (Q10.C) */
+  if(a.q10.includes("Q10.C")) flags.push("FLAG_ESCLUSIONI");
+  /* FLAG_RET_RISK: aspirazione Q3 oltre la banda plausibile del profilo */
+  if(ASPIRATION_MAX[a.q3] > PROFILE_RETURN_MAX[profile]) flags.push("FLAG_RET_RISK");
+  /* FLAG_INCOERENZA: scarto tra cap massimo e minimo >= 3 */
+  if(Math.max.apply(null, vals) - Math.min.apply(null, vals) >= 3)
+    flags.push("FLAG_INCOERENZA");
+
+  return {
+    profile: profile,
+    profile_name: PROFILE_NAMES[profile],
+    caps: caps,
+    flags: flags,
+    vol_range: [PROFILE_PARAMS[profile][0], PROFILE_PARAMS[profile][1]],
+    max_dd_budget: PROFILE_PARAMS[profile][2],
+    blend: startingBlend(a, profile)
+  };
+}
+/*LOGIC-END*/
+
+/* ======================================================================
+   TESTI (esatti da docs/intake/questionario_v1.md) e rendering
+   ====================================================================== */
+const QUESTIONS = [
+  {key:"q1", multi:false, title:"Q1 — Orizzonte temporale",
+   prompt:"Per quanto tempo il capitale può restare investito senza necessità di disinvestire?",
+   options:[["Q1.A","Meno di 3 anni"],["Q1.B","Da 3 a 5 anni"],
+            ["Q1.C","Da 5 a 10 anni"],["Q1.D","Oltre 10 anni"]]},
+  {key:"q2", multi:false, title:"Q2 — Obiettivo primario",
+   prompt:"Qual è la finalità principale di questo portafoglio?",
+   options:[["Q2.A","Conservazione del capitale (proteggere il valore, anche a costo di rendimenti contenuti)"],
+            ["Q2.B","Reddito ricorrente (flussi cedolari/dividendi periodici)"],
+            ["Q2.C","Crescita bilanciata (crescita del capitale con una componente di reddito)"],
+            ["Q2.D","Massima crescita del capitale nel lungo periodo"]]},
+  {key:"q3", multi:false, title:"Q3 — Rendimento atteso annuo",
+   prompt:"Che rendimento medio annuo lordo ritiene realistico attendersi da questo portafoglio? (aspirazione indicativa: nessun rendimento è promesso né promettibile — Costituzione, Art. 3.2)",
+   options:[["Q3.A","1–3% (protezione del potere d'acquisto)"],["Q3.B","3–5%"],
+            ["Q3.C","5–8%"],["Q3.D","8–12%"],["Q3.E","Oltre il 12%"]]},
+  {key:"q4", multi:false, title:"Q4 — Massima perdita tollerata su 12 mesi (drawdown)",
+   prompt:"Qual è la perdita massima sul valore del portafoglio che potrebbe accettare nell'arco di 12 mesi senza che ciò comprometta i suoi piani?",
+   options:[["Q4.A","Fino a −5%"],["Q4.B","Fino a −10%"],["Q4.C","Fino a −20%"],
+            ["Q4.D","Fino a −30%"],["Q4.E","Oltre −30%"]]},
+  {key:"q5", multi:false, title:"Q5 — Reazione a un ribasso del −20%",
+   prompt:"Il portafoglio perde il 20% in pochi mesi per una crisi di mercato. Cosa farebbe più probabilmente?",
+   options:[["Q5.A","Venderei tutto per evitare ulteriori perdite"],
+            ["Q5.B","Ridurrei l'esposizione in attesa di chiarimenti"],
+            ["Q5.C","Manterrei le posizioni secondo il piano"],
+            ["Q5.D","Aumenterei l'investimento approfittando dei prezzi"]]},
+  {key:"q6", multi:true, title:"Q6 — Strumenti ammessi (multi-selezione: indicare TUTTI quelli accettati)",
+   prompt:"Con quali strumenti accetta che il portafoglio sia costruito?",
+   options:[["Q6.A","ETF e fondi indicizzati"],["Q6.B","Azioni singole"],
+            ["Q6.C","Obbligazioni (governative e societarie)"],
+            ["Q6.D","Oro e materie prime (via ETC/ETF fisici)"],
+            ["Q6.E","Criptovalute (in ogni caso max 5% del portafoglio)"],
+            ["Q6.F","Fondi attivi / altri strumenti (certificati, alternativi liquidi)"]]},
+  {key:"q7", multi:false, title:"Q7 — Valuta base",
+   prompt:"In quale valuta misura il suo patrimonio e vuole vedere rendicontato il portafoglio?",
+   options:[["Q7.A","EUR"],["Q7.B","CHF"],["Q7.C","USD"]]},
+  {key:"q8", multi:false, title:"Q8 — Quota del patrimonio investita e bisogno di liquidità",
+   prompt:"Quale quota del suo patrimonio complessivo rappresenta questo portafoglio, e con quale probabilità dovrà prelevarne una parte?",
+   options:[["Q8.A","Oltre il 75% del patrimonio, e/o possibili prelievi entro 12 mesi"],
+            ["Q8.B","50–75%, e/o possibili prelievi entro 3 anni"],
+            ["Q8.C","25–50%, prelievi improbabili prima di 3 anni"],
+            ["Q8.D","Meno del 25%, nessun prelievo previsto"]]},
+  {key:"q9", multi:false, title:"Q9 — Esperienza e conoscenza dei mercati",
+   prompt:"Quale descrive meglio la sua esperienza di investimento?",
+   options:[["Q9.A","Nessuna: non ho mai investito direttamente"],
+            ["Q9.B","Base: ho investito in fondi comuni o ETF (es. piani di accumulo)"],
+            ["Q9.C","Intermedia: ho negoziato azioni e obbligazioni singole"],
+            ["Q9.D","Avanzata: conosco anche derivati, criptovalute o strumenti alternativi"],
+            ["Q9.E","Professionale: lavoro o ho lavorato nel settore finanziario"]]},
+  {key:"q10", multi:true, title:"Q10 — Esclusioni e preferenze (multi-selezione)",
+   prompt:"Vi sono settori, temi o aree geografiche da escludere o privilegiare?",
+   options:[["Q10.A","Nessuna esclusione o preferenza"],
+            ["Q10.B","Esclusioni etiche (armi controverse, tabacco, gioco d'azzardo)"],
+            ["Q10.C","Esclusione combustibili fossili / attività ad alto impatto carbonico"],
+            ["Q10.D","Esclusioni geografiche (dettaglio nel testo libero: es. mercati emergenti, singoli paesi)"],
+            ["Q10.E","Preferenza per un orientamento complessivo alla sostenibilità (tilt ESG)"]]}
+];
+
+const PORTFOLIO_LABELS = {
+  wolf43:"WOLF 43", egonon_difensivo:"EgononAI Difensivo",
+  egonon_bilanciato:"EgononAI Bilanciato", egonon_dinamico:"EgononAI Dinamico"
+};
+const BLEND_ORDER = ["wolf43","egonon_difensivo","egonon_bilanciato","egonon_dinamico"];
+
+const FLAG_INFO = {
+  FLAG_RET_RISK:"Aspirazione di rendimento (Q3) oltre la banda plausibile del profilo: l'aspettativa viene ridotta, il rischio non viene mai alzato.",
+  FLAG_COMPORTAMENTO:"Reazione a un ribasso (Q5) più prudente della perdita dichiarata tollerabile (Q4): prevale la risposta comportamentale, più conservativa.",
+  FLAG_ORIZZONTE:"Orizzonte temporale breve incoerente con obiettivo o rendimento atteso di lungo periodo: il profilo resta tagliato dal vincolo di orizzonte.",
+  FLAG_CONOSCENZA:"Criptovalute richieste (Q6.E) senza conoscenza avanzata (Q9): la crypto viene rimossa dall'universo strumenti.",
+  FLAG_UNIVERSO:"Universo strumenti incompleto (azioni singole non ammesse, o bond assenti su profilo ≤ 3): variante ETF-proxy con revisione umana.",
+  FLAG_ESCLUSIONI:"L'esclusione dei combustibili fossili tocca titoli dei portafogli di ancoraggio: sostituzione con proxy, impatto dichiarato nel report.",
+  FLAG_INCOERENZA:"Risposte molto disomogenee (scarto tra i vincoli ≥ 3 livelli): profilo calcolato sul minimo, colloquio consigliato."
+};
+
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+
+function renderQuiz(){
+  const form = document.getElementById("quiz");
+  form.innerHTML = QUESTIONS.map(q => {
+    const type = q.multi ? "checkbox" : "radio";
+    const opts = q.options.map(([code, text]) => `
+      <label class="opt"><input type="${type}" name="${q.key}" value="${code}">
+        <span class="code">${code.split(".")[1]}</span><span>${esc(text)}</span></label>`).join("");
+    return `<div class="card"><h3>${esc(q.title)}</h3>
+      <p class="prompt">${esc(q.prompt)}</p>${opts}</div>`;
+  }).join("");
+}
+
+function collectAnswers(){
+  const a = {};
+  for(const q of QUESTIONS){
+    const checked = Array.from(
+      document.querySelectorAll(`input[name="${q.key}"]:checked`)).map(i => i.value);
+    if(q.multi){ if(checked.length === 0) return null; a[q.key] = checked; }
+    else { if(checked.length !== 1) return null; a[q.key] = checked[0]; }
+  }
+  return a;
+}
+
+function updateState(){
+  let done = 0;
+  for(const q of QUESTIONS)
+    if(document.querySelector(`input[name="${q.key}"]:checked`)) done++;
+  document.getElementById("progress").textContent = `${done}/10 domande completate`;
+  document.getElementById("calc").disabled = (collectAnswers() === null);
+}
+
+/* Q10.A "Nessuna esclusione o preferenza" è esclusiva (vincolo dello schema) */
+function enforceQ10Exclusive(changed){
+  if(changed.name !== "q10" || !changed.checked) return;
+  const boxes = document.querySelectorAll('input[name="q10"]');
+  if(changed.value === "Q10.A")
+    boxes.forEach(b => { if(b.value !== "Q10.A") b.checked = false; });
+  else
+    boxes.forEach(b => { if(b.value === "Q10.A") b.checked = false; });
+}
+
+const fmtIt = v => String(v).replace(".", ",");
+
+function renderResult(r){
+  const sec = document.getElementById("result");
+  const scale = [1,2,3,4,5].map(i =>
+    `<span class="${i === r.profile ? "on" : ""}">${i} · ${PROFILE_NAMES[i]}</span>`).join("");
+  const bars = BLEND_ORDER.filter(k => k in r.blend).map(k => {
+    const pct = Math.round(r.blend[k] * 100);
+    return `<div class="bar-row"><span class="name">${PORTFOLIO_LABELS[k]}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+      <span class="pct">${pct}%</span></div>`;
+  }).join("");
+  const flags = r.flags.length
+    ? r.flags.map(f => `<div class="flag-row"><span class="badge">${f}</span>
+        <span>${esc(FLAG_INFO[f])}</span></div>`).join("")
+    : `<div class="flag-row"><span class="badge ok">NESSUN FLAG</span>
+        <span>Le risposte sono coerenti tra loro: nessuna incoerenza rilevata.</span></div>`;
+  sec.innerHTML = `
+    <h2>Risultato — Profilo ${r.profile}: ${r.profile_name}</h2>
+    <div class="scale">${scale}</div>
+    <div class="tiles">
+      <div class="tile"><div class="k">Volatilità target (annua)</div>
+        <div class="v">${fmtIt(r.vol_range[0])}–${fmtIt(r.vol_range[1])}%</div></div>
+      <div class="tile"><div class="k">Max drawdown budget</div>
+        <div class="v">−${fmtIt(Math.abs(r.max_dd_budget))}%</div></div>
+    </div>
+    <div class="panel"><h3>Allocazione di partenza tra i portafogli modello</h3>${bars}
+      <p class="method">Punto di partenza indicativo (§5 del questionario v1): il profilo è il
+      minimo dei vincoli di rischio (regola minimax, fail-closed); ranges indicativi, nessun
+      rendimento è promesso.</p></div>
+    <div class="panel"><h3>Segnalazioni di coerenza (flag)</h3>${flags}</div>
+    <p class="method">Nel processo completo il profilo genera i parametri di mandato (bande,
+    cash floor, esclusioni) che alimentano il motore di allocazione — contattaci per
+    l'onboarding.</p>
+    <p class="method" style="color:var(--muted)">Calcolo eseguito interamente nel tuo browser:
+    nessun dato lascia il tuo browser.</p>`;
+  sec.hidden = false;
+  sec.scrollIntoView({behavior:"smooth", block:"start"});
+}
+
+if(typeof document !== "undefined" && document.getElementById("quiz")){
+  renderQuiz();
+  document.getElementById("quiz").addEventListener("change", e => {
+    enforceQ10Exclusive(e.target);
+    updateState();
+  });
+  document.getElementById("calc").addEventListener("click", () => {
+    const a = collectAnswers();
+    if(a) renderResult(computeProfile(a));
+  });
+  updateState();
+}
+
+/* ----------------------------------------------------------------------
+   VERIFICA (22/07/2026): computeProfile confrontato con la logica canonica
+   Python (engine/intake/profile.py: compute_profile + mandate_params) su
+   3 payload — risultati IDENTICI (profilo, flag, blend):
+   1) Aggressivo coerente  (Q1.D,Q2.D,Q3.D,Q4.E,Q5.D,Q6=A+B+C+D+E,Q7.A,Q8.D,Q9.E,Q10.A)
+      -> profilo 5 Aggressivo, flag: nessuno, blend {wolf43:0.45, egonon_dinamico:0.55}
+   2) Incoerente rendimento/rischio (Q1.C,Q2.A,Q3.E,Q4.A,Q5.C,Q6=A+B+C,Q7.A,Q8.C,Q9.C,Q10.B)
+      -> profilo 1 Difensivo, flag [FLAG_RET_RISK, FLAG_INCOERENZA],
+         blend {egonon_difensivo:1.0}
+   3) ETF-only (Q1.C,Q2.C,Q3.C,Q4.C,Q5.C,Q6=A+C+D senza B,Q7.A,Q8.C,Q9.B,Q10=C+E)
+      -> profilo 3 Bilanciato, flag [FLAG_UNIVERSO, FLAG_ESCLUSIONI, FLAG_RET_RISK],
+         blend {egonon_difensivo:1.0} (collasso ETF-only)
+   ---------------------------------------------------------------------- */
+</script>
+</body>
+</html>
