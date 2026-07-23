@@ -37,7 +37,10 @@
   .pill{display:inline-block;font-size:12px;color:var(--ink2);
         border:1px solid var(--border);border-radius:999px;padding:2px 10px;margin:2px 0 18px}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-bottom:26px}
-  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;
+        cursor:pointer;transition:border-color .15s}
+  .card:hover{border-color:var(--s1)}
+  .card .goto{color:var(--s1);font-size:12px;margin-top:8px}
   .card h3{margin:0 0 2px;font-size:15px}
   .card .ccy{color:var(--muted);font-size:12px}
   .card .big{font-size:22px;margin-top:6px}
@@ -110,6 +113,11 @@ async function main(){
         ${badges}${bt}<div class="soon">Track dal ${p.inception} — vol ex-ante
         ${String(p.ex_ante?.vol_ann_pct??"").replace(".",",")}% · *simulazione, non track</div>`;
     }
+    c.insertAdjacentHTML("beforeend",
+      `<div class="goto">Dettaglio: composizione, pesi, P&amp;L →</div>`);
+    c.addEventListener("click", () =>
+      document.getElementById("pf_" + p.portfolio)
+        ?.scrollIntoView({behavior: "smooth", block: "start"}));
     cards.appendChild(c);
   }
   const ids = reg.portfolios.map(p => p.portfolio);
@@ -123,6 +131,8 @@ async function main(){
 
 function renderDetail(d){
   const sec = document.createElement("section");
+  sec.id = "pf_" + d.portfolio;
+  sec.style.scrollMarginTop = "16px";
   const uid = d.portfolio;
   const baseCap = d.portfolio === "wolf43" ? "1.000.000" : "100.000";
   let tiles;

@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-23T08:01:44+00:00",
+ "generated": "2026-07-23T15:08:36+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -8,12 +8,12 @@
    "status": "live",
    "asof": "2026-07-22",
    "metrics": {
-    "perf_total_pct": 33.56,
+    "perf_total_pct": 33.42,
     "vol_ann_pct": 25.97,
-    "sharpe": 2.08,
+    "sharpe": 2.07,
     "max_dd_pct": -13.55,
     "var95_1w_pct": 6.02,
-    "nav_last": 1335596.0
+    "nav_last": 1334184.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -40,7 +40,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 1.28
+    "perf_total_pct": 1.09
    }
   },
   {
@@ -64,7 +64,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 16.07
+    "perf_total_pct": 16.17
    }
   },
   {
@@ -88,7 +88,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 29.71
+    "perf_total_pct": 27.73
    }
   },
   {
@@ -112,7 +112,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 2.8
+    "perf_total_pct": 2.57
    }
   },
   {
@@ -136,7 +136,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 8.32
+    "perf_total_pct": 7.45
    }
   }
  ],

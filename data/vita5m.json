@@ -25,9 +25,9 @@
    "group": "Azionario sviluppato hedged CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 6617.2576,
-   "cost_px": 3.78,
-   "last_px": 3.78,
+   "shares": 6671.1142,
+   "cost_px": 3.75,
+   "last_px": 3.75,
    "pl_pct": 0.0,
    "weight_target_pct": 25.0,
    "weight_now_pct": 25.0
@@ -38,7 +38,7 @@
    "group": "Azionario momentum sviluppati",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 262.65,
+   "shares": 262.0549,
    "cost_px": 116.84,
    "last_px": 116.84,
    "pl_pct": 0.0,
@@ -51,9 +51,9 @@
    "group": "Azionario emergenti",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 459.2297,
-   "cost_px": 53.46,
-   "last_px": 53.46,
+   "shares": 464.0924,
+   "cost_px": 52.78,
+   "last_px": 52.78,
    "pl_pct": 0.0,
    "weight_target_pct": 20.0,
    "weight_now_pct": 20.0
@@ -64,9 +64,9 @@
    "group": "Oro fisico CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 20.2634,
-   "cost_px": 987.0,
-   "last_px": 987.0,
+   "shares": 20.3936,
+   "cost_px": 980.7,
+   "last_px": 980.7,
    "pl_pct": 0.0,
    "weight_target_pct": 20.0,
    "weight_now_pct": 20.0
@@ -77,9 +77,9 @@
    "group": "Azionario mondo intero (small incluse)",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 472.6325,
-   "cost_px": 12.99,
-   "last_px": 12.99,
+   "shares": 475.8119,
+   "cost_px": 12.87,
+   "last_px": 12.87,
    "pl_pct": 0.0,
    "weight_target_pct": 5.0,
    "weight_now_pct": 5.0
@@ -90,9 +90,9 @@
    "group": "Azionario emergenti value",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 63.8868,
-   "cost_px": 96.07,
-   "last_px": 96.07,
+   "shares": 64.2224,
+   "cost_px": 95.35,
+   "last_px": 95.35,
    "pl_pct": 0.0,
    "weight_target_pct": 5.0,
    "weight_now_pct": 5.0
@@ -112,9 +112,9 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 15.39,
-    "sortino": 0.85,
-    "calmar": 1.28,
+    "cagr_pct": 13.72,
+    "sortino": 0.77,
+    "calmar": 1.15,
     "months_n": 7,
     "months_positive_pct": 57.0,
     "best_month_pct": 9.06,
@@ -247,7 +247,7 @@
     ],
     [
      "2026-07-24",
-     -4.07
+     -4.85
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -259,8 +259,8 @@
      "m04": 9.06,
      "m05": 5.63,
      "m06": 1.37,
-     "m07": -1.98,
-     "tot": 8.32
+     "m07": -2.78,
+     "tot": 7.45
     }
    },
    "correlations": {
@@ -275,14 +275,14 @@
     "matrix": [
      [
       1.0,
-      0.66,
+      0.65,
       0.71,
-      0.35,
+      0.36,
       0.16,
       0.64
      ],
      [
-      0.66,
+      0.65,
       1.0,
       0.8,
       0.33,
@@ -293,14 +293,14 @@
       0.71,
       0.8,
       1.0,
-      0.36,
+      0.37,
       0.13,
       0.93
      ],
      [
-      0.35,
-      0.33,
       0.36,
+      0.33,
+      0.37,
       1.0,
       -0.1,
       0.34
@@ -326,10 +326,10 @@
   },
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-23 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 8.32,
-   "vol_ann_pct": 19.6,
+   "perf_total_pct": 7.45,
+   "vol_ann_pct": 19.65,
    "max_dd_pct": -11.98,
-   "sharpe": 0.82
+   "sharpe": 0.75
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -338,7 +338,7 @@
    "2026-04": 9.06,
    "2026-05": 5.63,
    "2026-06": 1.37,
-   "2026-07": -1.98
+   "2026-07": -2.78
   },
   "nav_weekly": [
    [
@@ -459,7 +459,7 @@
    ],
    [
     "2026-07-24",
-    108323.0
+    107446.0
    ]
   ]
  },
