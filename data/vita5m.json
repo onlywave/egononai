@@ -25,12 +25,12 @@
    "group": "Azionario sviluppato hedged CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 6671.1142,
-   "cost_px": 3.75,
+   "shares": 6695.2331,
+   "cost_px": 3.73,
    "last_px": 3.75,
-   "pl_pct": 0.0,
+   "pl_pct": 0.5,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 25.0
+   "weight_now_pct": 25.1
   },
   {
    "name": "iShares Edge MSCI World Momentum",
@@ -38,12 +38,12 @@
    "group": "Azionario momentum sviluppati",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 262.0549,
+   "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 116.84,
-   "pl_pct": 0.0,
+   "last_px": 115.92,
+   "pl_pct": -0.54,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 25.0
+   "weight_now_pct": 24.84
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -51,12 +51,12 @@
    "group": "Azionario emergenti",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 464.0924,
-   "cost_px": 52.78,
-   "last_px": 52.78,
-   "pl_pct": 0.0,
+   "shares": 468.689,
+   "cost_px": 52.41,
+   "last_px": 52.48,
+   "pl_pct": 0.38,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.0
+   "weight_now_pct": 20.06
   },
   {
    "name": "ZKB Gold ETF AA (CHF)",
@@ -64,12 +64,12 @@
    "group": "Oro fisico CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 20.3936,
-   "cost_px": 980.7,
-   "last_px": 980.7,
-   "pl_pct": 0.0,
+   "shares": 20.4374,
+   "cost_px": 978.6,
+   "last_px": 977.3,
+   "pl_pct": -0.13,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.0
+   "weight_now_pct": 19.96
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -77,12 +77,12 @@
    "group": "Azionario mondo intero (small incluse)",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 475.8119,
-   "cost_px": 12.87,
-   "last_px": 12.87,
-   "pl_pct": 0.0,
+   "shares": 478.8675,
+   "cost_px": 12.82,
+   "last_px": 12.89,
+   "pl_pct": 0.78,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.0
+   "weight_now_pct": 5.03
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -90,10 +90,10 @@
    "group": "Azionario emergenti value",
    "kind": "etf",
    "ccy": "USD",
-   "shares": 64.2224,
-   "cost_px": 95.35,
-   "last_px": 95.35,
-   "pl_pct": 0.0,
+   "shares": 64.8469,
+   "cost_px": 94.7,
+   "last_px": 94.61,
+   "pl_pct": 0.15,
    "weight_target_pct": 5.0,
    "weight_now_pct": 5.0
   }
@@ -103,18 +103,18 @@
  "nav_weekly": [
   [
    "2026-07-24",
-   100000.0
+   100084.0
   ]
  ],
- "asof": "2026-07-23",
+ "asof": "2026-07-24",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 13.72,
-    "sortino": 0.77,
-    "calmar": 1.15,
+    "cagr_pct": 13.32,
+    "sortino": 0.74,
+    "calmar": 1.11,
     "months_n": 7,
     "months_positive_pct": 57.0,
     "best_month_pct": 9.06,
@@ -247,7 +247,7 @@
     ],
     [
      "2026-07-24",
-     -4.85
+     -5.01
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -259,8 +259,8 @@
      "m04": 9.06,
      "m05": 5.63,
      "m06": 1.37,
-     "m07": -2.78,
-     "tot": 7.45
+     "m07": -2.94,
+     "tot": 7.27
     }
    },
    "correlations": {
@@ -284,14 +284,14 @@
      [
       0.65,
       1.0,
-      0.8,
+      0.79,
       0.33,
       0.12,
       0.75
      ],
      [
       0.71,
-      0.8,
+      0.79,
       1.0,
       0.37,
       0.13,
@@ -324,12 +324,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-07-23 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-07-24 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 7.45,
-   "vol_ann_pct": 19.65,
+   "perf_total_pct": 7.27,
+   "vol_ann_pct": 19.6,
    "max_dd_pct": -11.98,
-   "sharpe": 0.75
+   "sharpe": 0.73
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -338,7 +338,7 @@
    "2026-04": 9.06,
    "2026-05": 5.63,
    "2026-06": 1.37,
-   "2026-07": -2.78
+   "2026-07": -2.94
   },
   "nav_weekly": [
    [
@@ -459,7 +459,7 @@
    ],
    [
     "2026-07-24",
-    107446.0
+    107270.0
    ]
   ]
  },

@@ -25,12 +25,12 @@
    "group": "Azionario sviluppato hedged",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 213.6028,
-   "cost_px": 92.04,
-   "last_px": 92.04,
-   "pl_pct": 0.0,
+   "shares": 214.1845,
+   "cost_px": 91.79,
+   "last_px": 92.25,
+   "pl_pct": 0.5,
    "weight_target_pct": 19.66,
-   "weight_now_pct": 19.66
+   "weight_now_pct": 19.72
   },
   {
    "name": "iShares Global Agg CHF-hedged",
@@ -38,12 +38,12 @@
    "group": "Obbligazionario globale hedged",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 3678.5321,
+   "shares": 3677.6246,
    "cost_px": 4.46,
-   "last_px": 4.46,
-   "pl_pct": 0.0,
+   "last_px": 4.48,
+   "pl_pct": 0.39,
    "weight_target_pct": 16.4,
-   "weight_now_pct": 16.4
+   "weight_now_pct": 16.43
   },
   {
    "name": "ZKB Gold ETF",
@@ -51,12 +51,12 @@
    "group": "Oro fisico CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 14.9383,
-   "cost_px": 980.7,
-   "last_px": 980.7,
-   "pl_pct": 0.0,
+   "shares": 14.9704,
+   "cost_px": 978.6,
+   "last_px": 977.3,
+   "pl_pct": -0.13,
    "weight_target_pct": 14.65,
-   "weight_now_pct": 14.65
+   "weight_now_pct": 14.6
   },
   {
    "name": "iShares Core CHF Corp",
@@ -64,12 +64,12 @@
    "group": "Obbligazionario corporate CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 105.8752,
-   "cost_px": 95.96,
-   "last_px": 95.96,
-   "pl_pct": 0.0,
+   "shares": 105.9525,
+   "cost_px": 95.89,
+   "last_px": 96.19,
+   "pl_pct": 0.31,
    "weight_target_pct": 10.16,
-   "weight_now_pct": 10.16
+   "weight_now_pct": 10.17
   },
   {
    "name": "iShares Swiss Gov 3-7",
@@ -77,12 +77,12 @@
    "group": "Governativo CHF",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 132.6027,
-   "cost_px": 73.0,
-   "last_px": 73.0,
-   "pl_pct": 0.0,
+   "shares": 132.7446,
+   "cost_px": 72.92,
+   "last_px": 72.9,
+   "pl_pct": -0.03,
    "weight_target_pct": 9.68,
-   "weight_now_pct": 9.68
+   "weight_now_pct": 9.66
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -90,12 +90,12 @@
    "group": "Azionario emergenti",
    "kind": "etf",
    "ccy": "EUR",
-   "shares": 208.9651,
-   "cost_px": 46.38,
-   "last_px": 46.38,
-   "pl_pct": 0.0,
+   "shares": 209.8208,
+   "cost_px": 46.17,
+   "last_px": 46.04,
+   "pl_pct": -0.22,
    "weight_target_pct": 9.0,
-   "weight_now_pct": 9.0
+   "weight_now_pct": 8.96
   },
   {
    "name": "Vanguard FTSE All-World",
@@ -103,12 +103,12 @@
    "group": "Azionario all-country",
    "kind": "etf",
    "ccy": "EUR",
-   "shares": 56.5424,
-   "cost_px": 163.8,
-   "last_px": 163.8,
-   "pl_pct": 0.0,
+   "shares": 56.6606,
+   "cost_px": 163.36,
+   "last_px": 163.68,
+   "pl_pct": 0.26,
    "weight_target_pct": 8.6,
-   "weight_now_pct": 8.6
+   "weight_now_pct": 8.61
   },
   {
    "name": "iShares Core SPI",
@@ -116,12 +116,12 @@
    "group": "Azionario Svizzera",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 29.5438,
-   "cost_px": 169.24,
-   "last_px": 169.24,
-   "pl_pct": 0.0,
+   "shares": 29.5264,
+   "cost_px": 169.34,
+   "last_px": 169.92,
+   "pl_pct": 0.34,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.0
+   "weight_now_pct": 5.01
   },
   {
    "name": "iShares Swiss Gov 0-3",
@@ -129,12 +129,12 @@
    "group": "Governativo CHF breve (cassa)",
    "kind": "etf",
    "ccy": "CHF",
-   "shares": 34.686,
-   "cost_px": 102.64,
-   "last_px": 102.64,
+   "shares": 34.7928,
+   "cost_px": 102.32,
+   "last_px": 102.32,
    "pl_pct": 0.0,
    "weight_target_pct": 3.56,
-   "weight_now_pct": 3.56
+   "weight_now_pct": 3.55
   },
   {
    "name": "21Shares Bitcoin ETP",
@@ -142,9 +142,9 @@
    "group": "Crypto ETP regolato",
    "kind": "etp",
    "ccy": "CHF",
-   "shares": 134.8571,
-   "cost_px": 17.5,
-   "last_px": 17.5,
+   "shares": 146.7662,
+   "cost_px": 16.08,
+   "last_px": 16.08,
    "pl_pct": 0.0,
    "weight_target_pct": 2.36,
    "weight_now_pct": 2.36
@@ -155,9 +155,9 @@
    "group": "Crypto ETP regolato",
    "kind": "etp",
    "ccy": "CHF",
-   "shares": 57.8616,
-   "cost_px": 15.9,
-   "last_px": 15.9,
+   "shares": 58.6735,
+   "cost_px": 15.68,
+   "last_px": 15.68,
    "pl_pct": 0.0,
    "weight_target_pct": 0.92,
    "weight_now_pct": 0.92
@@ -168,18 +168,18 @@
  "nav_weekly": [
   [
    "2026-07-24",
-   100000.0
+   100192.0
   ]
  ],
- "asof": "2026-07-23",
+ "asof": "2026-07-24",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 4.62,
-    "sortino": 0.53,
-    "calmar": 0.8,
+    "cagr_pct": 4.34,
+    "sortino": 0.5,
+    "calmar": 0.76,
     "months_n": 7,
     "months_positive_pct": 57.0,
     "best_month_pct": 3.72,
@@ -312,7 +312,7 @@
     ],
     [
      "2026-07-24",
-     -1.8
+     -1.93
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -324,8 +324,8 @@
      "m04": 3.72,
      "m05": 2.1,
      "m06": -1.01,
-     "m07": -0.69,
-     "tot": 2.57
+     "m07": -0.82,
+     "tot": 2.43
     }
    },
    "correlations": {
@@ -345,72 +345,72 @@
     "matrix": [
      [
       1.0,
-      0.52,
+      0.53,
       0.37,
-      0.38,
-      0.25,
+      0.39,
+      0.26,
       0.75,
       0.88,
       0.65,
-      0.41,
-      0.28,
-      0.38
+      0.42,
+      0.33,
+      0.39
      ],
      [
-      0.52,
+      0.53,
       1.0,
       0.25,
-      0.36,
+      0.37,
       0.41,
-      0.47,
+      0.46,
       0.46,
       0.57,
       0.53,
-      0.0,
-      0.12
+      0.05,
+      0.13
      ],
      [
       0.37,
       0.25,
       1.0,
       0.18,
-      -0.0,
+      0.0,
       0.41,
       0.33,
       0.2,
-      0.1,
-      0.24,
+      0.11,
+      0.27,
       0.3
      ],
      [
-      0.38,
-      0.36,
+      0.39,
+      0.37,
       0.18,
       1.0,
-      0.29,
+      0.3,
       0.31,
-      0.31,
+      0.32,
       0.33,
-      0.35,
-      -0.0,
-      0.09
+      0.36,
+      0.05,
+      0.1
      ],
      [
-      0.25,
+      0.26,
       0.41,
-      -0.0,
-      0.29,
+      0.0,
+      0.3,
       1.0,
       0.24,
-      0.18,
+      0.19,
       0.33,
-      0.59,
-      0.01,
-      0.05
+      0.6,
+      0.05,
+      0.06
      ],
      [
       0.75,
-      0.47,
+      0.46,
       0.41,
       0.31,
       0.24,
@@ -418,20 +418,20 @@
       0.84,
       0.46,
       0.44,
-      0.29,
+      0.31,
       0.36
      ],
      [
       0.88,
       0.46,
       0.33,
-      0.31,
-      0.18,
+      0.32,
+      0.19,
       0.84,
       1.0,
       0.58,
-      0.43,
-      0.32,
+      0.44,
+      0.35,
       0.34
      ],
      [
@@ -444,57 +444,57 @@
       0.58,
       1.0,
       0.33,
-      0.11,
+      0.14,
       0.15
      ],
      [
-      0.41,
+      0.42,
       0.53,
-      0.1,
-      0.35,
-      0.59,
+      0.11,
+      0.36,
+      0.6,
       0.44,
-      0.43,
+      0.44,
       0.33,
       1.0,
-      0.08,
+      0.11,
       0.23
      ],
      [
-      0.28,
-      0.0,
-      0.24,
-      -0.0,
-      0.01,
-      0.29,
-      0.32,
+      0.33,
+      0.05,
+      0.27,
+      0.05,
+      0.05,
+      0.31,
+      0.35,
+      0.14,
       0.11,
-      0.08,
       1.0,
-      0.72
+      0.74
      ],
      [
-      0.38,
-      0.12,
+      0.39,
+      0.13,
       0.3,
-      0.09,
-      0.05,
+      0.1,
+      0.06,
       0.36,
       0.34,
       0.15,
       0.23,
-      0.72,
+      0.74,
       1.0
      ]
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-07-23 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-07-24 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 2.57,
-   "vol_ann_pct": 9.82,
+   "perf_total_pct": 2.43,
+   "vol_ann_pct": 9.84,
    "max_dd_pct": -5.74,
-   "sharpe": 0.51
+   "sharpe": 0.48
   },
   "monthly_pct": {
    "2026-01": 2.07,
@@ -503,7 +503,7 @@
    "2026-04": 3.72,
    "2026-05": 2.1,
    "2026-06": -1.01,
-   "2026-07": -0.69
+   "2026-07": -0.82
   },
   "nav_weekly": [
    [
@@ -624,7 +624,7 @@
    ],
    [
     "2026-07-24",
-    102567.0
+    102428.0
    ]
   ]
  },
