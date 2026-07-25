@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-25T07:36:57+00:00",
+ "generated": "2026-07-25T15:06:46+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
@@ -8,12 +8,12 @@
    "status": "live",
    "asof": "2026-07-24",
    "metrics": {
-    "perf_total_pct": 32.31,
+    "perf_total_pct": 32.34,
     "vol_ann_pct": 25.84,
     "sharpe": 2.0,
     "max_dd_pct": -13.55,
     "var95_1w_pct": 5.99,
-    "nav_last": 1323106.0
+    "nav_last": 1323444.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -64,7 +64,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 15.82
+    "perf_total_pct": 16.11
    }
   },
   {
@@ -88,7 +88,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 27.01
+    "perf_total_pct": 27.02
    }
   },
   {
@@ -140,5 +140,5 @@
    }
   }
  ],
- "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+ "disclaimer": "EgononAI è un'iniziativa di ricerca di EGONON SA (www.egonon.ch), gestore patrimoniale autorizzato FINMA dal 12.04.2022. Portafogli modello a solo scopo di ricerca: nessuna consulenza finanziaria personalizzata, nessuna offerta né sollecitazione all'investimento; contenuti non destinati a soggetti per i quali la loro fruizione sarebbe contraria a norme locali (incluso il pubblico retail in Italia/UE). EGONON SA e persone collegate possono detenere gli strumenti citati. Le performance passate non sono indicative di quelle future; simulazioni sempre etichettate. Metodologia dichiarata; dati di mercato EOD (fonte pubblica), valori lordi."
 }

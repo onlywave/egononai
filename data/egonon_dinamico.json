@@ -40,10 +40,10 @@
    "ccy": "EUR",
    "shares": 35.0027,
    "cost_px": 150.46,
-   "last_px": 150.46,
-   "pl_pct": -0.32,
+   "last_px": 151.34,
+   "pl_pct": 0.26,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.05
+   "weight_now_pct": 6.09
   },
   {
    "name": "Palantir Tech.",
@@ -66,10 +66,10 @@
    "ccy": "EUR",
    "shares": 250.0714,
    "cost_px": 21.06,
-   "last_px": 21.06,
-   "pl_pct": -0.32,
+   "last_px": 21.21,
+   "pl_pct": 0.39,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.05
+   "weight_now_pct": 6.09
   },
   {
    "name": "China Yangtze Power",
@@ -105,10 +105,10 @@
    "ccy": "EUR",
    "shares": 29.9949,
    "cost_px": 175.58,
-   "last_px": 175.58,
-   "pl_pct": -0.32,
+   "last_px": 176.52,
+   "pl_pct": 0.21,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.05
+   "weight_now_pct": 6.08
   },
   {
    "name": "American Tower",
@@ -131,10 +131,10 @@
    "ccy": "EUR",
    "shares": 143.1893,
    "cost_px": 36.78,
-   "last_px": 36.78,
-   "pl_pct": -0.32,
+   "last_px": 36.59,
+   "pl_pct": -0.83,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.05
+   "weight_now_pct": 6.02
   },
   {
    "name": "Astera Labs",
@@ -199,7 +199,7 @@
    "last_px": 23880.0,
    "pl_pct": -1.4,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.99
+   "weight_now_pct": 5.98
   },
   {
    "name": "Nutrien",
@@ -248,10 +248,10 @@
    "ccy": "USD",
    "shares": 35.6391,
    "cost_px": 66.5,
-   "last_px": 66.5,
-   "pl_pct": 0.0,
+   "last_px": 64.6,
+   "pl_pct": -2.86,
    "weight_target_pct": 2.37,
-   "weight_now_pct": 2.39
+   "weight_now_pct": 2.33
   },
   {
    "name": "BHP Group",
@@ -274,10 +274,10 @@
    "ccy": "EUR",
    "shares": 3.3356,
    "cost_px": 126.1,
-   "last_px": 126.1,
-   "pl_pct": -0.32,
+   "last_px": 126.9,
+   "pl_pct": 0.31,
    "weight_target_pct": 0.48,
-   "weight_now_pct": 0.48
+   "weight_now_pct": 0.49
   }
  ],
  "metrics": null,
@@ -285,7 +285,7 @@
  "nav_weekly": [
   [
    "2026-07-24",
-   99007.0
+   99021.0
   ]
  ],
  "asof": "2026-07-24",
@@ -294,13 +294,13 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 53.11,
+    "cagr_pct": 53.14,
     "sortino": 1.54,
-    "calmar": 4.17,
+    "calmar": 4.18,
     "months_n": 7,
     "months_positive_pct": 71.0,
     "best_month_pct": 16.97,
-    "worst_month_pct": -11.28,
+    "worst_month_pct": -11.27,
     "var95_1m_hist_pct": null,
     "cvar95_1m_hist_pct": null,
     "skew_monthly": null,
@@ -429,7 +429,7 @@
     ],
     [
      "2026-07-24",
-     -12.11
+     -12.1
     ]
    ],
    "max_dd_date": "2026-07-20",
@@ -441,8 +441,8 @@
      "m04": 16.97,
      "m05": 14.65,
      "m06": 3.15,
-     "m07": -11.28,
-     "tot": 27.01
+     "m07": -11.27,
+     "tot": 27.02
     }
    },
    "correlations": {
@@ -497,7 +497,7 @@
       0.03,
       0.31,
       -0.18,
-      0.26,
+      0.25,
       0.12,
       -0.23,
       0.45,
@@ -541,7 +541,7 @@
       -0.21,
       1.0,
       -0.06,
-      0.22,
+      0.21,
       0.38,
       0.06,
       0.63,
@@ -549,7 +549,7 @@
       -0.0,
       0.21,
       0.18,
-      0.11,
+      0.1,
       0.13,
       0.02,
       0.04,
@@ -581,12 +581,12 @@
      ],
      [
       0.14,
-      0.26,
+      0.25,
       -0.15,
-      0.22,
+      0.21,
       -0.13,
       1.0,
-      0.12,
+      0.11,
       -0.17,
       0.19,
       0.14,
@@ -597,7 +597,7 @@
       -0.04,
       0.06,
       0.23,
-      0.26,
+      0.27,
       0.46,
       0.34
      ],
@@ -607,7 +607,7 @@
       -0.32,
       0.38,
       0.0,
-      0.12,
+      0.11,
       1.0,
       0.09,
       0.41,
@@ -620,7 +620,7 @@
       0.0,
       0.01,
       0.07,
-      0.35,
+      0.34,
       0.14
      ],
      [
@@ -658,13 +658,13 @@
       -0.09,
       0.21,
       0.2,
-      0.25,
+      0.26,
       0.18,
       0.11,
       -0.02,
       0.18,
-      0.25,
-      0.36,
+      0.26,
+      0.37,
       0.37
      ],
      [
@@ -742,7 +742,7 @@
       0.63,
       0.17,
       -0.17,
-      0.25,
+      0.26,
       0.09,
       0.09,
       0.08,
@@ -751,7 +751,7 @@
       -0.04,
       0.09,
       0.25,
-      0.27,
+      0.28,
       0.49,
       0.41
      ],
@@ -759,7 +759,7 @@
       -0.02,
       0.21,
       0.0,
-      0.11,
+      0.1,
       -0.03,
       0.3,
       0.12,
@@ -773,7 +773,7 @@
       0.04,
       0.04,
       -0.04,
-      0.14,
+      0.15,
       0.38,
       0.25
      ],
@@ -849,20 +849,20 @@
       0.09,
       0.24,
       -0.06,
-      0.26,
+      0.27,
       0.07,
       -0.04,
-      0.25,
+      0.26,
       0.14,
       0.12,
       0.05,
-      0.27,
-      0.14,
+      0.28,
+      0.15,
       0.11,
       0.07,
       0.08,
       1.0,
-      0.25,
+      0.26,
       0.29
      ],
      [
@@ -872,9 +872,9 @@
       0.24,
       0.06,
       0.46,
-      0.35,
+      0.34,
       -0.05,
-      0.36,
+      0.37,
       -0.1,
       0.07,
       0.15,
@@ -883,7 +883,7 @@
       0.11,
       0.12,
       0.12,
-      0.25,
+      0.26,
       1.0,
       0.28
      ],
@@ -914,7 +914,7 @@
   },
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-24 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 27.01,
+   "perf_total_pct": 27.02,
    "vol_ann_pct": 25.49,
    "max_dd_pct": -12.73,
    "sharpe": 1.75
@@ -926,7 +926,7 @@
    "2026-04": 16.97,
    "2026-05": 14.65,
    "2026-06": 3.15,
-   "2026-07": -11.28
+   "2026-07": -11.27
   },
   "nav_weekly": [
    [
@@ -1047,9 +1047,9 @@
    ],
    [
     "2026-07-24",
-    127009.0
+    127023.0
    ]
   ]
  },
- "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+ "disclaimer": "EgononAI è un'iniziativa di ricerca di EGONON SA (www.egonon.ch), gestore patrimoniale autorizzato FINMA dal 12.04.2022. Portafogli modello a solo scopo di ricerca: nessuna consulenza finanziaria personalizzata, nessuna offerta né sollecitazione all'investimento; contenuti non destinati a soggetti per i quali la loro fruizione sarebbe contraria a norme locali (incluso il pubblico retail in Italia/UE). EGONON SA e persone collegate possono detenere gli strumenti citati. Le performance passate non sono indicative di quelle future; simulazioni sempre etichettate. Metodologia dichiarata; dati di mercato EOD (fonte pubblica), valori lordi."
 }

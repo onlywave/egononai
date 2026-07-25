@@ -30,7 +30,7 @@
    "last_px": 23880.0,
    "pl_pct": -0.98,
    "weight_target_pct": 7.1,
-   "weight_now_pct": 7.03
+   "weight_now_pct": 7.02
   },
   {
    "name": "Kurita Water Industries",
@@ -43,7 +43,7 @@
    "last_px": 8943.0,
    "pl_pct": -1.11,
    "weight_target_pct": 5.15,
-   "weight_now_pct": 5.09
+   "weight_now_pct": 5.08
   },
   {
    "name": "ABB Ltd",
@@ -53,10 +53,10 @@
    "ccy": "CHF",
    "shares": 93.2062,
    "cost_px": 79.86,
-   "last_px": 79.86,
-   "pl_pct": -0.02,
+   "last_px": 80.0,
+   "pl_pct": 0.16,
    "weight_target_pct": 8.01,
-   "weight_now_pct": 8.01
+   "weight_now_pct": 8.0
   },
   {
    "name": "Air Liquide",
@@ -66,10 +66,10 @@
    "ccy": "EUR",
    "shares": 59.2892,
    "cost_px": 175.58,
-   "last_px": 175.58,
-   "pl_pct": 0.0,
+   "last_px": 176.52,
+   "pl_pct": 0.54,
    "weight_target_pct": 10.41,
-   "weight_now_pct": 10.41
+   "weight_now_pct": 10.44
   },
   {
    "name": "American Tower",
@@ -82,7 +82,7 @@
    "last_px": 164.65,
    "pl_pct": 0.32,
    "weight_target_pct": 10.32,
-   "weight_now_pct": 10.36
+   "weight_now_pct": 10.33
   },
   {
    "name": "Cadence Design Sys.",
@@ -95,7 +95,7 @@
    "last_px": 330.46,
    "pl_pct": 0.32,
    "weight_target_pct": 4.03,
-   "weight_now_pct": 4.04
+   "weight_now_pct": 4.03
   },
   {
    "name": "Iberdrola",
@@ -105,10 +105,10 @@
    "ccy": "EUR",
    "shares": 494.302,
    "cost_px": 21.06,
-   "last_px": 21.06,
-   "pl_pct": 0.0,
+   "last_px": 21.21,
+   "pl_pct": 0.71,
    "weight_target_pct": 10.41,
-   "weight_now_pct": 10.41
+   "weight_now_pct": 10.46
   },
   {
    "name": "Linde plc",
@@ -121,7 +121,7 @@
    "last_px": 506.32,
    "pl_pct": 0.32,
    "weight_target_pct": 10.41,
-   "weight_now_pct": 10.45
+   "weight_now_pct": 10.42
   },
   {
    "name": "Prysmian S.p.A.",
@@ -131,10 +131,10 @@
    "ccy": "EUR",
    "shares": 46.4711,
    "cost_px": 126.1,
-   "last_px": 126.1,
-   "pl_pct": 0.0,
+   "last_px": 126.9,
+   "pl_pct": 0.63,
    "weight_target_pct": 5.86,
-   "weight_now_pct": 5.86
+   "weight_now_pct": 5.88
   },
   {
    "name": "Schneider Electric",
@@ -144,10 +144,10 @@
    "ccy": "EUR",
    "shares": 21.8161,
    "cost_px": 265.4,
-   "last_px": 265.4,
-   "pl_pct": 0.0,
+   "last_px": 268.05,
+   "pl_pct": 1.0,
    "weight_target_pct": 5.79,
-   "weight_now_pct": 5.79
+   "weight_now_pct": 5.83
   },
   {
    "name": "Xylem",
@@ -160,7 +160,7 @@
    "last_px": 116.87,
    "pl_pct": 0.32,
    "weight_target_pct": 9.25,
-   "weight_now_pct": 9.28
+   "weight_now_pct": 9.26
   }
  ],
  "metrics": null,
@@ -168,7 +168,7 @@
  "nav_weekly": [
   [
    "2026-07-24",
-   99981.0
+   100220.0
   ]
  ],
  "asof": "2026-07-24",
@@ -177,9 +177,9 @@
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 29.91,
-    "sortino": 2.07,
-    "calmar": 4.8,
+    "cagr_pct": 30.49,
+    "sortino": 2.09,
+    "calmar": 4.89,
     "months_n": 7,
     "months_positive_pct": 71.0,
     "best_month_pct": 7.59,
@@ -312,7 +312,7 @@
     ],
     [
      "2026-07-24",
-     -5.02
+     -4.79
     ]
    ],
    "max_dd_date": "2026-03-23",
@@ -324,8 +324,8 @@
      "m04": 7.59,
      "m05": 2.78,
      "m06": 3.69,
-     "m07": -3.64,
-     "tot": 15.82
+     "m07": -3.4,
+     "tot": 16.11
     }
    },
    "correlations": {
@@ -350,7 +350,7 @@
       0.03,
       -0.12,
       -0.0,
-      0.0,
+      -0.0,
       0.15,
       0.21,
       0.09,
@@ -422,7 +422,7 @@
       0.11
      ],
      [
-      0.0,
+      -0.0,
       0.01,
       0.28,
       0.3,
@@ -491,10 +491,10 @@
   },
   "note": "Simulazione retrospettiva 01/01/2026→2026-07-24 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 15.82,
+   "perf_total_pct": 16.11,
    "vol_ann_pct": 12.03,
    "max_dd_pct": -6.23,
-   "sharpe": 2.17
+   "sharpe": 2.2
   },
   "monthly_pct": {
    "2026-01": 3.39,
@@ -503,7 +503,7 @@
    "2026-04": 7.59,
    "2026-05": 2.78,
    "2026-06": 3.69,
-   "2026-07": -3.64
+   "2026-07": -3.4
   },
   "nav_weekly": [
    [
@@ -624,9 +624,9 @@
    ],
    [
     "2026-07-24",
-    115818.0
+    116108.0
    ]
   ]
  },
- "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi."
+ "disclaimer": "EgononAI è un'iniziativa di ricerca di EGONON SA (www.egonon.ch), gestore patrimoniale autorizzato FINMA dal 12.04.2022. Portafogli modello a solo scopo di ricerca: nessuna consulenza finanziaria personalizzata, nessuna offerta né sollecitazione all'investimento; contenuti non destinati a soggetti per i quali la loro fruizione sarebbe contraria a norme locali (incluso il pubblico retail in Italia/UE). EGONON SA e persone collegate possono detenere gli strumenti citati. Le performance passate non sono indicative di quelle future; simulazioni sempre etichettate. Metodologia dichiarata; dati di mercato EOD (fonte pubblica), valori lordi."
 }
