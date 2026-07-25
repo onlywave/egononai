@@ -2,13 +2,13 @@
  "portfolio": "wolf43",
  "quant": {
   "stats": {
-   "cagr_pct": 69.2,
-   "sortino": 1.91,
-   "calmar": 5.11,
+   "cagr_pct": 64.68,
+   "sortino": 1.82,
+   "calmar": 4.77,
    "months_n": 7,
    "months_positive_pct": 71.0,
    "best_month_pct": 14.79,
-   "worst_month_pct": -8.44,
+   "worst_month_pct": -9.69,
    "var95_1m_hist_pct": null,
    "cvar95_1m_hist_pct": null,
    "skew_monthly": null,
@@ -137,7 +137,7 @@
    ],
    [
     "2026-07-24",
-    -10.51
+    -11.73
    ]
   ],
   "max_dd_date": "2026-07-20",
@@ -149,8 +149,8 @@
     "m04": 14.79,
     "m05": 9.41,
     "m06": 6.26,
-    "m07": -8.44,
-    "tot": 34.14
+    "m07": -9.69,
+    "tot": 32.31
    }
   },
   "correlations": {
@@ -169,7 +169,7 @@
      0.51,
      0.34,
      0.56,
-     0.3
+     0.29
     ],
     [
      0.71,
@@ -204,7 +204,7 @@
      0.37
     ],
     [
-     0.3,
+     0.29,
      0.27,
      0.48,
      0.05,
@@ -217,16 +217,16 @@
  "label": "WOLF 43 — World to Come",
  "base_currency": "EUR",
  "inception": "2026-01-01",
- "asof": "2026-07-23",
+ "asof": "2026-07-24",
  "status": "live",
  "methodology": "44 titoli globali sui colli di bottiglia strutturali; quote fisse da inception, dividendi lordi a cassa; NAV EOD in EUR; vol e VaR dichiarati su rendimenti giornalieri (252) e settimanali (52).",
  "metrics": {
-  "perf_total_pct": 34.14,
-  "vol_ann_pct": 25.89,
-  "sharpe": 2.1,
+  "perf_total_pct": 32.31,
+  "vol_ann_pct": 25.84,
+  "sharpe": 2.0,
   "max_dd_pct": -13.55,
-  "var95_1w_pct": 6.0,
-  "nav_last": 1341412.0
+  "var95_1w_pct": 5.99,
+  "nav_last": 1323106.0
  },
  "monthly_pct": {
   "2026-01": 8.72,
@@ -235,7 +235,7 @@
   "2026-04": 14.79,
   "2026-05": 9.41,
   "2026-06": 6.26,
-  "2026-07": -8.44
+  "2026-07": -9.69
  },
  "nav_weekly": [
   [
@@ -356,7 +356,7 @@
   ],
   [
    "2026-07-24",
-   1341412.0
+   1323106.0
   ]
  ],
  "holdings": [
@@ -368,11 +368,11 @@
    "ccy": "EUR",
    "shares": 44.5,
    "cost_px": 921.4,
-   "last_px": 1589.6,
-   "pl_pct": 72.52,
-   "contrib_pp": 2.97,
+   "last_px": 1579.2,
+   "pl_pct": 71.39,
+   "contrib_pp": 2.93,
    "weight_target_pct": 4.1,
-   "weight_now_pct": 5.27
+   "weight_now_pct": 5.31
   },
   {
    "name": "Schneider Electric",
@@ -382,9 +382,9 @@
    "ccy": "EUR",
    "shares": 174.54,
    "cost_px": 234.9,
-   "last_px": 269.0,
-   "pl_pct": 14.52,
-   "contrib_pp": 0.6,
+   "last_px": 265.4,
+   "pl_pct": 12.98,
+   "contrib_pp": 0.53,
    "weight_target_pct": 4.1,
    "weight_now_pct": 3.5
   },
@@ -397,10 +397,10 @@
    "shares": 154.63,
    "cost_px": 303.89,
    "last_px": 415.58,
-   "pl_pct": 40.77,
-   "contrib_pp": 1.63,
+   "pl_pct": 41.23,
+   "contrib_pp": 1.65,
    "weight_target_pct": 4.0,
-   "weight_now_pct": 4.2
+   "weight_now_pct": 4.27
   },
   {
    "name": "ABB Ltd",
@@ -411,10 +411,10 @@
    "shares": 573.35,
    "cost_px": 59.22,
    "last_px": 79.86,
-   "pl_pct": 34.99,
+   "pl_pct": 34.97,
    "contrib_pp": 1.28,
    "weight_target_pct": 3.65,
-   "weight_now_pct": 3.67
+   "weight_now_pct": 3.72
   },
   {
    "name": "Prysmian S.p.A.",
@@ -424,11 +424,11 @@
    "ccy": "EUR",
    "shares": 405.19,
    "cost_px": 86.38,
-   "last_px": 128.25,
-   "pl_pct": 48.47,
-   "contrib_pp": 1.7,
+   "last_px": 126.1,
+   "pl_pct": 45.98,
+   "contrib_pp": 1.61,
    "weight_target_pct": 3.5,
-   "weight_now_pct": 3.87
+   "weight_now_pct": 3.86
   },
   {
    "name": "Constellation Energy",
@@ -439,10 +439,10 @@
    "shares": 111.4,
    "cost_px": 353.27,
    "last_px": 275.6,
-   "pl_pct": -19.69,
-   "contrib_pp": -0.66,
+   "pl_pct": -19.43,
+   "contrib_pp": -0.65,
    "weight_target_pct": 3.35,
-   "weight_now_pct": 2.01
+   "weight_now_pct": 2.04
   },
   {
    "name": "Vertiv Holdings",
@@ -453,10 +453,10 @@
    "shares": 242.91,
    "cost_px": 162.01,
    "last_px": 304.04,
-   "pl_pct": 93.19,
-   "contrib_pp": 3.12,
+   "pl_pct": 93.81,
+   "contrib_pp": 3.14,
    "weight_target_pct": 3.35,
-   "weight_now_pct": 4.82
+   "weight_now_pct": 4.91
   },
   {
    "name": "Tokyo Electron",
@@ -466,11 +466,11 @@
    "ccy": "JPY",
    "shares": 174.11,
    "cost_px": 34320.0,
-   "last_px": 65950.0,
-   "pl_pct": 89.69,
-   "contrib_pp": 2.91,
+   "last_px": 62660.0,
+   "pl_pct": 80.22,
+   "contrib_pp": 2.61,
    "weight_target_pct": 3.25,
-   "weight_now_pct": 4.6
+   "weight_now_pct": 4.43
   },
   {
    "name": "Air Liquide",
@@ -480,11 +480,11 @@
    "ccy": "EUR",
    "shares": 199.05,
    "cost_px": 145.69,
-   "last_px": 176.74,
-   "pl_pct": 21.31,
-   "contrib_pp": 0.62,
+   "last_px": 175.58,
+   "pl_pct": 20.52,
+   "contrib_pp": 0.59,
    "weight_target_pct": 2.9,
-   "weight_now_pct": 2.62
+   "weight_now_pct": 2.64
   },
   {
    "name": "Xylem",
@@ -495,10 +495,10 @@
    "shares": 250.16,
    "cost_px": 136.18,
    "last_px": 116.87,
-   "pl_pct": -11.66,
-   "contrib_pp": -0.34,
+   "pl_pct": -11.37,
+   "contrib_pp": -0.33,
    "weight_target_pct": 2.9,
-   "weight_now_pct": 1.91
+   "weight_now_pct": 1.94
   },
   {
    "name": "Cadence Design Sys.",
@@ -509,10 +509,10 @@
    "shares": 107.11,
    "cost_px": 312.58,
    "last_px": 330.46,
-   "pl_pct": 8.83,
-   "contrib_pp": 0.25,
+   "pl_pct": 9.18,
+   "contrib_pp": 0.26,
    "weight_target_pct": 2.85,
-   "weight_now_pct": 2.31
+   "weight_now_pct": 2.35
   },
   {
    "name": "Hitachi Ltd",
@@ -522,11 +522,11 @@
    "ccy": "JPY",
    "shares": 1068.94,
    "cost_px": 4902.0,
-   "last_px": 4854.0,
-   "pl_pct": -2.25,
-   "contrib_pp": -0.06,
+   "last_px": 4850.0,
+   "pl_pct": -2.34,
+   "contrib_pp": -0.07,
    "weight_target_pct": 2.85,
-   "weight_now_pct": 2.08
+   "weight_now_pct": 2.1
   },
   {
    "name": "Cameco Corp",
@@ -537,10 +537,10 @@
    "shares": 352.05,
    "cost_px": 125.68,
    "last_px": 125.87,
-   "pl_pct": 0.24,
-   "contrib_pp": 0.01,
+   "pl_pct": 0.55,
+   "contrib_pp": 0.02,
    "weight_target_pct": 2.75,
-   "weight_now_pct": 2.05
+   "weight_now_pct": 2.09
   },
   {
    "name": "Linde plc",
@@ -551,10 +551,10 @@
    "shares": 75.76,
    "cost_px": 426.39,
    "last_px": 506.32,
-   "pl_pct": 22.24,
-   "contrib_pp": 0.61,
+   "pl_pct": 22.63,
+   "contrib_pp": 0.62,
    "weight_target_pct": 2.75,
-   "weight_now_pct": 2.51
+   "weight_now_pct": 2.55
   },
   {
    "name": "SK hynix",
@@ -564,11 +564,11 @@
    "ccy": "KRW",
    "shares": 68.88,
    "cost_px": 651000.0,
-   "last_px": 1919000.0,
-   "pl_pct": 195.77,
-   "contrib_pp": 5.19,
+   "last_px": 1759000.0,
+   "pl_pct": 175.27,
+   "contrib_pp": 4.64,
    "weight_target_pct": 2.65,
-   "weight_now_pct": 5.84
+   "weight_now_pct": 5.51
   },
   {
    "name": "Siemens Energy",
@@ -578,9 +578,9 @@
    "ccy": "EUR",
    "shares": 220.1,
    "cost_px": 120.4,
-   "last_px": 152.32,
-   "pl_pct": 26.51,
-   "contrib_pp": 0.7,
+   "last_px": 150.46,
+   "pl_pct": 24.97,
+   "contrib_pp": 0.66,
    "weight_target_pct": 2.65,
    "weight_now_pct": 2.5
   },
@@ -592,11 +592,11 @@
    "ccy": "AUD",
    "shares": 906.31,
    "cost_px": 45.49,
-   "last_px": 60.63,
-   "pl_pct": 43.21,
-   "contrib_pp": 1.02,
+   "last_px": 58.85,
+   "pl_pct": 38.99,
+   "contrib_pp": 0.92,
    "weight_target_pct": 2.35,
-   "weight_now_pct": 2.51
+   "weight_now_pct": 2.47
   },
   {
    "name": "CATL",
@@ -606,11 +606,11 @@
    "ccy": "HKD",
    "shares": 415.91,
    "cost_px": 505.5,
-   "last_px": 626.5,
-   "pl_pct": 26.59,
-   "contrib_pp": 0.61,
+   "last_px": 622.0,
+   "pl_pct": 26.12,
+   "contrib_pp": 0.6,
    "weight_target_pct": 2.3,
-   "weight_now_pct": 2.17
+   "weight_now_pct": 2.19
   },
   {
    "name": "Kazatomprom",
@@ -620,11 +620,11 @@
    "ccy": "USD",
    "shares": 484.21,
    "cost_px": 55.8,
-   "last_px": 67.9,
-   "pl_pct": 25.26,
-   "contrib_pp": 0.58,
+   "last_px": 66.5,
+   "pl_pct": 23.07,
+   "contrib_pp": 0.53,
    "weight_target_pct": 2.3,
-   "weight_now_pct": 2.15
+   "weight_now_pct": 2.14
   },
   {
    "name": "Reliance Industries",
@@ -634,9 +634,9 @@
    "ccy": "USD",
    "shares": 385.98,
    "cost_px": 70.0,
-   "last_px": 52.7,
-   "pl_pct": -22.5,
-   "contrib_pp": -0.52,
+   "last_px": 51.8,
+   "pl_pct": -23.58,
+   "contrib_pp": -0.54,
    "weight_target_pct": 2.3,
    "weight_now_pct": 1.33
   },
@@ -649,10 +649,10 @@
    "shares": 167.48,
    "cost_px": 161.33,
    "last_px": 168.98,
-   "pl_pct": 7.82,
-   "contrib_pp": 0.18,
+   "pl_pct": 8.17,
+   "contrib_pp": 0.19,
    "weight_target_pct": 2.3,
-   "weight_now_pct": 1.85
+   "weight_now_pct": 1.88
   },
   {
    "name": "Antofagasta plc",
@@ -662,11 +662,11 @@
    "ccy": "GBp",
    "shares": 572.04,
    "cost_px": 32.79,
-   "last_px": 37.96,
-   "pl_pct": 18.37,
-   "contrib_pp": 0.39,
+   "last_px": 36.21,
+   "pl_pct": 12.73,
+   "contrib_pp": 0.27,
    "weight_target_pct": 2.15,
-   "weight_now_pct": 1.9
+   "weight_now_pct": 1.83
   },
   {
    "name": "China Yangtze Power",
@@ -676,11 +676,11 @@
    "ccy": "CNY",
    "shares": 6499.68,
    "cost_px": 27.19,
-   "last_px": 28.94,
-   "pl_pct": 13.19,
-   "contrib_pp": 0.28,
+   "last_px": 28.9,
+   "pl_pct": 13.34,
+   "contrib_pp": 0.29,
    "weight_target_pct": 2.15,
-   "weight_now_pct": 1.81
+   "weight_now_pct": 1.84
   },
   {
    "name": "Iberdrola",
@@ -690,9 +690,9 @@
    "ccy": "EUR",
    "shares": 1164.37,
    "cost_px": 18.47,
-   "last_px": 21.27,
-   "pl_pct": 15.19,
-   "contrib_pp": 0.33,
+   "last_px": 21.06,
+   "pl_pct": 14.05,
+   "contrib_pp": 0.3,
    "weight_target_pct": 2.15,
    "weight_now_pct": 1.85
   },
@@ -704,11 +704,11 @@
    "ccy": "JPY",
    "shares": 622.71,
    "cost_px": 6348.0,
-   "last_px": 9043.0,
-   "pl_pct": 40.62,
-   "contrib_pp": 0.87,
+   "last_px": 8943.0,
+   "pl_pct": 39.06,
+   "contrib_pp": 0.84,
    "weight_target_pct": 2.15,
-   "weight_now_pct": 2.25
+   "weight_now_pct": 2.26
   },
   {
    "name": "Daikin Industries",
@@ -718,9 +718,9 @@
    "ccy": "JPY",
    "shares": 192.28,
    "cost_px": 20080.0,
-   "last_px": 24115.0,
-   "pl_pct": 18.55,
-   "contrib_pp": 0.39,
+   "last_px": 23880.0,
+   "pl_pct": 17.39,
+   "contrib_pp": 0.37,
    "weight_target_pct": 2.1,
    "weight_now_pct": 1.86
   },
@@ -732,11 +732,11 @@
    "ccy": "KRW",
    "shares": 289.3,
    "cost_px": 119900.0,
-   "last_px": 270000.0,
-   "pl_pct": 125.95,
-   "contrib_pp": 2.58,
+   "last_px": 249500.0,
+   "pl_pct": 112.0,
+   "contrib_pp": 2.3,
    "weight_target_pct": 2.05,
-   "weight_now_pct": 3.45
+   "weight_now_pct": 3.28
   },
   {
    "name": "Deere & Company",
@@ -747,10 +747,10 @@
    "shares": 49.2,
    "cost_px": 465.57,
    "last_px": 610.02,
-   "pl_pct": 34.88,
-   "contrib_pp": 0.68,
+   "pl_pct": 35.31,
+   "contrib_pp": 0.69,
    "weight_target_pct": 1.95,
-   "weight_now_pct": 1.96
+   "weight_now_pct": 1.99
   },
   {
    "name": "Nutrien",
@@ -761,10 +761,10 @@
    "shares": 370.33,
    "cost_px": 84.72,
    "last_px": 96.48,
-   "pl_pct": 13.98,
-   "contrib_pp": 0.27,
+   "pl_pct": 14.34,
+   "contrib_pp": 0.28,
    "weight_target_pct": 1.95,
-   "weight_now_pct": 1.66
+   "weight_now_pct": 1.69
   },
   {
    "name": "Advantest",
@@ -774,11 +774,11 @@
    "ccy": "JPY",
    "shares": 173.23,
    "cost_px": 19635.0,
-   "last_px": 30800.0,
-   "pl_pct": 54.84,
-   "contrib_pp": 1.01,
+   "last_px": 28945.0,
+   "pl_pct": 45.51,
+   "contrib_pp": 0.84,
    "weight_target_pct": 1.85,
-   "weight_now_pct": 2.14
+   "weight_now_pct": 2.03
   },
   {
    "name": "Veolia Environnement",
@@ -788,11 +788,11 @@
    "ccy": "EUR",
    "shares": 538.36,
    "cost_px": 29.72,
-   "last_px": 37.25,
-   "pl_pct": 25.34,
-   "contrib_pp": 0.41,
+   "last_px": 36.78,
+   "pl_pct": 23.76,
+   "contrib_pp": 0.38,
    "weight_target_pct": 1.6,
-   "weight_now_pct": 1.49
+   "weight_now_pct": 1.5
   },
   {
    "name": "American Tower",
@@ -803,10 +803,10 @@
    "shares": 97.02,
    "cost_px": 175.57,
    "last_px": 164.65,
-   "pl_pct": -3.46,
+   "pl_pct": -3.15,
    "contrib_pp": -0.05,
    "weight_target_pct": 1.45,
-   "weight_now_pct": 1.04
+   "weight_now_pct": 1.06
   },
   {
    "name": "CRISPR Therapeutics",
@@ -817,10 +817,10 @@
    "shares": 324.82,
    "cost_px": 52.44,
    "last_px": 47.53,
-   "pl_pct": -6.7,
-   "contrib_pp": -0.1,
+   "pl_pct": -6.4,
+   "contrib_pp": -0.09,
    "weight_target_pct": 1.45,
-   "weight_now_pct": 1.01
+   "weight_now_pct": 1.03
   },
   {
    "name": "Palantir Tech.",
@@ -831,10 +831,10 @@
    "shares": 95.83,
    "cost_px": 177.75,
    "last_px": 123.37,
-   "pl_pct": -28.55,
+   "pl_pct": -28.32,
    "contrib_pp": -0.41,
    "weight_target_pct": 1.45,
-   "weight_now_pct": 0.77
+   "weight_now_pct": 0.79
   },
   {
    "name": "Rocket Lab USA",
@@ -845,10 +845,10 @@
    "shares": 244.17,
    "cost_px": 69.76,
    "last_px": 69.99,
-   "pl_pct": 3.28,
+   "pl_pct": 3.61,
    "contrib_pp": 0.05,
    "weight_target_pct": 1.45,
-   "weight_now_pct": 1.12
+   "weight_now_pct": 1.14
   },
   {
    "name": "Talen Energy",
@@ -859,10 +859,10 @@
    "shares": 45.44,
    "cost_px": 374.84,
    "last_px": 379.27,
-   "pl_pct": 4.16,
-   "contrib_pp": 0.06,
+   "pl_pct": 4.49,
+   "contrib_pp": 0.07,
    "weight_target_pct": 1.45,
-   "weight_now_pct": 1.13
+   "weight_now_pct": 1.15
   },
   {
    "name": "BYD Company",
@@ -873,10 +873,10 @@
    "shares": 1345.67,
    "cost_px": 95.1,
    "last_px": 88.65,
-   "pl_pct": -4.79,
-   "contrib_pp": -0.07,
+   "pl_pct": -4.45,
+   "contrib_pp": -0.06,
    "weight_target_pct": 1.4,
-   "weight_now_pct": 0.99
+   "weight_now_pct": 1.01
   },
   {
    "name": "Marvell Technology",
@@ -887,10 +887,10 @@
    "shares": 193.53,
    "cost_px": 84.98,
    "last_px": 209.32,
-   "pl_pct": 153.56,
-   "contrib_pp": 2.15,
+   "pl_pct": 154.37,
+   "contrib_pp": 2.16,
    "weight_target_pct": 1.4,
-   "weight_now_pct": 2.65
+   "weight_now_pct": 2.69
   },
   {
    "name": "SQM",
@@ -901,10 +901,10 @@
    "shares": 204.89,
    "cost_px": 68.8,
    "last_px": 69.32,
-   "pl_pct": 3.72,
-   "contrib_pp": 0.04,
+   "pl_pct": 4.05,
+   "contrib_pp": 0.05,
    "weight_target_pct": 1.2,
-   "weight_now_pct": 0.93
+   "weight_now_pct": 0.94
   },
   {
    "name": "Symbotic",
@@ -915,10 +915,10 @@
    "shares": 236.92,
    "cost_px": 59.5,
    "last_px": 40.57,
-   "pl_pct": -29.81,
+   "pl_pct": -29.59,
    "contrib_pp": -0.36,
    "weight_target_pct": 1.2,
-   "weight_now_pct": 0.63
+   "weight_now_pct": 0.64
   },
   {
    "name": "Vale S.A.",
@@ -929,10 +929,10 @@
    "shares": 1081.87,
    "cost_px": 13.03,
    "last_px": 14.83,
-   "pl_pct": 17.16,
+   "pl_pct": 17.54,
    "contrib_pp": 0.21,
    "weight_target_pct": 1.2,
-   "weight_now_pct": 1.05
+   "weight_now_pct": 1.07
   },
   {
    "name": "Coherent Corp.",
@@ -943,10 +943,10 @@
    "shares": 66.83,
    "cost_px": 184.57,
    "last_px": 313.22,
-   "pl_pct": 74.69,
-   "contrib_pp": 0.78,
+   "pl_pct": 75.25,
+   "contrib_pp": 0.79,
    "weight_target_pct": 1.05,
-   "weight_now_pct": 1.37
+   "weight_now_pct": 1.39
   },
   {
    "name": "Hon Hai (Foxconn)",
@@ -956,9 +956,9 @@
    "ccy": "TWD",
    "shares": 1671.83,
    "cost_px": 230.5,
-   "last_px": 257.5,
-   "pl_pct": 10.95,
-   "contrib_pp": 0.11,
+   "last_px": 252.5,
+   "pl_pct": 9.41,
+   "contrib_pp": 0.1,
    "weight_target_pct": 1.05,
    "weight_now_pct": 0.87
   },
@@ -971,10 +971,10 @@
    "shares": 70.61,
    "cost_px": 166.36,
    "last_px": 326.97,
-   "pl_pct": 102.32,
-   "contrib_pp": 1.02,
+   "pl_pct": 102.97,
+   "contrib_pp": 1.03,
    "weight_target_pct": 1.0,
-   "weight_now_pct": 1.51
+   "weight_now_pct": 1.53
   }
  ],
  "disclaimer": "Portafoglio modello a scopo di ricerca. Non costituisce consulenza finanziaria personalizzata, offerta o sollecitazione. Le performance passate non sono indicative di quelle future. Metodologia dichiarata nella pagina; dati di mercato EOD (fonte pubblica), valori lordi.",

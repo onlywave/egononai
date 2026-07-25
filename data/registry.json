@@ -1,19 +1,19 @@
 {
- "generated": "2026-07-24T07:58:40+00:00",
+ "generated": "2026-07-25T07:36:57+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
    "label": "WOLF 43 — World to Come",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-07-23",
+   "asof": "2026-07-24",
    "metrics": {
-    "perf_total_pct": 34.14,
-    "vol_ann_pct": 25.89,
-    "sharpe": 2.1,
+    "perf_total_pct": 32.31,
+    "vol_ann_pct": 25.84,
+    "sharpe": 2.0,
     "max_dd_pct": -13.55,
-    "var95_1w_pct": 6.0,
-    "nav_last": 1341412.0
+    "var95_1w_pct": 5.99,
+    "nav_last": 1323106.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -40,7 +40,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 1.05
+    "perf_total_pct": 1.26
    }
   },
   {
@@ -64,7 +64,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 15.84
+    "perf_total_pct": 15.82
    }
   },
   {
@@ -88,7 +88,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 27.33
+    "perf_total_pct": 27.01
    }
   },
   {
@@ -112,7 +112,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 2.43
+    "perf_total_pct": 2.63
    }
   },
   {
@@ -136,7 +136,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 7.27
+    "perf_total_pct": 7.24
    }
   }
  ],
