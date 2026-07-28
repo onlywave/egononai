@@ -1,19 +1,19 @@
 {
- "generated": "2026-07-25T15:55:00+00:00",
+ "generated": "2026-07-28T08:05:39+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
    "label": "WOLF 43 — World to Come",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-07-24",
+   "asof": "2026-07-27",
    "metrics": {
-    "perf_total_pct": 32.34,
-    "vol_ann_pct": 25.84,
-    "sharpe": 2.0,
+    "perf_total_pct": 31.11,
+    "vol_ann_pct": 25.87,
+    "sharpe": 1.93,
     "max_dd_pct": -13.55,
     "var95_1w_pct": 5.99,
-    "nav_last": 1323444.0
+    "nav_last": 1311075.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -24,7 +24,7 @@
    "label": "EgononAI Difensivo — Multi-Asset ETF",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-07-24",
+   "asof": "2026-07-28",
    "metrics": null,
    "risk_level": "basso",
    "etf_only": true,
@@ -40,7 +40,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 1.26
+    "perf_total_pct": 1.15
    }
   },
   {
@@ -48,7 +48,7 @@
    "label": "EgononAI Bilanciato — Quality Bottleneck",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-07-24",
+   "asof": "2026-07-28",
    "metrics": null,
    "risk_level": "medio",
    "etf_only": false,
@@ -64,7 +64,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 16.11
+    "perf_total_pct": 14.86
    }
   },
   {
@@ -72,7 +72,7 @@
    "label": "EgononAI Dinamico — High Conviction",
    "base_currency": "USD",
    "status": "live",
-   "asof": "2026-07-24",
+   "asof": "2026-07-28",
    "metrics": null,
    "risk_level": "alto",
    "etf_only": false,
@@ -88,7 +88,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 27.02
+    "perf_total_pct": 22.02
    }
   },
   {
@@ -96,7 +96,7 @@
    "label": "EgononAI Multi-Asset 100 — Profilo Istituzionale",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-07-24",
+   "asof": "2026-07-28",
    "metrics": null,
    "risk_level": "istituzionale",
    "etf_only": false,
@@ -112,7 +112,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 2.63
+    "perf_total_pct": 2.54
    }
   },
   {
@@ -120,7 +120,7 @@
    "label": "VITA 5M — CHF-First Multipolare",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-07-24",
+   "asof": "2026-07-28",
    "metrics": null,
    "risk_level": "multipolare",
    "etf_only": true,
@@ -136,7 +136,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 7.24
+    "perf_total_pct": 5.27
    }
   }
  ],
