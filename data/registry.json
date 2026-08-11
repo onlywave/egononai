@@ -1,19 +1,19 @@
 {
- "generated": "2026-08-08T06:24:27+00:00",
+ "generated": "2026-08-11T06:34:04+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
    "label": "WOLF 43 — World to Come",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-08-07",
+   "asof": "2026-08-10",
    "metrics": {
-    "perf_total_pct": 30.11,
-    "vol_ann_pct": 26.76,
-    "sharpe": 1.72,
-    "max_dd_pct": -19.45,
-    "var95_1w_pct": 6.2,
-    "nav_last": 1301143.0
+    "perf_total_pct": 31.17,
+    "vol_ann_pct": 26.7,
+    "sharpe": 1.77,
+    "max_dd_pct": -19.37,
+    "var95_1w_pct": 6.19,
+    "nav_last": 1311725.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -24,14 +24,14 @@
    "label": "EgononAI Difensivo — Multi-Asset ETF",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-08-07",
+   "asof": "2026-08-10",
    "metrics": {
-    "perf_total_pct": 1.37,
-    "vol_ann_pct": 4.5,
-    "sharpe": 6.37,
+    "perf_total_pct": 1.17,
+    "vol_ann_pct": 4.51,
+    "sharpe": 5.04,
     "max_dd_pct": -0.46,
     "var95_1w_pct": 1.04,
-    "nav_last": 101367.0
+    "nav_last": 101173.0
    },
    "risk_level": "basso",
    "etf_only": true,
@@ -47,7 +47,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 2.99
+    "perf_total_pct": 2.8
    }
   },
   {
@@ -55,14 +55,14 @@
    "label": "EgononAI Bilanciato — Quality Bottleneck",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-08-07",
+   "asof": "2026-08-10",
    "metrics": {
-    "perf_total_pct": 0.16,
-    "vol_ann_pct": 9.52,
-    "sharpe": 0.4,
+    "perf_total_pct": -0.09,
+    "vol_ann_pct": 9.24,
+    "sharpe": -0.15,
     "max_dd_pct": -1.44,
-    "var95_1w_pct": 2.2,
-    "nav_last": 100163.0
+    "var95_1w_pct": 2.14,
+    "nav_last": 99909.0
    },
    "risk_level": "medio",
    "etf_only": false,
@@ -78,7 +78,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 15.87
+    "perf_total_pct": 15.59
    }
   },
   {
@@ -86,14 +86,14 @@
    "label": "EgononAI Dinamico — High Conviction",
    "base_currency": "USD",
    "status": "live",
-   "asof": "2026-08-07",
+   "asof": "2026-08-11",
    "metrics": {
-    "perf_total_pct": 2.15,
-    "vol_ann_pct": 30.17,
-    "sharpe": 1.62,
+    "perf_total_pct": 2.01,
+    "vol_ann_pct": 27.66,
+    "sharpe": 1.42,
     "max_dd_pct": -6.29,
-    "var95_1w_pct": 6.99,
-    "nav_last": 102147.0
+    "var95_1w_pct": 6.41,
+    "nav_last": 102008.0
    },
    "risk_level": "alto",
    "etf_only": false,
@@ -109,7 +109,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 28.37
+    "perf_total_pct": 28.08
    }
   },
   {
@@ -117,14 +117,14 @@
    "label": "EgononAI Multi-Asset 100 — Profilo Istituzionale",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-08-07",
+   "asof": "2026-08-10",
    "metrics": {
-    "perf_total_pct": 2.66,
-    "vol_ann_pct": 6.99,
-    "sharpe": 7.93,
+    "perf_total_pct": 2.56,
+    "vol_ann_pct": 6.93,
+    "sharpe": 7.11,
     "max_dd_pct": -0.63,
-    "var95_1w_pct": 1.62,
-    "nav_last": 102660.0
+    "var95_1w_pct": 1.61,
+    "nav_last": 102561.0
    },
    "risk_level": "istituzionale",
    "etf_only": false,
@@ -140,7 +140,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 5.0
+    "perf_total_pct": 4.91
    }
   },
   {
@@ -148,14 +148,14 @@
    "label": "VITA 5M — CHF-First Multipolare",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-08-07",
+   "asof": "2026-08-10",
    "metrics": {
-    "perf_total_pct": 2.47,
-    "vol_ann_pct": 17.21,
-    "sharpe": 3.06,
+    "perf_total_pct": 2.46,
+    "vol_ann_pct": 16.85,
+    "sharpe": 2.87,
     "max_dd_pct": -2.94,
-    "var95_1w_pct": 3.99,
-    "nav_last": 102475.0
+    "var95_1w_pct": 3.9,
+    "nav_last": 102455.0
    },
    "risk_level": "multipolare",
    "etf_only": true,
@@ -171,7 +171,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 9.49
+    "perf_total_pct": 9.46
    }
   }
  ],
