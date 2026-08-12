@@ -93,9 +93,9 @@
    "shares": 209.8208,
    "cost_px": 46.17,
    "last_px": 46.43,
-   "pl_pct": 1.09,
+   "pl_pct": 1.21,
    "weight_target_pct": 9.0,
-   "weight_now_pct": 8.87
+   "weight_now_pct": 8.88
   },
   {
    "name": "Vanguard FTSE All-World",
@@ -106,9 +106,9 @@
    "shares": 56.6606,
    "cost_px": 163.36,
    "last_px": 168.48,
-   "pl_pct": 3.67,
+   "pl_pct": 3.79,
    "weight_target_pct": 8.6,
-   "weight_now_pct": 8.69
+   "weight_now_pct": 8.7
   },
   {
    "name": "iShares Core SPI",
@@ -164,15 +164,15 @@
   }
  ],
  "metrics": {
-  "perf_total_pct": 2.56,
-  "vol_ann_pct": 6.93,
-  "sharpe": 7.11,
+  "perf_total_pct": 2.58,
+  "vol_ann_pct": 6.7,
+  "sharpe": 6.89,
   "max_dd_pct": -0.63,
-  "var95_1w_pct": 1.61,
-  "nav_last": 102561.0
+  "var95_1w_pct": 1.55,
+  "nav_last": 102582.0
  },
  "monthly_pct": {
-  "2026-08": 2.82
+  "2026-08": 2.84
  },
  "nav_weekly": [
   [
@@ -189,10 +189,10 @@
   ],
   [
    "2026-08-14",
-   102561.0
+   102582.0
   ]
  ],
- "asof": "2026-08-10",
+ "asof": "2026-08-11",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
@@ -345,7 +345,7 @@
     ],
     [
      "2026-08-14",
-     -0.14
+     -0.11
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -358,8 +358,8 @@
      "m05": 2.1,
      "m06": -1.01,
      "m07": -1.22,
-     "m08": 2.84,
-     "tot": 4.91
+     "m08": 2.86,
+     "tot": 4.94
     }
    },
    "correlations": {
@@ -523,10 +523,10 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-08-10 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-08-11 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 4.91,
-   "vol_ann_pct": 9.72,
+   "perf_total_pct": 4.94,
+   "vol_ann_pct": 9.69,
    "max_dd_pct": -5.74,
    "sharpe": 0.86
   },
@@ -538,7 +538,7 @@
    "2026-05": 2.1,
    "2026-06": -1.01,
    "2026-07": -1.22,
-   "2026-08": 2.84
+   "2026-08": 2.86
   },
   "nav_weekly": [
    [
@@ -671,7 +671,7 @@
    ],
    [
     "2026-08-14",
-    104911.0
+    104936.0
    ]
   ]
  },

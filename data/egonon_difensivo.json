@@ -113,10 +113,10 @@
  ],
  "metrics": {
   "perf_total_pct": 1.17,
-  "vol_ann_pct": 4.51,
-  "sharpe": 5.04,
+  "vol_ann_pct": 4.35,
+  "sharpe": 4.85,
   "max_dd_pct": -0.46,
-  "var95_1w_pct": 1.04,
+  "var95_1w_pct": 1.01,
   "nav_last": 101173.0
  },
  "monthly_pct": {
@@ -140,15 +140,15 @@
    101173.0
   ]
  ],
- "asof": "2026-08-10",
+ "asof": "2026-08-11",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 4.62,
+    "cagr_pct": 4.6,
     "sortino": 0.8,
-    "calmar": 1.1,
+    "calmar": 1.09,
     "months_n": 8,
     "months_positive_pct": 62.0,
     "best_month_pct": 1.92,
@@ -387,12 +387,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-08-10 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-08-11 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
    "perf_total_pct": 2.8,
-   "vol_ann_pct": 6.3,
+   "vol_ann_pct": 6.28,
    "max_dd_pct": -4.2,
-   "sharpe": 0.75
+   "sharpe": 0.74
   },
   "monthly_pct": {
    "2026-01": 1.71,
