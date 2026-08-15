@@ -27,8 +27,8 @@
    "ccy": "CHF",
    "shares": 6695.2331,
    "cost_px": 3.73,
-   "last_px": 3.9,
-   "pl_pct": 4.47,
+   "last_px": 3.91,
+   "pl_pct": 4.82,
    "weight_target_pct": 25.0,
    "weight_now_pct": 25.06
   },
@@ -40,10 +40,10 @@
    "ccy": "USD",
    "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 118.02,
-   "pl_pct": 0.85,
+   "last_px": 119.14,
+   "pl_pct": 1.96,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 24.19
+   "weight_now_pct": 24.38
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -53,10 +53,10 @@
    "ccy": "USD",
    "shares": 468.689,
    "cost_px": 52.41,
-   "last_px": 54.5,
-   "pl_pct": 3.82,
+   "last_px": 54.8,
+   "pl_pct": 4.55,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 19.92
+   "weight_now_pct": 20.0
   },
   {
    "name": "ZKB Gold ETF AA (CHF)",
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 20.4374,
    "cost_px": 978.6,
-   "last_px": 1063.4,
-   "pl_pct": 8.67,
+   "last_px": 1051.2,
+   "pl_pct": 7.42,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.85
+   "weight_now_pct": 20.55
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 478.8675,
    "cost_px": 12.82,
-   "last_px": 13.55,
-   "pl_pct": 5.49,
+   "last_px": 13.5,
+   "pl_pct": 5.25,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.06
+   "weight_now_pct": 5.03
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -92,22 +92,22 @@
    "ccy": "USD",
    "shares": 64.8469,
    "cost_px": 94.7,
-   "last_px": 97.49,
-   "pl_pct": 2.78,
+   "last_px": 98.69,
+   "pl_pct": 4.2,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 4.93
+   "weight_now_pct": 4.98
   }
  ],
  "metrics": {
-  "perf_total_pct": 4.24,
-  "vol_ann_pct": 15.59,
-  "sharpe": 4.27,
+  "perf_total_pct": 4.56,
+  "vol_ann_pct": 15.11,
+  "sharpe": 4.45,
   "max_dd_pct": -2.94,
-  "var95_1w_pct": 3.61,
-  "nav_last": 104241.0
+  "var95_1w_pct": 3.5,
+  "nav_last": 104561.0
  },
  "monthly_pct": {
-  "2026-08": 5.9
+  "2026-08": 6.23
  },
  "nav_weekly": [
   [
@@ -124,18 +124,18 @@
   ],
   [
    "2026-08-14",
-   104241.0
+   104561.0
   ]
  ],
- "asof": "2026-08-13",
+ "asof": "2026-08-14",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 19.24,
-    "sortino": 1.03,
-    "calmar": 1.61,
+    "cagr_pct": 19.95,
+    "sortino": 1.06,
+    "calmar": 1.67,
     "months_n": 8,
     "months_positive_pct": 62.0,
     "best_month_pct": 9.06,
@@ -280,7 +280,7 @@
     ],
     [
      "2026-08-14",
-     -1.31
+     -0.9
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -293,8 +293,8 @@
      "m05": 5.63,
      "m06": 1.37,
      "m07": -4.71,
-     "m08": 5.82,
-     "tot": 11.45
+     "m08": 6.27,
+     "tot": 11.91
     }
    },
    "correlations": {
@@ -311,9 +311,9 @@
       1.0,
       0.62,
       0.71,
-      0.36,
+      0.35,
       0.16,
-      0.62
+      0.63
      ],
      [
       0.62,
@@ -332,7 +332,7 @@
       0.93
      ],
      [
-      0.36,
+      0.35,
       0.32,
       0.36,
       1.0,
@@ -348,7 +348,7 @@
       0.1
      ],
      [
-      0.62,
+      0.63,
       0.77,
       0.93,
       0.33,
@@ -358,12 +358,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-08-13 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-08-14 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 11.45,
-   "vol_ann_pct": 19.42,
+   "perf_total_pct": 11.91,
+   "vol_ann_pct": 19.37,
    "max_dd_pct": -11.98,
-   "sharpe": 0.99
+   "sharpe": 1.02
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -373,7 +373,7 @@
    "2026-05": 5.63,
    "2026-06": 1.37,
    "2026-07": -4.71,
-   "2026-08": 5.82
+   "2026-08": 6.27
   },
   "nav_weekly": [
    [
@@ -506,7 +506,7 @@
    ],
    [
     "2026-08-14",
-    111448.0
+    111912.0
    ]
   ]
  },
