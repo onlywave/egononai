@@ -27,10 +27,10 @@
    "ccy": "CHF",
    "shares": 6695.2331,
    "cost_px": 3.73,
-   "last_px": 3.9,
-   "pl_pct": 4.54,
+   "last_px": 3.87,
+   "pl_pct": 3.63,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 24.86
+   "weight_now_pct": 25.14
   },
   {
    "name": "iShares Edge MSCI World Momentum",
@@ -40,10 +40,10 @@
    "ccy": "USD",
    "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 120.42,
-   "pl_pct": 2.61,
+   "last_px": 116.9,
+   "pl_pct": -0.19,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 24.4
+   "weight_now_pct": 24.21
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -53,10 +53,10 @@
    "ccy": "USD",
    "shares": 468.689,
    "cost_px": 52.41,
-   "last_px": 55.59,
-   "pl_pct": 5.6,
+   "last_px": 53.7,
+   "pl_pct": 2.21,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.09
+   "weight_now_pct": 19.84
   },
   {
    "name": "ZKB Gold ETF AA (CHF)",
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 20.4374,
    "cost_px": 978.6,
-   "last_px": 1061.8,
-   "pl_pct": 8.5,
+   "last_px": 1050.2,
+   "pl_pct": 7.32,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.64
+   "weight_now_pct": 20.83
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 478.8675,
    "cost_px": 12.82,
-   "last_px": 13.46,
-   "pl_pct": 4.51,
+   "last_px": 13.35,
+   "pl_pct": 3.85,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 4.97
+   "weight_now_pct": 5.04
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -92,22 +92,22 @@
    "ccy": "USD",
    "shares": 64.8469,
    "cost_px": 94.7,
-   "last_px": 100.52,
-   "pl_pct": 5.67,
+   "last_px": 96.64,
+   "pl_pct": 1.8,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.03
+   "weight_now_pct": 4.94
   }
  ],
  "metrics": {
-  "perf_total_pct": 5.11,
-  "vol_ann_pct": 14.54,
-  "sharpe": 4.62,
+  "perf_total_pct": 3.05,
+  "vol_ann_pct": 16.63,
+  "sharpe": 2.36,
   "max_dd_pct": -2.94,
-  "var95_1w_pct": 3.37,
-  "nav_last": 105115.0
+  "var95_1w_pct": 3.85,
+  "nav_last": 103049.0
  },
  "monthly_pct": {
-  "2026-08": 6.79
+  "2026-08": 4.69
  },
  "nav_weekly": [
   [
@@ -128,18 +128,18 @@
   ],
   [
    "2026-08-21",
-   105115.0
+   103049.0
   ]
  ],
- "asof": "2026-08-18",
+ "asof": "2026-08-19",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 20.73,
-    "sortino": 1.11,
-    "calmar": 1.73,
+    "cagr_pct": 16.59,
+    "sortino": 0.9,
+    "calmar": 1.39,
     "months_n": 8,
     "months_positive_pct": 62.0,
     "best_month_pct": 9.06,
@@ -288,7 +288,7 @@
     ],
     [
      "2026-08-21",
-     -0.29
+     -2.42
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -301,8 +301,8 @@
      "m05": 5.63,
      "m06": 1.37,
      "m07": -4.71,
-     "m08": 6.91,
-     "tot": 12.59
+     "m08": 4.63,
+     "tot": 10.19
     }
    },
    "correlations": {
@@ -326,14 +326,14 @@
      [
       0.62,
       1.0,
-      0.8,
+      0.81,
       0.32,
       0.12,
-      0.77
+      0.78
      ],
      [
       0.71,
-      0.8,
+      0.81,
       1.0,
       0.36,
       0.13,
@@ -357,7 +357,7 @@
      ],
      [
       0.62,
-      0.77,
+      0.78,
       0.93,
       0.33,
       0.1,
@@ -366,12 +366,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-08-18 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-08-19 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 12.59,
-   "vol_ann_pct": 19.28,
+   "perf_total_pct": 10.19,
+   "vol_ann_pct": 19.47,
    "max_dd_pct": -11.98,
-   "sharpe": 1.07
+   "sharpe": 0.88
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -381,7 +381,7 @@
    "2026-05": 5.63,
    "2026-06": 1.37,
    "2026-07": -4.71,
-   "2026-08": 6.91
+   "2026-08": 4.63
   },
   "nav_weekly": [
    [
@@ -518,7 +518,7 @@
    ],
    [
     "2026-08-21",
-    112592.0
+    110194.0
    ]
   ]
  },
