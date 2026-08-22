@@ -27,10 +27,10 @@
    "ccy": "EUR",
    "shares": 68.2791,
    "cost_px": 114.53,
-   "last_px": 123.69,
-   "pl_pct": 8.0,
+   "last_px": 124.62,
+   "pl_pct": 8.81,
    "weight_target_pct": 7.82,
-   "weight_now_pct": 8.36
+   "weight_now_pct": 8.42
   },
   {
    "name": "iShares Core EUR Corp Bond",
@@ -40,10 +40,10 @@
    "ccy": "EUR",
    "shares": 202.4409,
    "cost_px": 117.17,
-   "last_px": 117.36,
-   "pl_pct": 0.17,
+   "last_px": 117.54,
+   "pl_pct": 0.32,
    "weight_target_pct": 23.72,
-   "weight_now_pct": 23.52
+   "weight_now_pct": 23.55
   },
   {
    "name": "iShares Core Global Aggregate EUR-H",
@@ -53,10 +53,10 @@
    "ccy": "EUR",
    "shares": 5620.9499,
    "cost_px": 4.88,
-   "last_px": 4.9,
-   "pl_pct": 0.44,
+   "last_px": 4.89,
+   "pl_pct": 0.28,
    "weight_target_pct": 27.41,
-   "weight_now_pct": 27.25
+   "weight_now_pct": 27.2
   },
   {
    "name": "iShares Core EUR Govt Bond",
@@ -79,10 +79,10 @@
    "ccy": "EUR",
    "shares": 77.1394,
    "cost_px": 124.45,
-   "last_px": 126.97,
-   "pl_pct": 2.03,
+   "last_px": 126.14,
+   "pl_pct": 1.36,
    "weight_target_pct": 9.6,
-   "weight_now_pct": 9.69
+   "weight_now_pct": 9.63
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -92,10 +92,10 @@
    "ccy": "EUR",
    "shares": 151.8433,
    "cost_px": 46.17,
-   "last_px": 46.53,
-   "pl_pct": 0.8,
+   "last_px": 46.62,
+   "pl_pct": 0.99,
    "weight_target_pct": 7.01,
-   "weight_now_pct": 6.99
+   "weight_now_pct": 7.01
   },
   {
    "name": "Xtrackers II EUR Overnight",
@@ -105,22 +105,22 @@
    "ccy": "EUR",
    "shares": 33.2614,
    "cost_px": 149.72,
-   "last_px": 149.93,
-   "pl_pct": 0.14,
+   "last_px": 149.98,
+   "pl_pct": 0.17,
    "weight_target_pct": 4.98,
    "weight_now_pct": 4.94
   }
  ],
  "metrics": {
   "perf_total_pct": 1.04,
-  "vol_ann_pct": 4.54,
-  "sharpe": 2.75,
+  "vol_ann_pct": 4.43,
+  "sharpe": 2.7,
   "max_dd_pct": -0.81,
-  "var95_1w_pct": 1.05,
-  "nav_last": 101037.0
+  "var95_1w_pct": 1.03,
+  "nav_last": 101044.0
  },
  "monthly_pct": {
-  "2026-08": 1.13
+  "2026-08": 1.14
  },
  "nav_weekly": [
   [
@@ -141,16 +141,16 @@
   ],
   [
    "2026-08-21",
-   101037.0
+   101044.0
   ]
  ],
- "asof": "2026-08-20",
+ "asof": "2026-08-21",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 4.18,
+    "cagr_pct": 4.16,
     "sortino": 0.72,
     "calmar": 0.99,
     "months_n": 8,
@@ -336,14 +336,14 @@
       0.3,
       0.3,
       0.41,
-      -0.04
+      -0.03
      ],
      [
       0.31,
       1.0,
       0.67,
       0.91,
-      0.47,
+      0.46,
       0.46,
       0.05
      ],
@@ -354,7 +354,7 @@
       0.81,
       0.53,
       0.53,
-      0.04
+      0.03
      ],
      [
       0.3,
@@ -367,12 +367,12 @@
      ],
      [
       0.3,
-      0.47,
+      0.46,
       0.53,
       0.45,
       1.0,
       0.72,
-      0.03
+      0.02
      ],
      [
       0.41,
@@ -384,21 +384,21 @@
       0.04
      ],
      [
-      -0.04,
+      -0.03,
       0.05,
-      0.04,
-      0.0,
       0.03,
+      0.0,
+      0.02,
       0.04,
       1.0
      ]
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-08-20 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-08-21 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
    "perf_total_pct": 2.65,
-   "vol_ann_pct": 6.23,
+   "vol_ann_pct": 6.21,
    "max_dd_pct": -4.2,
    "sharpe": 0.68
   },
@@ -547,7 +547,7 @@
    ],
    [
     "2026-08-21",
-    102647.0
+    102645.0
    ]
   ]
  },
