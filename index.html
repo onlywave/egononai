@@ -121,13 +121,22 @@ async function main(){
         ?.scrollIntoView({behavior: "smooth", block: "start"}));
     cards.appendChild(c);
   }
-  const ids = reg.portfolios.map(p => p.portfolio);
-  for(const id of ids){
-    const d = await (await fetch(`data/${id}.json`)).json();
-    renderDetail(d);
-  }
   document.getElementById("foot").textContent =
     reg.disclaimer + " · Generato " + reg.generated + " · © EgononAI";
+  // un file dati difettoso non deve spegnere gli altri dettagli né il disclaimer
+  for(const p of reg.portfolios){
+    try{
+      const d = await (await fetch(`data/${p.portfolio}.json`)).json();
+      renderDetail(d);
+    }catch(e){
+      const sec = document.createElement("section");
+      sec.id = "pf_" + p.portfolio;
+      sec.style.scrollMarginTop = "16px";
+      sec.innerHTML = `<h2>${p.label}</h2>
+        <p class="soon">Dettaglio temporaneamente non disponibile — dati in rigenerazione.</p>`;
+      document.getElementById("detail").appendChild(sec);
+    }
+  }
 }
 
 function renderDetail(d){
