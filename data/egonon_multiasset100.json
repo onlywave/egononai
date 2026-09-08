@@ -27,10 +27,10 @@
    "ccy": "CHF",
    "shares": 214.1845,
    "cost_px": 91.79,
-   "last_px": 95.31,
-   "pl_pct": 3.83,
+   "last_px": 94.72,
+   "pl_pct": 3.19,
    "weight_target_pct": 19.66,
-   "weight_now_pct": 19.67
+   "weight_now_pct": 19.54
   },
   {
    "name": "iShares Global Agg CHF-hedged",
@@ -41,9 +41,9 @@
    "shares": 3677.6246,
    "cost_px": 4.46,
    "last_px": 4.45,
-   "pl_pct": -0.13,
+   "pl_pct": -0.24,
    "weight_target_pct": 16.4,
-   "weight_now_pct": 15.78
+   "weight_now_pct": 15.76
   },
   {
    "name": "ZKB Gold ETF",
@@ -53,10 +53,10 @@
    "ccy": "CHF",
    "shares": 14.9704,
    "cost_px": 978.6,
-   "last_px": 1075.6,
-   "pl_pct": 9.91,
+   "last_px": 1056.6,
+   "pl_pct": 7.97,
    "weight_target_pct": 14.65,
-   "weight_now_pct": 15.51
+   "weight_now_pct": 15.24
   },
   {
    "name": "iShares Core CHF Corp",
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 105.9525,
    "cost_px": 95.89,
-   "last_px": 96.46,
-   "pl_pct": 0.59,
+   "last_px": 96.36,
+   "pl_pct": 0.49,
    "weight_target_pct": 10.16,
-   "weight_now_pct": 9.85
+   "weight_now_pct": 9.83
   },
   {
    "name": "iShares Swiss Gov 3-7",
@@ -79,10 +79,10 @@
    "ccy": "CHF",
    "shares": 132.7446,
    "cost_px": 72.92,
-   "last_px": 73.23,
-   "pl_pct": 0.43,
+   "last_px": 73.37,
+   "pl_pct": 0.62,
    "weight_target_pct": 9.68,
-   "weight_now_pct": 9.37
+   "weight_now_pct": 9.38
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -92,10 +92,10 @@
    "ccy": "EUR",
    "shares": 209.8208,
    "cost_px": 46.17,
-   "last_px": 47.53,
-   "pl_pct": 4.05,
+   "last_px": 48.4,
+   "pl_pct": 6.33,
    "weight_target_pct": 9.0,
-   "weight_now_pct": 9.02
+   "weight_now_pct": 9.22
   },
   {
    "name": "Vanguard FTSE All-World",
@@ -105,10 +105,10 @@
    "ccy": "EUR",
    "shares": 56.6606,
    "cost_px": 163.36,
-   "last_px": 168.06,
-   "pl_pct": 3.97,
+   "last_px": 167.78,
+   "pl_pct": 4.17,
    "weight_target_pct": 8.6,
-   "weight_now_pct": 8.61
+   "weight_now_pct": 8.63
   },
   {
    "name": "iShares Core SPI",
@@ -118,10 +118,10 @@
    "ccy": "CHF",
    "shares": 29.5264,
    "cost_px": 169.34,
-   "last_px": 171.56,
-   "pl_pct": 1.31,
+   "last_px": 168.7,
+   "pl_pct": -0.38,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 4.88
+   "weight_now_pct": 4.8
   },
   {
    "name": "iShares Swiss Gov 0-3",
@@ -131,8 +131,8 @@
    "ccy": "CHF",
    "shares": 34.7928,
    "cost_px": 102.32,
-   "last_px": 103.42,
-   "pl_pct": 1.08,
+   "last_px": 103.51,
+   "pl_pct": 1.17,
    "weight_target_pct": 3.56,
    "weight_now_pct": 3.47
   },
@@ -144,10 +144,10 @@
    "ccy": "CHF",
    "shares": 146.7662,
    "cost_px": 16.08,
-   "last_px": 19.03,
-   "pl_pct": 18.35,
+   "last_px": 20.94,
+   "pl_pct": 30.25,
    "weight_target_pct": 2.36,
-   "weight_now_pct": 2.69
+   "weight_now_pct": 2.96
   },
   {
    "name": "21Shares Ethereum ETP",
@@ -157,23 +157,23 @@
    "ccy": "CHF",
    "shares": 58.6735,
    "cost_px": 15.68,
-   "last_px": 20.33,
-   "pl_pct": 29.62,
+   "last_px": 20.58,
+   "pl_pct": 31.22,
    "weight_target_pct": 0.92,
-   "weight_now_pct": 1.15
+   "weight_now_pct": 1.16
   }
  ],
  "metrics": {
-  "perf_total_pct": 3.8,
-  "vol_ann_pct": 6.95,
-  "sharpe": 4.26,
+  "perf_total_pct": 3.82,
+  "vol_ann_pct": 6.85,
+  "sharpe": 4.21,
   "max_dd_pct": -1.18,
-  "var95_1w_pct": 1.61,
-  "nav_last": 103803.0
+  "var95_1w_pct": 1.59,
+  "nav_last": 103818.0
  },
  "monthly_pct": {
   "2026-08": 3.54,
-  "2026-09": 0.51
+  "2026-09": 0.52
  },
  "nav_weekly": [
   [
@@ -202,18 +202,22 @@
   ],
   [
    "2026-09-04",
-   103803.0
+   103786.0
+  ],
+  [
+   "2026-09-11",
+   103818.0
   ]
  ],
- "asof": "2026-09-04",
+ "asof": "2026-09-08",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 8.88,
-    "sortino": 0.98,
-    "calmar": 1.55,
+    "cagr_pct": 8.71,
+    "sortino": 0.97,
+    "calmar": 1.52,
     "months_n": 9,
     "months_positive_pct": 67.0,
     "best_month_pct": 3.72,
@@ -370,7 +374,11 @@
     ],
     [
      "2026-09-04",
-     -0.47
+     -0.48
+    ],
+    [
+     "2026-09-11",
+     -0.49
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -384,8 +392,8 @@
      "m06": -1.01,
      "m07": -1.22,
      "m08": 3.32,
-     "m09": 0.52,
-     "tot": 5.95
+     "m09": 0.5,
+     "tot": 5.93
     }
    },
    "correlations": {
@@ -406,77 +414,77 @@
      [
       1.0,
       0.48,
-      0.37,
+      0.38,
       0.35,
       0.26,
-      0.74,
+      0.73,
       0.87,
       0.63,
       0.4,
-      0.28,
-      0.32
+      0.26,
+      0.31
      ],
      [
       0.48,
       1.0,
       0.23,
-      0.33,
+      0.34,
       0.4,
-      0.38,
+      0.37,
       0.45,
       0.51,
       0.54,
-      0.12,
+      0.1,
       0.06
      ],
      [
-      0.37,
+      0.38,
       0.23,
       1.0,
       0.16,
-      0.03,
+      0.02,
       0.38,
       0.33,
       0.21,
       0.13,
-      0.3,
+      0.28,
       0.31
      ],
      [
       0.35,
-      0.33,
+      0.34,
       0.16,
       1.0,
       0.32,
-      0.29,
-      0.31,
+      0.28,
+      0.3,
       0.32,
       0.41,
-      0.05,
+      0.04,
       0.07
      ],
      [
       0.26,
       0.4,
-      0.03,
+      0.02,
       0.32,
       1.0,
       0.25,
       0.2,
-      0.33,
+      0.32,
       0.6,
       0.06,
       0.08
      ],
      [
-      0.74,
+      0.73,
+      0.37,
       0.38,
-      0.38,
-      0.29,
+      0.28,
       0.25,
       1.0,
       0.82,
-      0.43,
+      0.42,
       0.4,
       0.27,
       0.3
@@ -485,13 +493,13 @@
       0.87,
       0.45,
       0.33,
-      0.31,
+      0.3,
       0.2,
       0.82,
       1.0,
-      0.56,
+      0.55,
       0.42,
-      0.3,
+      0.29,
       0.24
      ],
      [
@@ -499,12 +507,12 @@
       0.51,
       0.21,
       0.32,
-      0.33,
-      0.43,
-      0.56,
+      0.32,
+      0.42,
+      0.55,
       1.0,
       0.34,
-      0.13,
+      0.09,
       0.12
      ],
      [
@@ -521,20 +529,20 @@
       0.22
      ],
      [
+      0.26,
+      0.1,
       0.28,
-      0.12,
-      0.3,
-      0.05,
+      0.04,
       0.06,
       0.27,
-      0.3,
-      0.13,
+      0.29,
+      0.09,
       0.13,
       1.0,
-      0.72
+      0.7
      ],
      [
-      0.32,
+      0.31,
       0.06,
       0.31,
       0.07,
@@ -543,18 +551,18 @@
       0.24,
       0.12,
       0.22,
-      0.72,
+      0.7,
       1.0
      ]
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-09-04 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-09-08 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 5.95,
-   "vol_ann_pct": 9.44,
+   "perf_total_pct": 5.93,
+   "vol_ann_pct": 9.41,
    "max_dd_pct": -5.74,
-   "sharpe": 0.94
+   "sharpe": 0.93
   },
   "monthly_pct": {
    "2026-01": 2.07,
@@ -565,7 +573,7 @@
    "2026-06": -1.01,
    "2026-07": -1.22,
    "2026-08": 3.32,
-   "2026-09": 0.52
+   "2026-09": 0.5
   },
   "nav_weekly": [
    [
@@ -710,7 +718,11 @@
    ],
    [
     "2026-09-04",
-    105949.0
+    105944.0
+   ],
+   [
+    "2026-09-11",
+    105929.0
    ]
   ]
  },
