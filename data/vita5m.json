@@ -27,10 +27,10 @@
    "ccy": "CHF",
    "shares": 6695.2331,
    "cost_px": 3.73,
-   "last_px": 3.85,
-   "pl_pct": 3.21,
+   "last_px": 3.84,
+   "pl_pct": 2.73,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 24.75
+   "weight_now_pct": 24.63
   },
   {
    "name": "iShares Edge MSCI World Momentum",
@@ -40,10 +40,10 @@
    "ccy": "USD",
    "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 116.46,
-   "pl_pct": -0.65,
+   "last_px": 117.76,
+   "pl_pct": 0.14,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 23.83
+   "weight_now_pct": 24.01
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -53,7 +53,7 @@
    "ccy": "USD",
    "shares": 468.689,
    "cost_px": 52.41,
-   "last_px": 56.07,
+   "last_px": 56.25,
    "pl_pct": 6.64,
    "weight_target_pct": 20.0,
    "weight_now_pct": 20.46
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 20.4374,
    "cost_px": 978.6,
-   "last_px": 1056.6,
-   "pl_pct": 7.97,
+   "last_px": 1054.2,
+   "pl_pct": 7.73,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.71
+   "weight_now_pct": 20.66
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 478.8675,
    "cost_px": 12.82,
-   "last_px": 13.44,
-   "pl_pct": 4.49,
+   "last_px": 13.4,
+   "pl_pct": 3.81,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.01
+   "weight_now_pct": 4.98
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -92,23 +92,23 @@
    "ccy": "USD",
    "shares": 64.8469,
    "cost_px": 94.7,
-   "last_px": 103.7,
-   "pl_pct": 9.15,
+   "last_px": 104.46,
+   "pl_pct": 9.6,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.24
+   "weight_now_pct": 5.26
   }
  ],
  "metrics": {
-  "perf_total_pct": 4.24,
-  "vol_ann_pct": 14.43,
-  "sharpe": 2.27,
+  "perf_total_pct": 4.26,
+  "vol_ann_pct": 14.24,
+  "sharpe": 2.24,
   "max_dd_pct": -2.94,
-  "var95_1w_pct": 3.34,
-  "nav_last": 104244.0
+  "var95_1w_pct": 3.3,
+  "nav_last": 104262.0
  },
  "monthly_pct": {
   "2026-08": 4.71,
-  "2026-09": 1.14
+  "2026-09": 1.16
  },
  "nav_weekly": [
   [
@@ -141,18 +141,18 @@
   ],
   [
    "2026-09-11",
-   104244.0
+   104262.0
   ]
  ],
- "asof": "2026-09-08",
+ "asof": "2026-09-09",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 17.35,
-    "sortino": 0.95,
-    "calmar": 1.45,
+    "cagr_pct": 17.59,
+    "sortino": 0.97,
+    "calmar": 1.47,
     "months_n": 9,
     "months_positive_pct": 67.0,
     "best_month_pct": 9.06,
@@ -313,7 +313,7 @@
     ],
     [
      "2026-09-11",
-     -1.15
+     -0.97
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -327,8 +327,8 @@
      "m06": 1.37,
      "m07": -4.71,
      "m08": 4.65,
-     "m09": 1.28,
-     "tot": 11.62
+     "m09": 1.46,
+     "tot": 11.83
     }
    },
    "correlations": {
@@ -392,12 +392,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-09-08 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-09-09 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 11.62,
-   "vol_ann_pct": 18.93,
+   "perf_total_pct": 11.83,
+   "vol_ann_pct": 18.88,
    "max_dd_pct": -11.98,
-   "sharpe": 0.94
+   "sharpe": 0.95
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -408,7 +408,7 @@
    "2026-06": 1.37,
    "2026-07": -4.71,
    "2026-08": 4.65,
-   "2026-09": 1.28
+   "2026-09": 1.46
   },
   "nav_weekly": [
    [
@@ -557,7 +557,7 @@
    ],
    [
     "2026-09-11",
-    111624.0
+    111825.0
    ]
   ]
  },
