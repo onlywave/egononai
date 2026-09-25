@@ -27,10 +27,10 @@
    "ccy": "USD",
    "shares": 85.8694,
    "cost_px": 69.99,
-   "last_px": 70.31,
-   "pl_pct": 0.46,
+   "last_px": 73.61,
+   "pl_pct": 5.17,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.89
+   "weight_now_pct": 6.14
   },
   {
    "name": "Siemens Energy",
@@ -40,10 +40,10 @@
    "ccy": "EUR",
    "shares": 35.0027,
    "cost_px": 150.46,
-   "last_px": 144.4,
-   "pl_pct": -4.4,
+   "last_px": 146.38,
+   "pl_pct": -2.81,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.6
+   "weight_now_pct": 5.67
   },
   {
    "name": "Palantir Tech.",
@@ -53,8 +53,8 @@
    "ccy": "USD",
    "shares": 48.7152,
    "cost_px": 123.37,
-   "last_px": 191.79,
-   "pl_pct": 55.46,
+   "last_px": 192.59,
+   "pl_pct": 56.11,
    "weight_target_pct": 6.01,
    "weight_now_pct": 9.11
   },
@@ -66,10 +66,10 @@
    "ccy": "EUR",
    "shares": 250.0714,
    "cost_px": 21.06,
-   "last_px": 20.29,
-   "pl_pct": -4.03,
+   "last_px": 20.44,
+   "pl_pct": -3.04,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.62
+   "weight_now_pct": 5.66
   },
   {
    "name": "China Yangtze Power",
@@ -80,9 +80,9 @@
    "shares": 1406.4521,
    "cost_px": 28.94,
    "last_px": 28.36,
-   "pl_pct": -1.13,
+   "pl_pct": -1.0,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.79
+   "weight_now_pct": 5.78
   },
   {
    "name": "SK hynix",
@@ -93,9 +93,9 @@
    "shares": 4.6214,
    "cost_px": 1919000.0,
    "last_px": 1862000.0,
-   "pl_pct": 4.4,
+   "pl_pct": 5.73,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.12
+   "weight_now_pct": 6.17
   },
   {
    "name": "Air Liquide",
@@ -105,10 +105,10 @@
    "ccy": "EUR",
    "shares": 29.9949,
    "cost_px": 175.58,
-   "last_px": 167.94,
-   "pl_pct": -4.72,
+   "last_px": 167.66,
+   "pl_pct": -4.61,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.58
+   "weight_now_pct": 5.56
   },
   {
    "name": "American Tower",
@@ -118,10 +118,10 @@
    "ccy": "USD",
    "shares": 36.5017,
    "cost_px": 164.65,
-   "last_px": 170.78,
-   "pl_pct": 3.72,
+   "last_px": 167.26,
+   "pl_pct": 1.59,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.08
+   "weight_now_pct": 5.93
   },
   {
    "name": "Veolia Environnement",
@@ -131,10 +131,10 @@
    "ccy": "EUR",
    "shares": 143.1893,
    "cost_px": 36.78,
-   "last_px": 31.28,
-   "pl_pct": -15.28,
+   "last_px": 31.55,
+   "pl_pct": -14.31,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 4.96
+   "weight_now_pct": 5.0
   },
   {
    "name": "Astera Labs",
@@ -144,10 +144,10 @@
    "ccy": "USD",
    "shares": 18.3809,
    "cost_px": 326.97,
-   "last_px": 360.46,
-   "pl_pct": 10.24,
+   "last_px": 360.51,
+   "pl_pct": 10.26,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.46
+   "weight_now_pct": 6.43
   },
   {
    "name": "Deere & Company",
@@ -157,10 +157,10 @@
    "ccy": "USD",
    "shares": 9.8521,
    "cost_px": 610.02,
-   "last_px": 709.48,
-   "pl_pct": 16.3,
+   "last_px": 694.94,
+   "pl_pct": 13.92,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.82
+   "weight_now_pct": 6.65
   },
   {
    "name": "Linde plc",
@@ -170,10 +170,10 @@
    "ccy": "USD",
    "shares": 11.87,
    "cost_px": 506.32,
-   "last_px": 469.72,
-   "pl_pct": -7.23,
+   "last_px": 468.14,
+   "pl_pct": -7.54,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.44
+   "weight_now_pct": 5.39
   },
   {
    "name": "Advantest",
@@ -183,10 +183,10 @@
    "ccy": "JPY",
    "shares": 31.822,
    "cost_px": 30800.0,
-   "last_px": 33060.0,
-   "pl_pct": 10.24,
+   "last_px": 34000.0,
+   "pl_pct": 14.07,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 6.46
+   "weight_now_pct": 6.65
   },
   {
    "name": "Daikin Industries",
@@ -196,10 +196,10 @@
    "ccy": "JPY",
    "shares": 40.6434,
    "cost_px": 24115.0,
-   "last_px": 20720.0,
-   "pl_pct": -11.75,
+   "last_px": 20860.0,
+   "pl_pct": -10.62,
    "weight_target_pct": 6.01,
-   "weight_now_pct": 5.17
+   "weight_now_pct": 5.21
   },
   {
    "name": "Nutrien",
@@ -209,10 +209,10 @@
    "ccy": "CAD",
    "shares": 59.2736,
    "cost_px": 96.48,
-   "last_px": 105.82,
-   "pl_pct": 9.46,
+   "last_px": 104.67,
+   "pl_pct": 8.09,
    "weight_target_pct": 4.06,
-   "weight_now_pct": 4.33
+   "weight_now_pct": 4.26
   },
   {
    "name": "BYD Company",
@@ -222,10 +222,10 @@
    "ccy": "HKD",
    "shares": 351.0931,
    "cost_px": 88.65,
-   "last_px": 79.5,
-   "pl_pct": -10.35,
+   "last_px": 78.1,
+   "pl_pct": -11.94,
    "weight_target_pct": 3.97,
-   "weight_now_pct": 3.47
+   "weight_now_pct": 3.39
   },
   {
    "name": "Talen Energy",
@@ -235,10 +235,10 @@
    "ccy": "USD",
    "shares": 10.3884,
    "cost_px": 379.27,
-   "last_px": 300.34,
-   "pl_pct": -20.81,
+   "last_px": 300.01,
+   "pl_pct": -20.9,
    "weight_target_pct": 3.94,
-   "weight_now_pct": 3.04
+   "weight_now_pct": 3.03
   },
   {
    "name": "Kazatomprom",
@@ -248,10 +248,10 @@
    "ccy": "USD",
    "shares": 35.6391,
    "cost_px": 66.5,
-   "last_px": 69.5,
-   "pl_pct": 4.51,
+   "last_px": 68.3,
+   "pl_pct": 2.71,
    "weight_target_pct": 2.37,
-   "weight_now_pct": 2.42
+   "weight_now_pct": 2.36
   },
   {
    "name": "BHP Group",
@@ -261,10 +261,10 @@
    "ccy": "AUD",
    "shares": 24.3048,
    "cost_px": 60.63,
-   "last_px": 61.02,
-   "pl_pct": 1.2,
+   "last_px": 60.72,
+   "pl_pct": 0.77,
    "weight_target_pct": 1.03,
-   "weight_now_pct": 1.02
+   "weight_now_pct": 1.01
   },
   {
    "name": "Prysmian S.p.A.",
@@ -274,23 +274,23 @@
    "ccy": "EUR",
    "shares": 3.3356,
    "cost_px": 126.1,
-   "last_px": 124.8,
-   "pl_pct": -1.41,
+   "last_px": 125.5,
+   "pl_pct": -0.58,
    "weight_target_pct": 0.48,
    "weight_now_pct": 0.46
   }
  ],
  "metrics": {
-  "perf_total_pct": 2.55,
-  "vol_ann_pct": 18.8,
-  "sharpe": 0.83,
+  "perf_total_pct": 3.02,
+  "vol_ann_pct": 18.63,
+  "sharpe": 0.95,
   "max_dd_pct": -6.29,
-  "var95_1w_pct": 4.36,
-  "nav_last": 102549.0
+  "var95_1w_pct": 4.32,
+  "nav_last": 103023.0
  },
  "monthly_pct": {
   "2026-08": 2.74,
-  "2026-09": 1.57
+  "2026-09": 2.04
  },
  "nav_weekly": [
   [
@@ -331,18 +331,18 @@
   ],
   [
    "2026-09-25",
-   102549.0
+   103023.0
   ]
  ],
- "asof": "2026-09-24",
+ "asof": "2026-09-25",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 46.36,
-    "sortino": 1.42,
-    "calmar": 2.51,
+    "cagr_pct": 47.06,
+    "sortino": 1.44,
+    "calmar": 2.55,
     "months_n": 9,
     "months_positive_pct": 78.0,
     "best_month_pct": 16.97,
@@ -511,7 +511,7 @@
     ],
     [
      "2026-09-25",
-     -8.58
+     -8.16
     ]
    ],
    "max_dd_date": "2026-07-29",
@@ -525,8 +525,8 @@
      "m06": 3.15,
      "m07": -11.77,
      "m08": 1.47,
-     "m09": 3.08,
-     "tot": 32.11
+     "m09": 3.55,
+     "tot": 32.71
     }
    },
    "correlations": {
@@ -555,13 +555,13 @@
     "matrix": [
      [
       1.0,
-      0.28,
+      0.27,
       0.31,
       0.05,
       -0.09,
       0.11,
       -0.14,
-      -0.04,
+      -0.05,
       0.09,
       0.42,
       0.12,
@@ -571,23 +571,23 @@
       -0.01,
       0.08,
       0.26,
-      0.18,
-      -0.0,
-      0.32
+      0.17,
+      -0.01,
+      0.31
      ],
      [
-      0.28,
+      0.27,
       1.0,
       0.05,
-      0.34,
+      0.35,
       -0.17,
       0.23,
       0.15,
-      -0.22,
+      -0.21,
       0.43,
       0.36,
       0.11,
-      0.06,
+      0.07,
       0.4,
       0.18,
       -0.06,
@@ -595,7 +595,7 @@
       0.37,
       0.4,
       0.18,
-      0.72
+      0.73
      ],
      [
       0.31,
@@ -605,7 +605,7 @@
       -0.16,
       -0.08,
       -0.2,
-      0.06,
+      0.05,
       -0.1,
       0.2,
       -0.11,
@@ -621,7 +621,7 @@
      ],
      [
       0.05,
-      0.34,
+      0.35,
       -0.19,
       1.0,
       -0.09,
@@ -682,8 +682,8 @@
       0.04,
       0.19,
       0.2,
-      0.44,
-      0.3
+      0.43,
+      0.29
      ],
      [
       -0.14,
@@ -708,9 +708,9 @@
       0.14
      ],
      [
-      -0.04,
-      -0.22,
-      0.06,
+      -0.05,
+      -0.21,
+      0.05,
       0.03,
       0.06,
       -0.2,
@@ -722,12 +722,12 @@
       0.12,
       -0.24,
       -0.06,
-      0.01,
+      0.02,
       -0.01,
       -0.05,
       -0.06,
-      -0.07,
-      -0.22
+      -0.06,
+      -0.21
      ],
      [
       0.09,
@@ -786,18 +786,18 @@
       0.03,
       1.0,
       0.19,
-      0.0,
+      -0.0,
       -0.03,
       0.18,
       0.08,
       0.09,
       0.05,
-      0.03,
-      0.04
+      0.04,
+      0.05
      ],
      [
       -0.09,
-      0.06,
+      0.07,
       -0.1,
       0.11,
       0.06,
@@ -808,7 +808,7 @@
       -0.16,
       0.19,
       1.0,
-      -0.05,
+      -0.06,
       0.14,
       0.2,
       0.08,
@@ -828,8 +828,8 @@
       -0.24,
       0.21,
       0.13,
-      0.0,
-      -0.05,
+      -0.0,
+      -0.06,
       1.0,
       0.33,
       -0.07,
@@ -859,7 +859,7 @@
       -0.01,
       0.14,
       0.34,
-      0.21
+      0.22
      ],
      [
       -0.01,
@@ -869,7 +869,7 @@
       0.21,
       -0.06,
       0.17,
-      0.01,
+      0.02,
       0.09,
       -0.09,
       0.18,
@@ -880,7 +880,7 @@
       0.17,
       -0.02,
       0.06,
-      0.09,
+      0.1,
       0.01
      ],
      [
@@ -928,7 +928,7 @@
       0.36
      ],
      [
-      0.18,
+      0.17,
       0.4,
       0.15,
       0.22,
@@ -946,62 +946,62 @@
       0.08,
       0.13,
       1.0,
-      0.21,
+      0.22,
       0.28
      ],
      [
-      -0.0,
+      -0.01,
       0.18,
       -0.04,
       0.23,
       -0.02,
-      0.44,
+      0.43,
       0.33,
-      -0.07,
+      -0.06,
       0.31,
       -0.11,
-      0.03,
+      0.04,
       0.09,
       0.44,
       0.34,
-      0.09,
+      0.1,
       0.14,
       0.05,
-      0.21,
+      0.22,
       1.0,
-      0.18
+      0.19
      ],
      [
-      0.32,
-      0.72,
+      0.31,
+      0.73,
       0.04,
       0.31,
       -0.16,
-      0.3,
+      0.29,
       0.14,
-      -0.22,
+      -0.21,
       0.34,
       0.42,
-      0.04,
+      0.05,
       0.02,
       0.38,
-      0.21,
+      0.22,
       0.01,
       0.03,
       0.36,
       0.28,
-      0.18,
+      0.19,
       1.0
      ]
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-09-24 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-09-25 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 32.11,
-   "vol_ann_pct": 25.23,
+   "perf_total_pct": 32.71,
+   "vol_ann_pct": 25.17,
    "max_dd_pct": -18.49,
-   "sharpe": 1.59
+   "sharpe": 1.61
   },
   "monthly_pct": {
    "2026-01": 8.47,
@@ -1012,7 +1012,7 @@
    "2026-06": 3.15,
    "2026-07": -11.77,
    "2026-08": 1.47,
-   "2026-09": 3.08
+   "2026-09": 3.55
   },
   "nav_weekly": [
    [
@@ -1169,7 +1169,7 @@
    ],
    [
     "2026-09-25",
-    132107.0
+    132707.0
    ]
   ]
  },
