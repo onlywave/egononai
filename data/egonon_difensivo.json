@@ -27,10 +27,10 @@
    "ccy": "EUR",
    "shares": 68.2791,
    "cost_px": 114.53,
-   "last_px": 117.82,
-   "pl_pct": 2.87,
+   "last_px": 118.46,
+   "pl_pct": 3.43,
    "weight_target_pct": 7.82,
-   "weight_now_pct": 8.06
+   "weight_now_pct": 8.11
   },
   {
    "name": "iShares Core EUR Corp Bond",
@@ -40,10 +40,10 @@
    "ccy": "EUR",
    "shares": 202.4409,
    "cost_px": 117.17,
-   "last_px": 115.45,
-   "pl_pct": -1.47,
+   "last_px": 115.61,
+   "pl_pct": -1.33,
    "weight_target_pct": 23.72,
-   "weight_now_pct": 23.43
+   "weight_now_pct": 23.47
   },
   {
    "name": "iShares Core Global Aggregate EUR-H",
@@ -54,7 +54,7 @@
    "shares": 5620.9499,
    "cost_px": 4.88,
    "last_px": 4.8,
-   "pl_pct": -1.53,
+   "pl_pct": -1.54,
    "weight_target_pct": 27.41,
    "weight_now_pct": 27.06
   },
@@ -66,8 +66,8 @@
    "ccy": "EUR",
    "shares": 182.2012,
    "cost_px": 106.81,
-   "last_px": 104.36,
-   "pl_pct": -2.29,
+   "last_px": 104.33,
+   "pl_pct": -2.31,
    "weight_target_pct": 19.46,
    "weight_now_pct": 19.06
   },
@@ -79,10 +79,10 @@
    "ccy": "EUR",
    "shares": 77.1394,
    "cost_px": 124.45,
-   "last_px": 129.13,
-   "pl_pct": 3.76,
+   "last_px": 128.69,
+   "pl_pct": 3.41,
    "weight_target_pct": 9.6,
-   "weight_now_pct": 9.99
+   "weight_now_pct": 9.95
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -92,10 +92,10 @@
    "ccy": "EUR",
    "shares": 151.8433,
    "cost_px": 46.17,
-   "last_px": 48.53,
-   "pl_pct": 5.12,
+   "last_px": 48.25,
+   "pl_pct": 4.51,
    "weight_target_pct": 7.01,
-   "weight_now_pct": 7.39
+   "weight_now_pct": 7.35
   },
   {
    "name": "Xtrackers II EUR Overnight",
@@ -112,16 +112,16 @@
   }
  ],
  "metrics": {
-  "perf_total_pct": -0.25,
-  "vol_ann_pct": 4.86,
+  "perf_total_pct": -0.26,
+  "vol_ann_pct": 5.0,
   "sharpe": -0.24,
-  "max_dd_pct": -1.96,
-  "var95_1w_pct": 1.13,
-  "nav_last": 99753.0
+  "max_dd_pct": -2.17,
+  "var95_1w_pct": 1.16,
+  "nav_last": 99745.0
  },
  "monthly_pct": {
   "2026-08": 0.97,
-  "2026-09": -1.11
+  "2026-09": -1.12
  },
  "nav_weekly": [
   [
@@ -166,18 +166,18 @@
   ],
   [
    "2026-10-02",
-   99753.0
+   99745.0
   ]
  ],
- "asof": "2026-09-29",
+ "asof": "2026-09-30",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 2.01,
-    "sortino": 0.37,
-    "calmar": 0.48,
+    "cagr_pct": 1.97,
+    "sortino": 0.36,
+    "calmar": 0.47,
     "months_n": 9,
     "months_positive_pct": 56.0,
     "best_month_pct": 1.92,
@@ -350,7 +350,7 @@
     ],
     [
      "2026-10-02",
-     -2.02
+     -2.04
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -364,8 +364,8 @@
      "m06": -0.25,
      "m07": -1.64,
      "m08": 1.01,
-     "m09": -0.99,
-     "tot": 1.5
+     "m09": -1.01,
+     "tot": 1.48
     }
    },
    "correlations": {
@@ -381,15 +381,15 @@
     "matrix": [
      [
       1.0,
-      0.31,
-      0.34,
-      0.31,
-      0.31,
+      0.32,
+      0.35,
+      0.32,
+      0.32,
       0.4,
-      -0.02
+      -0.0
      ],
      [
-      0.31,
+      0.32,
       1.0,
       0.69,
       0.91,
@@ -398,25 +398,25 @@
       0.07
      ],
      [
-      0.34,
+      0.35,
       0.69,
       1.0,
-      0.82,
+      0.83,
       0.53,
       0.53,
       0.02
      ],
      [
-      0.31,
+      0.32,
       0.91,
-      0.82,
+      0.83,
       1.0,
       0.47,
       0.49,
       0.01
      ],
      [
-      0.31,
+      0.32,
       0.47,
       0.53,
       0.47,
@@ -434,7 +434,7 @@
       0.06
      ],
      [
-      -0.02,
+      -0.0,
       0.07,
       0.02,
       0.01,
@@ -445,12 +445,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-09-29 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-09-30 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 1.5,
-   "vol_ann_pct": 6.08,
+   "perf_total_pct": 1.48,
+   "vol_ann_pct": 6.11,
    "max_dd_pct": -4.2,
-   "sharpe": 0.36
+   "sharpe": 0.35
   },
   "monthly_pct": {
    "2026-01": 1.71,
@@ -461,7 +461,7 @@
    "2026-06": -0.25,
    "2026-07": -1.64,
    "2026-08": 1.01,
-   "2026-09": -0.99
+   "2026-09": -1.01
   },
   "nav_weekly": [
    [
@@ -622,7 +622,7 @@
    ],
    [
     "2026-10-02",
-    101499.0
+    101475.0
    ]
   ]
  },
