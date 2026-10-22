@@ -27,10 +27,10 @@
    "ccy": "CHF",
    "shares": 6695.2331,
    "cost_px": 3.73,
-   "last_px": 3.83,
-   "pl_pct": 2.62,
+   "last_px": 3.81,
+   "pl_pct": 2.04,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 25.37
+   "weight_now_pct": 25.58
   },
   {
    "name": "iShares Edge MSCI World Momentum",
@@ -40,10 +40,10 @@
    "ccy": "USD",
    "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 112.4,
-   "pl_pct": -2.53,
+   "last_px": 111.38,
+   "pl_pct": -3.85,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 24.09
+   "weight_now_pct": 24.11
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -53,10 +53,10 @@
    "ccy": "USD",
    "shares": 468.689,
    "cost_px": 52.41,
-   "last_px": 52.15,
-   "pl_pct": 0.82,
+   "last_px": 51.05,
+   "pl_pct": -1.75,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 19.94
+   "weight_now_pct": 19.71
   },
   {
    "name": "ZKB Gold ETF AA (CHF)",
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 20.4374,
    "cost_px": 978.6,
-   "last_px": 1005.0,
-   "pl_pct": 2.7,
+   "last_px": 993.0,
+   "pl_pct": 1.47,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.31
+   "weight_now_pct": 20.35
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 478.8675,
    "cost_px": 12.82,
-   "last_px": 13.17,
-   "pl_pct": 4.06,
+   "last_px": 13.09,
+   "pl_pct": 2.98,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.14
+   "weight_now_pct": 5.16
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -92,24 +92,24 @@
    "ccy": "USD",
    "shares": 64.8469,
    "cost_px": 94.7,
-   "last_px": 97.45,
-   "pl_pct": 4.27,
+   "last_px": 95.39,
+   "pl_pct": 1.6,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.15
+   "weight_now_pct": 5.09
   }
  ],
  "metrics": {
-  "perf_total_pct": 1.14,
-  "vol_ann_pct": 13.47,
-  "sharpe": 0.39,
-  "max_dd_pct": -4.82,
-  "var95_1w_pct": 3.12,
-  "nav_last": 101144.0
+  "perf_total_pct": -0.28,
+  "vol_ann_pct": 13.86,
+  "sharpe": -0.01,
+  "max_dd_pct": -6.16,
+  "var95_1w_pct": 3.21,
+  "nav_last": 99720.0
  },
  "monthly_pct": {
   "2026-08": 4.71,
   "2026-09": 1.92,
-  "2026-10": -3.71
+  "2026-10": -5.07
  },
  "nav_weekly": [
   [
@@ -166,18 +166,18 @@
   ],
   [
    "2026-10-23",
-   101144.0
+   99720.0
   ]
  ],
- "asof": "2026-10-21",
+ "asof": "2026-10-22",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 10.23,
-    "sortino": 0.64,
-    "calmar": 0.85,
+    "cagr_pct": 8.19,
+    "sortino": 0.52,
+    "calmar": 0.68,
     "months_n": 10,
     "months_positive_pct": 60.0,
     "best_month_pct": 9.06,
@@ -362,7 +362,7 @@
     ],
     [
      "2026-10-23",
-     -5.21
+     -6.6
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -377,8 +377,8 @@
      "m07": -4.71,
      "m08": 4.65,
      "m09": 2.27,
-     "m10": -4.04,
-     "tot": 8.16
+     "m10": -5.45,
+     "tot": 6.57
     }
    },
    "correlations": {
@@ -393,61 +393,61 @@
     "matrix": [
      [
       1.0,
-      0.62,
-      0.7,
+      0.63,
+      0.71,
       0.37,
-      0.16,
+      0.17,
       0.62
      ],
      [
-      0.62,
+      0.63,
       1.0,
       0.81,
       0.33,
       0.12,
-      0.77
+      0.78
      ],
      [
-      0.7,
+      0.71,
       0.81,
       1.0,
-      0.36,
-      0.13,
+      0.37,
+      0.14,
       0.94
      ],
      [
       0.37,
       0.33,
-      0.36,
+      0.37,
       1.0,
       -0.08,
-      0.33
+      0.34
      ],
      [
-      0.16,
+      0.17,
       0.12,
-      0.13,
+      0.14,
       -0.08,
       1.0,
       0.1
      ],
      [
       0.62,
-      0.77,
+      0.78,
       0.94,
-      0.33,
+      0.34,
       0.1,
       1.0
      ]
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-10-21 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-10-22 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 8.16,
-   "vol_ann_pct": 18.13,
+   "perf_total_pct": 6.57,
+   "vol_ann_pct": 18.21,
    "max_dd_pct": -11.98,
-   "sharpe": 0.62
+   "sharpe": 0.52
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -459,7 +459,7 @@
    "2026-07": -4.71,
    "2026-08": 4.65,
    "2026-09": 2.27,
-   "2026-10": -4.04
+   "2026-10": -5.45
   },
   "nav_weekly": [
    [
@@ -632,7 +632,7 @@
    ],
    [
     "2026-10-23",
-    108159.0
+    106566.0
    ]
   ]
  },
