@@ -27,10 +27,10 @@
    "ccy": "CHF",
    "shares": 6695.2331,
    "cost_px": 3.73,
-   "last_px": 3.81,
-   "pl_pct": 2.08,
+   "last_px": 3.83,
+   "pl_pct": 2.65,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 25.56
+   "weight_now_pct": 25.33
   },
   {
    "name": "iShares Edge MSCI World Momentum",
@@ -40,10 +40,10 @@
    "ccy": "USD",
    "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 111.16,
-   "pl_pct": -3.2,
+   "last_px": 113.26,
+   "pl_pct": -1.2,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 24.23
+   "weight_now_pct": 24.37
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -53,10 +53,10 @@
    "ccy": "USD",
    "shares": 468.689,
    "cost_px": 52.41,
-   "last_px": 50.94,
-   "pl_pct": -1.11,
+   "last_px": 51.83,
+   "pl_pct": 0.79,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 19.81
+   "weight_now_pct": 19.89
   },
   {
    "name": "ZKB Gold ETF AA (CHF)",
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 20.4374,
    "cost_px": 978.6,
-   "last_px": 979.9,
-   "pl_pct": 0.13,
+   "last_px": 994.2,
+   "pl_pct": 1.59,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.06
+   "weight_now_pct": 20.05
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 478.8675,
    "cost_px": 12.82,
-   "last_px": 13.08,
-   "pl_pct": 3.8,
+   "last_px": 13.15,
+   "pl_pct": 4.54,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.2
+   "weight_now_pct": 5.16
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -92,24 +92,24 @@
    "ccy": "USD",
    "shares": 64.8469,
    "cost_px": 94.7,
-   "last_px": 95.71,
-   "pl_pct": 2.83,
+   "last_px": 97.9,
+   "pl_pct": 5.36,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.15
+   "weight_now_pct": 5.2
   }
  ],
  "metrics": {
-  "perf_total_pct": -0.15,
-  "vol_ann_pct": 13.93,
-  "sharpe": 0.03,
+  "perf_total_pct": 1.33,
+  "vol_ann_pct": 14.1,
+  "sharpe": 0.41,
   "max_dd_pct": -6.99,
-  "var95_1w_pct": 3.23,
-  "nav_last": 99853.0
+  "var95_1w_pct": 3.27,
+  "nav_last": 101334.0
  },
  "monthly_pct": {
   "2026-08": 4.71,
   "2026-09": 1.92,
-  "2026-10": -4.94
+  "2026-10": -3.53
  },
  "nav_weekly": [
   [
@@ -170,18 +170,18 @@
   ],
   [
    "2026-10-30",
-   99853.0
+   101334.0
   ]
  ],
- "asof": "2026-10-27",
+ "asof": "2026-10-28",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 8.28,
-    "sortino": 0.53,
-    "calmar": 0.69,
+    "cagr_pct": 10.32,
+    "sortino": 0.63,
+    "calmar": 0.86,
     "months_n": 10,
     "months_positive_pct": 60.0,
     "best_month_pct": 9.06,
@@ -370,7 +370,7 @@
     ],
     [
      "2026-10-30",
-     -6.44
+     -4.97
     ]
    ],
    "max_dd_date": "2026-03-27",
@@ -385,8 +385,8 @@
      "m07": -4.71,
      "m08": 4.65,
      "m09": 2.27,
-     "m10": -5.29,
-     "tot": 6.75
+     "m10": -3.8,
+     "tot": 8.43
     }
    },
    "correlations": {
@@ -411,7 +411,7 @@
       0.63,
       1.0,
       0.81,
-      0.33,
+      0.34,
       0.12,
       0.78
      ],
@@ -425,7 +425,7 @@
      ],
      [
       0.37,
-      0.33,
+      0.34,
       0.37,
       1.0,
       -0.08,
@@ -450,12 +450,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-10-27 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-10-28 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 6.75,
-   "vol_ann_pct": 18.18,
+   "perf_total_pct": 8.43,
+   "vol_ann_pct": 18.21,
    "max_dd_pct": -11.98,
-   "sharpe": 0.52
+   "sharpe": 0.62
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -467,7 +467,7 @@
    "2026-07": -4.71,
    "2026-08": 4.65,
    "2026-09": 2.27,
-   "2026-10": -5.29
+   "2026-10": -3.8
   },
   "nav_weekly": [
    [
@@ -644,7 +644,7 @@
    ],
    [
     "2026-10-30",
-    106755.0
+    108430.0
    ]
   ]
  },
