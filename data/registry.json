@@ -1,19 +1,19 @@
 {
- "generated": "2026-10-31T11:14:12+00:00",
+ "generated": "2026-11-03T13:00:22+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
    "label": "WOLF 43 — World to Come",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-10-30",
+   "asof": "2026-11-02",
    "metrics": {
-    "perf_total_pct": 22.37,
-    "vol_ann_pct": 25.98,
-    "sharpe": 1.04,
-    "max_dd_pct": -19.69,
-    "var95_1w_pct": 6.02,
-    "nav_last": 1223728.0
+    "perf_total_pct": 22.12,
+    "vol_ann_pct": 25.92,
+    "sharpe": 1.03,
+    "max_dd_pct": -19.74,
+    "var95_1w_pct": 6.01,
+    "nav_last": 1221225.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -24,14 +24,14 @@
    "label": "EgononAI Difensivo — Multi-Asset ETF",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-10-30",
+   "asof": "2026-11-03",
    "metrics": {
-    "perf_total_pct": -0.31,
-    "vol_ann_pct": 4.46,
-    "sharpe": -0.22,
+    "perf_total_pct": -0.39,
+    "vol_ann_pct": 4.52,
+    "sharpe": -0.27,
     "max_dd_pct": -2.17,
-    "var95_1w_pct": 1.03,
-    "nav_last": 99693.0
+    "var95_1w_pct": 1.05,
+    "nav_last": 99613.0
    },
    "risk_level": "basso",
    "etf_only": true,
@@ -47,7 +47,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 1.33
+    "perf_total_pct": 1.24
    }
   },
   {
@@ -55,14 +55,14 @@
    "label": "EgononAI Bilanciato — Quality Bottleneck",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-10-30",
+   "asof": "2026-11-03",
    "metrics": {
-    "perf_total_pct": -3.04,
-    "vol_ann_pct": 10.12,
-    "sharpe": -1.02,
+    "perf_total_pct": -2.83,
+    "vol_ann_pct": 10.01,
+    "sharpe": -0.93,
     "max_dd_pct": -6.25,
-    "var95_1w_pct": 2.35,
-    "nav_last": 96963.0
+    "var95_1w_pct": 2.32,
+    "nav_last": 97166.0
    },
    "risk_level": "medio",
    "etf_only": false,
@@ -78,7 +78,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 11.71
+    "perf_total_pct": 11.72
    }
   },
   {
@@ -86,14 +86,14 @@
    "label": "EgononAI Dinamico — High Conviction",
    "base_currency": "USD",
    "status": "live",
-   "asof": "2026-10-30",
+   "asof": "2026-11-03",
    "metrics": {
-    "perf_total_pct": -1.18,
-    "vol_ann_pct": 18.99,
-    "sharpe": -0.13,
+    "perf_total_pct": -1.86,
+    "vol_ann_pct": 18.76,
+    "sharpe": -0.25,
     "max_dd_pct": -8.56,
-    "var95_1w_pct": 4.4,
-    "nav_last": 98818.0
+    "var95_1w_pct": 4.35,
+    "nav_last": 98137.0
    },
    "risk_level": "alto",
    "etf_only": false,
@@ -109,7 +109,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 24.08
+    "perf_total_pct": 22.88
    }
   },
   {
@@ -117,14 +117,14 @@
    "label": "EgononAI Multi-Asset 100 — Profilo Istituzionale",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-10-30",
+   "asof": "2026-11-03",
    "metrics": {
-    "perf_total_pct": 0.41,
-    "vol_ann_pct": 7.52,
-    "sharpe": 0.23,
-    "max_dd_pct": -3.74,
-    "var95_1w_pct": 1.74,
-    "nav_last": 100411.0
+    "perf_total_pct": 0.39,
+    "vol_ann_pct": 7.54,
+    "sharpe": 0.21,
+    "max_dd_pct": -3.76,
+    "var95_1w_pct": 1.75,
+    "nav_last": 100386.0
    },
    "risk_level": "istituzionale",
    "etf_only": false,
@@ -140,7 +140,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 2.52
+    "perf_total_pct": 2.38
    }
   },
   {
@@ -148,14 +148,14 @@
    "label": "VITA 5M — CHF-First Multipolare",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-10-30",
+   "asof": "2026-11-03",
    "metrics": {
-    "perf_total_pct": -2.35,
-    "vol_ann_pct": 15.03,
-    "sharpe": -0.48,
-    "max_dd_pct": -8.11,
-    "var95_1w_pct": 3.48,
-    "nav_last": 97650.0
+    "perf_total_pct": -3.09,
+    "vol_ann_pct": 15.06,
+    "sharpe": -0.63,
+    "max_dd_pct": -8.8,
+    "var95_1w_pct": 3.49,
+    "nav_last": 96913.0
    },
    "risk_level": "multipolare",
    "etf_only": true,
@@ -171,7 +171,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 4.34
+    "perf_total_pct": 3.51
    }
   }
  ],
