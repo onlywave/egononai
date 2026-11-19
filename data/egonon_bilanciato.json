@@ -27,10 +27,10 @@
    "ccy": "JPY",
    "shares": 54.8375,
    "cost_px": 24115.0,
-   "last_px": 23040.0,
-   "pl_pct": 1.79,
+   "last_px": 23940.0,
+   "pl_pct": 5.14,
    "weight_target_pct": 7.1,
-   "weight_now_pct": 7.35
+   "weight_now_pct": 7.57
   },
   {
    "name": "Kurita Water Industries",
@@ -40,10 +40,10 @@
    "ccy": "JPY",
    "shares": 106.0721,
    "cost_px": 9043.0,
-   "last_px": 5622.0,
-   "pl_pct": -33.77,
+   "last_px": 5623.0,
+   "pl_pct": -34.14,
    "weight_target_pct": 5.15,
-   "weight_now_pct": 3.47
+   "weight_now_pct": 3.44
   },
   {
    "name": "ABB Ltd",
@@ -53,10 +53,10 @@
    "ccy": "CHF",
    "shares": 93.2062,
    "cost_px": 79.86,
-   "last_px": 68.24,
-   "pl_pct": -14.2,
+   "last_px": 69.22,
+   "pl_pct": -13.15,
    "weight_target_pct": 8.01,
-   "weight_now_pct": 6.98
+   "weight_now_pct": 7.06
   },
   {
    "name": "Air Liquide",
@@ -66,10 +66,10 @@
    "ccy": "EUR",
    "shares": 59.2892,
    "cost_px": 175.58,
-   "last_px": 191.28,
-   "pl_pct": 8.94,
+   "last_px": 189.74,
+   "pl_pct": 8.06,
    "weight_target_pct": 10.41,
-   "weight_now_pct": 11.53
+   "weight_now_pct": 11.41
   },
   {
    "name": "American Tower",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 71.527,
    "cost_px": 164.65,
-   "last_px": 182.53,
-   "pl_pct": 15.3,
+   "last_px": 181.85,
+   "pl_pct": 14.57,
    "weight_target_pct": 10.32,
-   "weight_now_pct": 12.09
+   "weight_now_pct": 11.99
   },
   {
    "name": "Cadence Design Sys.",
@@ -92,10 +92,10 @@
    "ccy": "USD",
    "shares": 13.9168,
    "cost_px": 330.46,
-   "last_px": 310.67,
-   "pl_pct": -2.22,
+   "last_px": 316.22,
+   "pl_pct": -0.74,
    "weight_target_pct": 4.03,
-   "weight_now_pct": 4.0
+   "weight_now_pct": 4.06
   },
   {
    "name": "Iberdrola",
@@ -105,10 +105,10 @@
    "ccy": "EUR",
    "shares": 494.302,
    "cost_px": 21.06,
-   "last_px": 22.79,
-   "pl_pct": 8.21,
+   "last_px": 22.58,
+   "pl_pct": 7.22,
    "weight_target_pct": 10.41,
-   "weight_now_pct": 11.45
+   "weight_now_pct": 11.32
   },
   {
    "name": "Linde plc",
@@ -118,10 +118,10 @@
    "ccy": "USD",
    "shares": 23.4627,
    "cost_px": 506.32,
-   "last_px": 511.27,
-   "pl_pct": 5.02,
+   "last_px": 510.95,
+   "pl_pct": 4.68,
    "weight_target_pct": 10.41,
-   "weight_now_pct": 11.11
+   "weight_now_pct": 11.05
   },
   {
    "name": "Prysmian S.p.A.",
@@ -131,10 +131,10 @@
    "ccy": "EUR",
    "shares": 46.4711,
    "cost_px": 126.1,
-   "last_px": 108.4,
-   "pl_pct": -14.04,
+   "last_px": 110.2,
+   "pl_pct": -12.61,
    "weight_target_pct": 5.86,
-   "weight_now_pct": 5.12
+   "weight_now_pct": 5.19
   },
   {
    "name": "Schneider Electric",
@@ -144,10 +144,10 @@
    "ccy": "EUR",
    "shares": 21.8161,
    "cost_px": 265.4,
-   "last_px": 240.3,
-   "pl_pct": -9.46,
+   "last_px": 238.75,
+   "pl_pct": -10.04,
    "weight_target_pct": 5.79,
-   "weight_now_pct": 5.33
+   "weight_now_pct": 5.28
   },
   {
    "name": "Xylem",
@@ -157,25 +157,25 @@
    "ccy": "USD",
    "shares": 90.3214,
    "cost_px": 116.87,
-   "last_px": 93.37,
-   "pl_pct": -16.91,
+   "last_px": 94.62,
+   "pl_pct": -16.01,
    "weight_target_pct": 9.25,
-   "weight_now_pct": 7.81
+   "weight_now_pct": 7.88
   }
  ],
  "metrics": {
-  "perf_total_pct": -1.61,
-  "vol_ann_pct": 10.83,
-  "sharpe": -0.39,
+  "perf_total_pct": -1.42,
+  "vol_ann_pct": 10.78,
+  "sharpe": -0.34,
   "max_dd_pct": -6.25,
-  "var95_1w_pct": 2.51,
-  "nav_last": 98390.0
+  "var95_1w_pct": 2.5,
+  "nav_last": 98579.0
  },
  "monthly_pct": {
   "2026-08": -1.78,
   "2026-09": -0.33,
   "2026-10": -0.14,
-  "2026-11": 1.47
+  "2026-11": 1.67
  },
  "nav_weekly": [
   [
@@ -248,18 +248,18 @@
   ],
   [
    "2026-11-20",
-   98390.0
+   98579.0
   ]
  ],
- "asof": "2026-11-18",
+ "asof": "2026-11-19",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 15.21,
-    "sortino": 1.21,
-    "calmar": 1.47,
+    "cagr_pct": 15.45,
+    "sortino": 1.23,
+    "calmar": 1.5,
     "months_n": 11,
     "months_positive_pct": 55.0,
     "best_month_pct": 7.59,
@@ -460,7 +460,7 @@
     ],
     [
      "2026-11-20",
-     -7.09
+     -6.89
     ]
    ],
    "max_dd_date": "2026-09-14",
@@ -476,8 +476,8 @@
      "m08": -1.78,
      "m09": -0.08,
      "m10": -0.73,
-     "m11": 1.42,
-     "tot": 13.3
+     "m11": 1.64,
+     "tot": 13.55
     }
    },
    "correlations": {
@@ -500,8 +500,8 @@
       0.28,
       0.09,
       0.01,
-      -0.06,
-      0.03,
+      -0.07,
+      0.04,
       0.01,
       0.11,
       0.16,
@@ -548,7 +548,7 @@
       0.2
      ],
      [
-      -0.06,
+      -0.07,
       -0.08,
       -0.12,
       0.12,
@@ -561,16 +561,16 @@
       0.17
      ],
      [
-      0.03,
+      0.04,
       0.06,
       0.22,
       -0.12,
       -0.06,
       1.0,
       -0.01,
-      0.05,
+      0.04,
       0.31,
-      0.27,
+      0.26,
       0.01
      ],
      [
@@ -592,10 +592,10 @@
       0.02,
       0.39,
       0.23,
-      0.05,
+      0.04,
       0.18,
       1.0,
-      -0.0,
+      -0.01,
       -0.06,
       0.25
      ],
@@ -607,7 +607,7 @@
       -0.2,
       0.31,
       0.19,
-      -0.0,
+      -0.01,
       1.0,
       0.7,
       0.07
@@ -618,7 +618,7 @@
       0.76,
       0.11,
       -0.18,
-      0.27,
+      0.26,
       0.22,
       -0.06,
       0.7,
@@ -641,12 +641,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-11-18 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-11-19 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 13.3,
-   "vol_ann_pct": 11.8,
+   "perf_total_pct": 13.55,
+   "vol_ann_pct": 11.78,
    "max_dd_pct": -10.33,
-   "sharpe": 1.22
+   "sharpe": 1.24
   },
   "monthly_pct": {
    "2026-01": 3.39,
@@ -659,7 +659,7 @@
    "2026-08": -1.78,
    "2026-09": -0.08,
    "2026-10": -0.73,
-   "2026-11": 1.42
+   "2026-11": 1.64
   },
   "nav_weekly": [
    [
@@ -848,7 +848,7 @@
    ],
    [
     "2026-11-20",
-    113296.0
+    113545.0
    ]
   ]
  },

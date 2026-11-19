@@ -27,10 +27,10 @@
    "ccy": "CHF",
    "shares": 6695.2331,
    "cost_px": 3.73,
-   "last_px": 3.67,
-   "pl_pct": -1.63,
+   "last_px": 3.68,
+   "pl_pct": -1.33,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 25.85
+   "weight_now_pct": 26.04
   },
   {
    "name": "iShares Edge MSCI World Momentum",
@@ -40,10 +40,10 @@
    "ccy": "USD",
    "shares": 262.7952,
    "cost_px": 116.84,
-   "last_px": 101.24,
-   "pl_pct": -10.26,
+   "last_px": 101.38,
+   "pl_pct": -10.2,
    "weight_target_pct": 25.0,
-   "weight_now_pct": 23.59
+   "weight_now_pct": 23.7
   },
   {
    "name": "iShares Core MSCI EM IMI",
@@ -53,8 +53,8 @@
    "ccy": "USD",
    "shares": 468.689,
    "cost_px": 52.41,
-   "last_px": 47.88,
-   "pl_pct": -5.38,
+   "last_px": 47.69,
+   "pl_pct": -5.82,
    "weight_target_pct": 20.0,
    "weight_now_pct": 19.89
   },
@@ -66,10 +66,10 @@
    "ccy": "CHF",
    "shares": 20.4374,
    "cost_px": 978.6,
-   "last_px": 942.2,
-   "pl_pct": -3.72,
+   "last_px": 923.6,
+   "pl_pct": -5.62,
    "weight_target_pct": 20.0,
-   "weight_now_pct": 20.24
+   "weight_now_pct": 19.93
   },
   {
    "name": "SPDR MSCI ACWI IMI",
@@ -79,10 +79,10 @@
    "ccy": "USD",
    "shares": 478.8675,
    "cost_px": 12.82,
-   "last_px": 12.57,
-   "pl_pct": 1.5,
+   "last_px": 12.59,
+   "pl_pct": 1.6,
    "weight_target_pct": 5.0,
-   "weight_now_pct": 5.34
+   "weight_now_pct": 5.36
   },
   {
    "name": "iShares Edge MSCI EM Value Factor",
@@ -92,25 +92,25 @@
    "ccy": "USD",
    "shares": 64.8469,
    "cost_px": 94.7,
-   "last_px": 88.45,
-   "pl_pct": -3.27,
+   "last_px": 87.98,
+   "pl_pct": -3.85,
    "weight_target_pct": 5.0,
    "weight_now_pct": 5.08
   }
  ],
  "metrics": {
-  "perf_total_pct": -4.88,
-  "vol_ann_pct": 16.18,
-  "sharpe": -0.84,
-  "max_dd_pct": -10.76,
-  "var95_1w_pct": 3.75,
-  "nav_last": 95119.0
+  "perf_total_pct": -5.28,
+  "vol_ann_pct": 16.16,
+  "sharpe": -0.9,
+  "max_dd_pct": -11.38,
+  "var95_1w_pct": 3.74,
+  "nav_last": 94718.0
  },
  "monthly_pct": {
   "2026-08": 4.71,
   "2026-09": 1.92,
   "2026-10": -7.0,
-  "2026-11": -2.63
+  "2026-11": -3.04
  },
  "nav_weekly": [
   [
@@ -183,18 +183,18 @@
   ],
   [
    "2026-11-20",
-   95119.0
+   94718.0
   ]
  ],
- "asof": "2026-11-18",
+ "asof": "2026-11-19",
  "construction_date": "2026-07-22",
  "backtest_2026": {
   "label": "Simulazione 2026 (backtest, dati reali)",
   "quant": {
    "stats": {
-    "cagr_pct": 1.63,
-    "sortino": 0.18,
-    "calmar": 0.14,
+    "cagr_pct": 1.16,
+    "sortino": 0.15,
+    "calmar": 0.1,
     "months_n": 11,
     "months_positive_pct": 55.0,
     "best_month_pct": 9.06,
@@ -395,10 +395,10 @@
     ],
     [
      "2026-11-20",
-     -11.1
+     -11.46
     ]
    ],
-   "max_dd_date": "2026-03-27",
+   "max_dd_date": "2026-11-18",
    "monthly_matrix": {
     "2026": {
      "m01": 3.42,
@@ -411,8 +411,8 @@
      "m08": 4.65,
      "m09": 2.27,
      "m10": -7.39,
-     "m11": -2.82,
-     "tot": 1.43
+     "m11": -3.22,
+     "tot": 1.02
     }
    },
    "correlations": {
@@ -454,14 +454,14 @@
       0.31,
       0.37,
       1.0,
-      -0.08,
+      -0.07,
       0.33
      ],
      [
       0.17,
       0.13,
       0.14,
-      -0.08,
+      -0.07,
       1.0,
       0.11
      ],
@@ -476,12 +476,12 @@
     ]
    }
   },
-  "note": "Simulazione retrospettiva 01/01/2026→2026-11-18 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
+  "note": "Simulazione retrospettiva 01/01/2026→2026-11-19 con i pesi correnti e dati di mercato reali. NON è un track record: portafoglio costruito il 2026-07-22.",
   "metrics": {
-   "perf_total_pct": 1.43,
-   "vol_ann_pct": 18.72,
-   "max_dd_pct": -11.98,
-   "sharpe": 0.18
+   "perf_total_pct": 1.02,
+   "vol_ann_pct": 18.7,
+   "max_dd_pct": -12.01,
+   "sharpe": 0.15
   },
   "monthly_pct": {
    "2026-01": 3.42,
@@ -494,7 +494,7 @@
    "2026-08": 4.65,
    "2026-09": 2.27,
    "2026-10": -7.39,
-   "2026-11": -2.82
+   "2026-11": -3.22
   },
   "nav_weekly": [
    [
@@ -683,7 +683,7 @@
    ],
    [
     "2026-11-20",
-    101432.0
+    101021.0
    ]
   ]
  },
