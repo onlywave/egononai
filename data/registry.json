@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-19T14:41:32+00:00",
+ "generated": "2026-11-20T14:21:52+00:00",
  "portfolios": [
   {
    "portfolio": "wolf43",
    "label": "WOLF 43 — World to Come",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-11-18",
+   "asof": "2026-11-19",
    "metrics": {
-    "perf_total_pct": 15.17,
-    "vol_ann_pct": 26.64,
-    "sharpe": 0.72,
+    "perf_total_pct": 14.65,
+    "vol_ann_pct": 26.58,
+    "sharpe": 0.7,
     "max_dd_pct": -24.35,
-    "var95_1w_pct": 6.17,
-    "nav_last": 1151730.0
+    "var95_1w_pct": 6.16,
+    "nav_last": 1146542.0
    },
    "risk_level": "medio-alto",
    "etf_only": false,
@@ -24,14 +24,14 @@
    "label": "EgononAI Difensivo — Multi-Asset ETF",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-11-19",
+   "asof": "2026-11-20",
    "metrics": {
-    "perf_total_pct": -1.06,
-    "vol_ann_pct": 4.62,
-    "sharpe": -0.65,
-    "max_dd_pct": -2.66,
-    "var95_1w_pct": 1.07,
-    "nav_last": 98943.0
+    "perf_total_pct": -1.74,
+    "vol_ann_pct": 4.68,
+    "sharpe": -1.06,
+    "max_dd_pct": -3.33,
+    "var95_1w_pct": 1.08,
+    "nav_last": 98263.0
    },
    "risk_level": "basso",
    "etf_only": true,
@@ -47,7 +47,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 0.53
+    "perf_total_pct": -0.23
    }
   },
   {
@@ -55,14 +55,14 @@
    "label": "EgononAI Bilanciato — Quality Bottleneck",
    "base_currency": "EUR",
    "status": "live",
-   "asof": "2026-11-19",
+   "asof": "2026-11-20",
    "metrics": {
-    "perf_total_pct": -1.42,
-    "vol_ann_pct": 10.78,
-    "sharpe": -0.34,
+    "perf_total_pct": -2.89,
+    "vol_ann_pct": 10.88,
+    "sharpe": -0.73,
     "max_dd_pct": -6.25,
-    "var95_1w_pct": 2.5,
-    "nav_last": 98579.0
+    "var95_1w_pct": 2.52,
+    "nav_last": 97107.0
    },
    "risk_level": "medio",
    "etf_only": false,
@@ -78,7 +78,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 13.55
+    "perf_total_pct": 11.6
    }
   },
   {
@@ -86,14 +86,14 @@
    "label": "EgononAI Dinamico — High Conviction",
    "base_currency": "USD",
    "status": "live",
-   "asof": "2026-11-19",
+   "asof": "2026-11-20",
    "metrics": {
-    "perf_total_pct": -4.88,
-    "vol_ann_pct": 20.56,
-    "sharpe": -0.61,
-    "max_dd_pct": -10.91,
-    "var95_1w_pct": 4.76,
-    "nav_last": 95120.0
+    "perf_total_pct": -7.81,
+    "vol_ann_pct": 20.47,
+    "sharpe": -1.05,
+    "max_dd_pct": -12.62,
+    "var95_1w_pct": 4.74,
+    "nav_last": 92189.0
    },
    "risk_level": "alto",
    "etf_only": false,
@@ -109,7 +109,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 17.87
+    "perf_total_pct": 13.81
    }
   },
   {
@@ -117,14 +117,14 @@
    "label": "EgononAI Multi-Asset 100 — Profilo Istituzionale",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-11-19",
+   "asof": "2026-11-20",
    "metrics": {
-    "perf_total_pct": -1.27,
-    "vol_ann_pct": 8.05,
-    "sharpe": -0.42,
-    "max_dd_pct": -5.87,
-    "var95_1w_pct": 1.86,
-    "nav_last": 98734.0
+    "perf_total_pct": -3.36,
+    "vol_ann_pct": 8.22,
+    "sharpe": -1.17,
+    "max_dd_pct": -7.36,
+    "var95_1w_pct": 1.9,
+    "nav_last": 96635.0
    },
    "risk_level": "istituzionale",
    "etf_only": false,
@@ -140,7 +140,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 0.84
+    "perf_total_pct": -1.33
    }
   },
   {
@@ -148,14 +148,14 @@
    "label": "VITA 5M — CHF-First Multipolare",
    "base_currency": "CHF",
    "status": "live",
-   "asof": "2026-11-19",
+   "asof": "2026-11-20",
    "metrics": {
-    "perf_total_pct": -5.28,
-    "vol_ann_pct": 16.16,
-    "sharpe": -0.9,
-    "max_dd_pct": -11.38,
-    "var95_1w_pct": 3.74,
-    "nav_last": 94718.0
+    "perf_total_pct": -9.44,
+    "vol_ann_pct": 17.04,
+    "sharpe": -1.6,
+    "max_dd_pct": -14.78,
+    "var95_1w_pct": 3.95,
+    "nav_last": 90560.0
    },
    "risk_level": "multipolare",
    "etf_only": true,
@@ -171,7 +171,7 @@
     }
    },
    "backtest_2026": {
-    "perf_total_pct": 1.02
+    "perf_total_pct": -3.48
    }
   }
  ],
